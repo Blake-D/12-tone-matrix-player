@@ -19,6 +19,14 @@ body {
                             "B3     RI0     RI1     RI2     RI3     RI4     RI5     RI6     RI7     RI8     RI9     RI10    RI11    B4"
 }
 
+.p-row{
+    float: right;
+}
+
+.i-row{
+    margin-top: 4vh;
+}
+
 .box{
     border: solid black;
 }
