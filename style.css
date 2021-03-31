@@ -1,7 +1,7 @@
 body {
     display: grid;
     min-height: 100vh;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:    "B1     I0      I1      I2      I3      I4      I5      I6      I7      I8      I9      I10     I11     B2"
                             "P0     P0-0    P0-1    P0-2    P0-3    P0-4    P0-5    P0-6    P0-7    P0-8    P0-9    P0-10   P0-11   R0"
@@ -17,14 +17,32 @@ body {
                             "P10    P10-0   P10-1   P10-2   P10-3   P10-4   P10-5   P10-6   P10-7   P10-8   P10-9   P10-10  P10-11  R10"
                             "P11    P11-0   P11-1   P11-2   P11-3   P11-4   P11-5   P11-6   P11-7   P11-8   P11-9   P11-10  P11-11  R11"
                             "B3     RI0     RI1     RI2     RI3     RI4     RI5     RI6     RI7     RI8     RI9     RI10    RI11    B4"
+                            "B3     OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      B4"
+}
+
+#ordering-bar{
+    grid-area: OB;
 }
 
 .p-row{
     float: right;
+    margin-top: 2vh;
 }
 
 .i-row{
     margin-top: 4vh;
+}
+
+.r-row{
+    margin-top: 2vh;
+}
+
+.i-div{
+    text-align: center;
+}
+
+.ri-div{
+    text-align: center;
 }
 
 .box{
