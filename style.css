@@ -20,6 +20,10 @@ body {
                             "B3     OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      B4"
 }
 
+/* .orderButton:focus{
+    color: white;
+} */
+
 #ordering-bar{
     grid-area: OB;
 }
@@ -49,816 +53,816 @@ body {
     border: solid black;
 }
 
-#blank-1{
+#blankOne{
     grid-area: B1;
 }
 
-#blank-2{
+#blankTwo{
     grid-area: B2;
 }
 
-#blank-3{
+#blankThree{
     grid-area: B3;
 }
 
-#blank-4{
+#blankFour{
     grid-area: B4;
 }
 
-#P0{
+#primeZero{
     grid-area: P0;
 }
 
-#P1{
+#primeOne{
     grid-area: P1;
 }
 
-#P2{
+#primeTwo{
     grid-area: P2;
 }
 
-#P3{
+#primeThree{
     grid-area: P3;
 }
 
-#P4{
+#primeFour{
     grid-area: P4;
 }
 
-#P5{
+#primeFive{
     grid-area: P5;
 }
 
-#P6{
+#primeSix{
     grid-area: P6;
 }
 
-#P7{
+#primeSeven{
     grid-area: P7;
 }
 
-#P8{
+#primeEight{
     grid-area: P8;
 }
 
-#P9{
+#primeNine{
     grid-area: P9;
 }
 
-#P10{
+#primeTen{
     grid-area: P10;
 }
 
-#P11{
+#primeEleven{
     grid-area: P11;
 }
 
 /* *** */
 
-#P0-0{
+#zeroZero{
     grid-area: P0-0;
 }
 
-#P0-1{
+#zeroOne{
     grid-area: P0-1;
 }
 
-#P0-2{
+#zeroTwo{
     grid-area: P0-2;
 }
 
-#P0-3{
+#zeroThree{
     grid-area: P0-3;
 }
 
-#P0-4{
+#zeroFour{
     grid-area: P0-4;
 }
 
-#P0-5{
+#zeroFive{
     grid-area: P0-5;
 }
 
-#P0-6{
+#zeroSix{
     grid-area: P0-6;
 }
 
-#P0-7{
+#zeroSeven{
     grid-area: P0-7;
 }
 
-#P0-8{
+#zeroEight{
     grid-area: P0-8;
 }
 
-#P0-9{
+#zeroNine{
     grid-area: P0-9;
 }
 
-#P0-10{
+#zeroTen{
     grid-area: P0-10;
 }
 
-#P0-11{
+#zeroEleven{
     grid-area: P0-11;
 }
 
 /* *** */
 
-#P1-0{
+#oneZero{
     grid-area: P1-0;
 }
 
-#P1-1{
+#oneOne{
     grid-area: P1-1;
 }
 
-#P1-2{
+#oneTwo{
     grid-area: P1-2;
 }
 
-#P1-3{
+#oneThree{
     grid-area: P1-3;
 }
 
-#P1-4{
+#oneFour{
     grid-area: P1-4;
 }
 
-#P1-5{
+#oneFive{
     grid-area: P1-5;
 }
 
-#P1-6{
+#oneSix{
     grid-area: P1-6;
 }
 
-#P1-7{
+#oneSeven{
     grid-area: P1-7;
 }
 
-#P1-8{
+#oneEight{
     grid-area: P1-8;
 }
 
-#P1-9{
+#oneNine{
     grid-area: P1-9;
 }
 
-#P1-10{
+#oneTen{
     grid-area: P1-10;
 }
 
-#P1-11{
+#oneEleven{
     grid-area: P1-11;
 }
 
 /* *** */
 
-#P2-0{
+#twoZero{
     grid-area: P2-0;
 }
 
-#P2-1{
+#twoOne{
     grid-area: P2-1;
 }
 
-#P2-2{
+#twoTwo{
     grid-area: P2-2;
 }
 
-#P2-3{
+#twoThree{
     grid-area: P2-3;
 }
 
-#P2-4{
+#twoFour{
     grid-area: P2-4;
 }
 
-#P2-5{
+#twoFive{
     grid-area: P2-5;
 }
 
-#P2-6{
+#twoSix{
     grid-area: P2-6;
 }
 
-#P2-7{
+#twoSeven{
     grid-area: P2-7;
 }
 
-#P2-8{
+#twoEight{
     grid-area: P2-8;
 }
 
-#P2-9{
+#twoNine{
     grid-area: P2-9;
 }
 
-#P2-10{
+#twoTen{
     grid-area: P2-10;
 }
 
-#P2-11{
+#twoEleven{
     grid-area: P2-11;
 }
 
 /* *** */
 
-#P3-0{
+#threeZero{
     grid-area: P3-0;
 }
 
-#P3-1{
+#threeOne{
     grid-area: P3-1;
 }
 
-#P3-2{
+#threeTwo{
     grid-area: P3-2;
 }
 
-#P3-3{
+#threeThree{
     grid-area: P3-3;
 }
 
-#P3-4{
+#threeFour{
     grid-area: P3-4;
 }
 
-#P3-5{
+#threeFive{
     grid-area: P3-5;
 }
 
-#P3-6{
+#threeSix{
     grid-area: P3-6;
 }
 
-#P3-7{
+#threeSeven{
     grid-area: P3-7;
 }
 
-#P3-8{
+#threeEight{
     grid-area: P3-8;
 }
 
-#P3-9{
+#threeNine{
     grid-area: P3-9;
 }
 
-#P3-10{
+#threeTen{
     grid-area: P3-10;
 }
 
-#P3-11{
+#threeEleven{
     grid-area: P3-11;
 }
 
 /* *** */
 
-#P4-0{
+#fourZero{
     grid-area: P4-0;
 }
 
-#P4-1{
+#fourOne{
     grid-area: P4-1;
 }
 
-#P4-2{
+#fourTwo{
     grid-area: P4-2;
 }
 
-#P4-3{
+#fourThree{
     grid-area: P4-3;
 }
 
-#P4-4{
+#fourFour{
     grid-area: P4-4;
 }
 
-#P4-5{
+#fourFive{
     grid-area: P4-5;
 }
 
-#P4-6{
+#fourSix{
     grid-area: P4-6;
 }
 
-#P4-7{
+#fourSeven{
     grid-area: P4-7;
 }
 
-#P4-8{
+#fourEight{
     grid-area: P4-8;
 }
 
-#P4-9{
+#fourNine{
     grid-area: P4-9;
 }
 
-#P4-10{
+#fourTen{
     grid-area: P4-10;
 }
 
-#P4-11{
+#fourEleven{
     grid-area: P4-11;
 }
 
 /* *** */
 
-#P5-0{
+#fiveZero{
     grid-area: P5-0;
 }
 
-#P5-1{
+#fiveOne{
     grid-area: P5-1;
 }
 
-#P5-2{
+#fiveTwo{
     grid-area: P5-2;
 }
 
-#P5-3{
+#fiveThree{
     grid-area: P5-3;
 }
 
-#P5-4{
+#fiveFour{
     grid-area: P5-4;
 }
 
-#P5-5{
+#fiveFive{
     grid-area: P5-5;
 }
 
-#P5-6{
+#fiveSix{
     grid-area: P5-6;
 }
 
-#P5-7{
+#fiveSeven{
     grid-area: P5-7;
 }
 
-#P5-8{
+#fiveEight{
     grid-area: P5-8;
 }
 
-#P5-9{
+#fiveNine{
     grid-area: P5-9;
 }
 
-#P5-10{
+#fiveTen{
     grid-area: P5-10;
 }
 
-#P5-11{
+#fiveEleven{
     grid-area: P5-11;
 }
 
 /* *** */
 
-#P6-0{
+#sixZero{
     grid-area: P6-0;
 }
 
-#P6-1{
+#sixOne{
     grid-area: P6-1;
 }
 
-#P6-2{
+#sixTwo{
     grid-area: P6-2;
 }
 
-#P6-3{
+#sixThree{
     grid-area: P6-3;
 }
 
-#P6-4{
+#sixFour{
     grid-area: P6-4;
 }
 
-#P6-5{
+#sixFive{
     grid-area: P6-5;
 }
 
-#P6-6{
+#sixSix{
     grid-area: P6-6;
 }
 
-#P6-7{
+#sixSeven{
     grid-area: P6-7;
 }
 
-#P6-8{
+#sixEight{
     grid-area: P6-8;
 }
 
-#P6-9{
+#sixNine{
     grid-area: P6-9;
 }
 
-#P6-10{
+#sixTen{
     grid-area: P6-10;
 }
 
-#P6-11{
+#sixEleven{
     grid-area: P6-11;
 }
 
 /* *** */
 
-#P7-0{
+#sevenZero{
     grid-area: P7-0;
 }
 
-#P7-1{
+#sevenOne{
     grid-area: P7-1;
 }
 
-#P7-2{
+#sevenTwo{
     grid-area: P7-2;
 }
 
-#P7-3{
+#sevenThree{
     grid-area: P7-3;
 }
 
-#P7-4{
+#sevenFour{
     grid-area: P7-4;
 }
 
-#P7-5{
+#sevenFive{
     grid-area: P7-5;
 }
 
-#P7-6{
+#sevenSix{
     grid-area: P7-6;
 }
 
-#P7-7{
+#sevenSeven{
     grid-area: P7-7;
 }
 
-#P7-8{
+#sevenEight{
     grid-area: P7-8;
 }
 
-#P7-9{
+#sevenNine{
     grid-area: P7-9;
 }
 
-#P7-10{
+#sevenTen{
     grid-area: P7-10;
 }
 
-#P7-11{
+#sevenEleven{
     grid-area: P7-11;
 }
 
 /* *** */
 
-#P8-0{
+#eightZero{
     grid-area: P8-0;
 }
 
-#P8-1{
+#eightOne{
     grid-area: P8-1;
 }
 
-#P8-2{
+#eightTwo{
     grid-area: P8-2;
 }
 
-#P8-3{
+#eightThree{
     grid-area: P8-3;
 }
 
-#P8-4{
+#eightFour{
     grid-area: P8-4;
 }
 
-#P8-5{
+#eightFive{
     grid-area: P8-5;
 }
 
-#P8-6{
+#eightSix{
     grid-area: P8-6;
 }
 
-#P8-7{
+#eightSeven{
     grid-area: P8-7;
 }
 
-#P8-8{
+#eightEight{
     grid-area: P8-8;
 }
 
-#P8-9{
+#eightNine{
     grid-area: P8-9;
 }
 
-#P8-10{
+#eightTen{
     grid-area: P8-10;
 }
 
-#P8-11{
+#eightEleven{
     grid-area: P8-11;
 }
 
 /* *** */
 
-#P9-0{
+#nineZero{
     grid-area: P9-0;
 }
 
-#P9-1{
+#nineOne{
     grid-area: P9-1;
 }
 
-#P9-2{
+#nineTwo{
     grid-area: P9-2;
 }
 
-#P9-3{
+#nineThree{
     grid-area: P9-3;
 }
 
-#P9-4{
+#nineFour{
     grid-area: P9-4;
 }
 
-#P9-5{
+#nineFive{
     grid-area: P9-5;
 }
 
-#P9-6{
+#nineSix{
     grid-area: P9-6;
 }
 
-#P9-7{
+#nineSeven{
     grid-area: P9-7;
 }
 
-#P9-8{
+#nineEight{
     grid-area: P9-8;
 }
 
-#P9-9{
+#nineNine{
     grid-area: P9-9;
 }
 
-#P9-10{
+#nineTen{
     grid-area: P9-10;
 }
 
-#P9-11{
+#nineEleven{
     grid-area: P9-11;
 }
 
 /* *** */
 
-#P10-0{
+#tenZero{
     grid-area: P10-0;
 }
 
-#P10-1{
+#tenOne{
     grid-area: P10-1;
 }
 
-#P10-2{
+#tenTwo{
     grid-area: P10-2;
 }
 
-#P10-3{
+#tenThree{
     grid-area: P10-3;
 }
 
-#P10-4{
+#tenFour{
     grid-area: P10-4;
 }
 
-#P10-5{
+#tenFive{
     grid-area: P10-5;
 }
 
-#P10-6{
+#tenSix{
     grid-area: P10-6;
 }
 
-#P10-7{
+#tenSeven{
     grid-area: P10-7;
 }
 
-#P10-8{
+#tenEight{
     grid-area: P10-8;
 }
 
-#P10-9{
+#tenNine{
     grid-area: P10-9;
 }
 
-#P10-10{
+#tenTen{
     grid-area: P10-10;
 }
 
-#P10-11{
+#tenEleven{
     grid-area: P10-11;
 }
 
 /* *** */
 
-#P11-0{
+#elevenZero{
     grid-area: P11-0;
 }
 
-#P11-1{
+#elevenOne{
     grid-area: P11-1;
 }
 
-#P11-2{
+#elevenTwo{
     grid-area: P11-2;
 }
 
-#P11-3{
+#elevenThree{
     grid-area: P11-3;
 }
 
-#P11-4{
+#elevenFour{
     grid-area: P11-4;
 }
 
-#P11-5{
+#elevenFive{
     grid-area: P11-5;
 }
 
-#P11-6{
+#elevenSix{
     grid-area: P11-6;
 }
 
-#P11-7{
+#elevenSeven{
     grid-area: P11-7;
 }
 
-#P11-8{
+#elevenEight{
     grid-area: P11-8;
 }
 
-#P11-9{
+#elevenNine{
     grid-area: P11-9;
 }
 
-#P11-10{
+#elevenTen{
     grid-area: P11-10;
 }
 
-#P11-11{
+#elevenEleven{
     grid-area: P11-11;
 }
 
 /* *** */
 
-#R0{
+#retroZero{
     grid-area: R0;
 }
 
-#R1{
+#retroOne{
     grid-area: R1;
 }
 
-#R2{
+#retroTwo{
     grid-area: R2;
 }
 
-#R3{
+#retroThree{
     grid-area: R3;
 }
 
-#R4{
+#retroFour{
     grid-area: R4;
 }
 
-#R5{
+#retroFive{
     grid-area: R5;
 }
 
-#R6{
+#retroSix{
     grid-area: R6;
 }
 
-#R7{
+#retroSeven{
     grid-area: R7;
 }
 
-#R8{
+#retroEight{
     grid-area: R8;
 }
 
-#R9{
+#retroNine{
     grid-area: R9;
 }
 
-#R10{
+#retroTen{
     grid-area: R10;
 }
 
-#R11{
+#retroEleven{
     grid-area: R11;
 }
 
 /* *** */
 
-#I0{
+#invZero{
     grid-area: I0;
 }
 
-#I1{
+#invOne{
     grid-area: I1;
 }
 
-#I2{
+#invTwo{
     grid-area: I2;
 }
 
-#I3{
+#invThree{
     grid-area: I3;
 }
 
-#I4{
+#invFour{
     grid-area: I4;
 }
 
-#I5{
+#invFive{
     grid-area: I5;
 }
 
-#I6{
+#invSix{
     grid-area: I6;
 }
 
-#I7{
+#invSeven{
     grid-area: I7;
 }
 
-#I8{
+#invEight{
     grid-area: I8;
 }
 
-#I9{
+#invNine{
     grid-area: I9;
 }
 
-#I10{
+#invTen{
     grid-area: I10;
 }
 
-#I11{
+#invEleven{
     grid-area: I11;
 }
 
 /* *** */
 
-#RI0{
+#retroInvZero{
     grid-area: RI0;
 }
 
-#RI1{
+#retroInvOne{
     grid-area: RI1;
 }
 
-#RI2{
+#retroInvTwo{
     grid-area: RI2;
 }
 
-#RI3{
+#retroInvThree{
     grid-area: RI3;
 }
 
-#RI4{
+#retroInvFour{
     grid-area: RI4;
 }
 
-#RI5{
+#retroInvFive{
     grid-area: RI5;
 }
 
-#RI6{
+#retroInvSix{
     grid-area: RI6;
 }
 
-#RI7{
+#retroInvSeven{
     grid-area: RI7;
 }
 
-#RI8{
+#retroInvEight{
     grid-area: RI8;
 }
 
-#RI9{
+#retroInvNine{
     grid-area: RI9;
 }
 
-#RI10{
+#retroInvTen{
     grid-area: RI10;
 }
 
-#RI11{
+#retroInvEleven{
     grid-area: RI11;
 }
