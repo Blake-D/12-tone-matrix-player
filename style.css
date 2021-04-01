@@ -1,56 +1,48 @@
 body {
     display: grid;
-    min-height: 100vh;
+    min-height: 90vh;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:    "B1     I0      I1      I2      I3      I4      I5      I6      I7      I8      I9      I10     I11     B2"
-                            "P0     P0-0    P0-1    P0-2    P0-3    P0-4    P0-5    P0-6    P0-7    P0-8    P0-9    P0-10   P0-11   R0"
-                            "P1     P1-0    P1-1    P1-2    P1-3    P1-4    P1-5    P1-6    P1-7    P1-8    P1-9    P1-10   P1-11   R1"
-                            "P2     P2-0    P2-1    P2-2    P2-3    P2-4    P2-5    P2-6    P2-7    P2-8    P2-9    P2-10   P2-11   R2"
-                            "P3     P3-0    P3-1    P3-2    P3-3    P3-4    P3-5    P3-6    P3-7    P3-8    P3-9    P3-10   P3-11   R3"
-                            "P4     P4-0    P4-1    P4-2    P4-3    P4-4    P4-5    P4-6    P4-7    P4-8    P4-9    P4-10   P4-11   R4"
-                            "P5     P5-0    P5-1    P5-2    P5-3    P5-4    P5-5    P5-6    P5-7    P5-8    P5-9    P5-10   P5-11   R5"
-                            "P6     P6-0    P6-1    P6-2    P6-3    P6-4    P6-5    P6-6    P6-7    P6-8    P6-9    P6-10   P6-11   R6"
-                            "P7     P7-0    P7-1    P7-2    P7-3    P7-4    P7-5    P7-6    P7-7    P7-8    P7-9    P7-10   P7-11   R7"
-                            "P8     P8-0    P8-1    P8-2    P8-3    P8-4    P8-5    P8-6    P8-7    P8-8    P8-9    P8-10   P8-11   R8"
-                            "P9     P9-0    P9-1    P9-2    P9-3    P9-4    P9-5    P9-6    P9-7    P9-8    P9-9    P9-10   P9-11   R9"
-                            "P10    P10-0   P10-1   P10-2   P10-3   P10-4   P10-5   P10-6   P10-7   P10-8   P10-9   P10-10  P10-11  R10"
-                            "P11    P11-0   P11-1   P11-2   P11-3   P11-4   P11-5   P11-6   P11-7   P11-8   P11-9   P11-10  P11-11  R11"
-                            "B3     RI0     RI1     RI2     RI3     RI4     RI5     RI6     RI7     RI8     RI9     RI10    RI11    B4"
+    grid-template-areas:    "B1     TR0     TR1     TR2     TR3     TR4     TR5     TR6     TR7     TR8     TR9     TR10    TR11    B2"
+                            "LC0    Z0      Z1      Z2      Z3      Z4      Z5      Z6      Z7      Z8      Z9      Z10     Z11     RC0"
+                            "LC1    O0      O1      O2      O3      O4      O5      O6      O7      O8      O9      O10     O11     RC1"
+                            "LC2    Tw0     Tw1     Tw2     Tw3     Tw4     Tw5     Tw6     Tw7     Tw8     Tw9     Tw10    Tw11    RC2"
+                            "LC3    Th0     Th1     Th2     Th3     Th4     Th5     Th6     Th7     Th8     Th9     Th10    Th11    RC3"
+                            "LC4    Fo0     Fo1     Fo2     Fo3     Fo4     Fo5     Fo6     Fo7     Fo8     Fo9     Fo10    Fo11    RC4"
+                            "LC5    Fi0     Fi1     Fi2     Fi3     Fi4     Fi5     Fi6     Fi7     Fi8     Fi9     Fi10    Fi11    RC5"
+                            "LC6    Si0     Si1     Si2     Si3     Si4     Si5     Si6     Si7     Si8     Si9     Si10    Si11    RC6"
+                            "LC7    Se0     Se1     Se2     Se3     Se4     Se5     Se6     Se7     Se8     Se9     Se10    Se11    RC7"
+                            "LC8    Ei0     Ei1     Ei2     Ei3     Ei4     Ei5     Ei6     Ei7     Ei8     Ei9     Ei10    Ei11    RC8"
+                            "LC9    N0      N1      N2      N3      N4      N5      N6      N7      N8      N9      N10     N11     RC9"
+                            "LC10   Te0     Te1     Te2     Te3     Te4     Te5     Te6     Te7     Te8     Te9     Te10    Te11    RC10"
+                            "LC11   El0     El1     El2     El3     El4     El5     El6     El7     El8     El9     El10    El11    RC11"
+                            "B3     BR0     BR1     BR2     BR3     BR4     BR5     BR6     BR7     BR8     BR9     BR10    BR11    B4"
                             "B3     OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      B4"
 }
 
-/* .orderButton:focus{
-    color: white;
-} */
-
-#ordering-bar{
-    grid-area: OB;
-}
-
-.p-row{
+.lcButton{
     float: right;
     margin-top: 2vh;
 }
 
-.i-row{
+.trButton{
     margin-top: 4vh;
 }
 
-.r-row{
+.rcButton{
     margin-top: 2vh;
 }
 
-.i-div{
-    text-align: center;
-}
-
-.ri-div{
+.topRow, .botRow{
     text-align: center;
 }
 
 .box{
     border: solid black;
+}
+
+#ordering-bar{
+    grid-area: OB;
 }
 
 #blankOne{
@@ -69,800 +61,801 @@ body {
     grid-area: B4;
 }
 
-#primeZero{
-    grid-area: P0;
+/* Left Column */
+
+#leftColumn0{
+    grid-area: LC0;
 }
 
-#primeOne{
-    grid-area: P1;
+#leftColumn1{
+    grid-area: LC1;
 }
 
-#primeTwo{
-    grid-area: P2;
+#leftColumn2{
+    grid-area: LC2;
 }
 
-#primeThree{
-    grid-area: P3;
+#leftColumn3{
+    grid-area: LC3;
 }
 
-#primeFour{
-    grid-area: P4;
+#leftColumn4{
+    grid-area: LC4;
 }
 
-#primeFive{
-    grid-area: P5;
+#leftColumn5{
+    grid-area: LC5;
 }
 
-#primeSix{
-    grid-area: P6;
+#leftColumn6{
+    grid-area: LC6;
 }
 
-#primeSeven{
-    grid-area: P7;
+#leftColumn7{
+    grid-area: LC7;
 }
 
-#primeEight{
-    grid-area: P8;
+#leftColumn8{
+    grid-area: LC8;
 }
 
-#primeNine{
-    grid-area: P9;
+#leftColumn9{
+    grid-area: LC9;
 }
 
-#primeTen{
-    grid-area: P10;
+#leftColumn10{
+    grid-area: LC10;
 }
 
-#primeEleven{
-    grid-area: P11;
+#leftColumn11{
+    grid-area: LC11;
 }
 
-/* *** */
+/* Right Column */
 
-#zeroZero{
-    grid-area: P0-0;
+#rightColumn0{
+    grid-area: RC0;
 }
 
-#zeroOne{
-    grid-area: P0-1;
+#rightColumn1{
+    grid-area: RC1;
 }
 
-#zeroTwo{
-    grid-area: P0-2;
+#rightColumn2{
+    grid-area: RC2;
 }
 
-#zeroThree{
-    grid-area: P0-3;
+#rightColumn3{
+    grid-area: RC3;
 }
 
-#zeroFour{
-    grid-area: P0-4;
+#rightColumn4{
+    grid-area: RC4;
 }
 
-#zeroFive{
-    grid-area: P0-5;
+#rightColumn5{
+    grid-area: RC5;
 }
 
-#zeroSix{
-    grid-area: P0-6;
+#rightColumn6{
+    grid-area: RC6;
 }
 
-#zeroSeven{
-    grid-area: P0-7;
+#rightColumn7{
+    grid-area: RC7;
 }
 
-#zeroEight{
-    grid-area: P0-8;
+#rightColumn8{
+    grid-area: RC8;
 }
 
-#zeroNine{
-    grid-area: P0-9;
+#rightColumn9{
+    grid-area: RC9;
 }
 
-#zeroTen{
-    grid-area: P0-10;
+#rightColumn10{
+    grid-area: RC10;
 }
 
-#zeroEleven{
-    grid-area: P0-11;
+#rightColumn11{
+    grid-area: RC11;
 }
 
-/* *** */
+/* Top Row */
 
-#oneZero{
-    grid-area: P1-0;
+#topRow0{
+    grid-area: TR0;
 }
 
-#oneOne{
-    grid-area: P1-1;
+#topRow1{
+    grid-area: TR1;
 }
 
-#oneTwo{
-    grid-area: P1-2;
+#topRow2{
+    grid-area: TR2;
 }
 
-#oneThree{
-    grid-area: P1-3;
+#topRow3{
+    grid-area: TR3;
 }
 
-#oneFour{
-    grid-area: P1-4;
+#topRow4{
+    grid-area: TR4;
 }
 
-#oneFive{
-    grid-area: P1-5;
+#topRow5{
+    grid-area: TR5;
 }
 
-#oneSix{
-    grid-area: P1-6;
+#topRow6{
+    grid-area: TR6;
 }
 
-#oneSeven{
-    grid-area: P1-7;
+#topRow7{
+    grid-area: TR7;
 }
 
-#oneEight{
-    grid-area: P1-8;
+#topRow8{
+    grid-area: TR8;
 }
 
-#oneNine{
-    grid-area: P1-9;
+#topRow9{
+    grid-area: TR9;
 }
 
-#oneTen{
-    grid-area: P1-10;
+#topRow10{
+    grid-area: TR10;
 }
 
-#oneEleven{
-    grid-area: P1-11;
+#topRow11{
+    grid-area: TR11;
 }
 
-/* *** */
+/* Bottom Row */
 
-#twoZero{
-    grid-area: P2-0;
+#bopRow0{
+    grid-area: BR0;
 }
 
-#twoOne{
-    grid-area: P2-1;
+#botRow1{
+    grid-area: BR1;
 }
 
-#twoTwo{
-    grid-area: P2-2;
+#botRow2{
+    grid-area: BR2;
 }
 
-#twoThree{
-    grid-area: P2-3;
+#botRow3{
+    grid-area: BR3;
 }
 
-#twoFour{
-    grid-area: P2-4;
+#botRow4{
+    grid-area: BR4;
 }
 
-#twoFive{
-    grid-area: P2-5;
+#botRow5{
+    grid-area: BR5;
 }
 
-#twoSix{
-    grid-area: P2-6;
+#botRow6{
+    grid-area: BR6;
 }
 
-#twoSeven{
-    grid-area: P2-7;
+#botRow7{
+    grid-area: BR7;
 }
 
-#twoEight{
-    grid-area: P2-8;
+#botRow8{
+    grid-area: BR8;
 }
 
-#twoNine{
-    grid-area: P2-9;
+#botRow9{
+    grid-area: BR9;
 }
 
-#twoTen{
-    grid-area: P2-10;
+#botRow10{
+    grid-area: BR10;
 }
 
-#twoEleven{
-    grid-area: P2-11;
+#botRow11{
+    grid-area: BR11;
 }
 
-/* *** */
+/* Row Zero */
 
-#threeZero{
-    grid-area: P3-0;
+#zero0{
+    grid-area: Z0;
 }
 
-#threeOne{
-    grid-area: P3-1;
+#zero1{
+    grid-area: Z1;
 }
 
-#threeTwo{
-    grid-area: P3-2;
+#zero2{
+    grid-area: Z2;
 }
 
-#threeThree{
-    grid-area: P3-3;
+#zero3{
+    grid-area: Z3;
 }
 
-#threeFour{
-    grid-area: P3-4;
+#zero4{
+    grid-area: Z4;
 }
 
-#threeFive{
-    grid-area: P3-5;
+#zero5{
+    grid-area: Z5;
 }
 
-#threeSix{
-    grid-area: P3-6;
+#zero6{
+    grid-area: Z6;
 }
 
-#threeSeven{
-    grid-area: P3-7;
+#zero7{
+    grid-area: Z7;
 }
 
-#threeEight{
-    grid-area: P3-8;
+#zero8{
+    grid-area: Z8;
 }
 
-#threeNine{
-    grid-area: P3-9;
+#zero9{
+    grid-area: Z9;
 }
 
-#threeTen{
-    grid-area: P3-10;
+#zero10{
+    grid-area: Z10;
 }
 
-#threeEleven{
-    grid-area: P3-11;
+#zero11{
+    grid-area: Z11;
 }
 
-/* *** */
+/* Row One */
 
-#fourZero{
-    grid-area: P4-0;
+#one0{
+    grid-area: O0;
 }
 
-#fourOne{
-    grid-area: P4-1;
+#one1{
+    grid-area: O1;
 }
 
-#fourTwo{
-    grid-area: P4-2;
+#one2{
+    grid-area: O2;
 }
 
-#fourThree{
-    grid-area: P4-3;
+#one3{
+    grid-area: O3;
 }
 
-#fourFour{
-    grid-area: P4-4;
+#one4{
+    grid-area: O4;
 }
 
-#fourFive{
-    grid-area: P4-5;
+#one5{
+    grid-area: O5;
 }
 
-#fourSix{
-    grid-area: P4-6;
+#one6{
+    grid-area: O6;
 }
 
-#fourSeven{
-    grid-area: P4-7;
+#one7{
+    grid-area: O7;
 }
 
-#fourEight{
-    grid-area: P4-8;
+#one8{
+    grid-area: O8;
 }
 
-#fourNine{
-    grid-area: P4-9;
+#one9{
+    grid-area: O9;
 }
 
-#fourTen{
-    grid-area: P4-10;
+#one10{
+    grid-area: O10;
 }
 
-#fourEleven{
-    grid-area: P4-11;
+#one11{
+    grid-area: O11;
 }
 
-/* *** */
+/* Row Two */
 
-#fiveZero{
-    grid-area: P5-0;
+#two0{
+    grid-area: Tw0;
 }
 
-#fiveOne{
-    grid-area: P5-1;
+#two1{
+    grid-area: Tw1;
 }
 
-#fiveTwo{
-    grid-area: P5-2;
+#two2{
+    grid-area: Tw2;
 }
 
-#fiveThree{
-    grid-area: P5-3;
+#two3{
+    grid-area: Tw3;
 }
 
-#fiveFour{
-    grid-area: P5-4;
+#two4{
+    grid-area: Tw4;
 }
 
-#fiveFive{
-    grid-area: P5-5;
+#two5{
+    grid-area: Tw5;
 }
 
-#fiveSix{
-    grid-area: P5-6;
+#two6{
+    grid-area: Tw6;
 }
 
-#fiveSeven{
-    grid-area: P5-7;
+#two7{
+    grid-area: Tw7;
 }
 
-#fiveEight{
-    grid-area: P5-8;
+#two8{
+    grid-area: Tw8;
 }
 
-#fiveNine{
-    grid-area: P5-9;
+#two9{
+    grid-area: Tw9;
 }
 
-#fiveTen{
-    grid-area: P5-10;
+#two10{
+    grid-area: Tw10;
 }
 
-#fiveEleven{
-    grid-area: P5-11;
+#two11{
+    grid-area: Tw11;
 }
 
-/* *** */
+/* Row Three */
 
-#sixZero{
-    grid-area: P6-0;
+#three0{
+    grid-area: Th0;
 }
 
-#sixOne{
-    grid-area: P6-1;
+#three1{
+    grid-area: Th1;
 }
 
-#sixTwo{
-    grid-area: P6-2;
+#three2{
+    grid-area: Th2;
 }
 
-#sixThree{
-    grid-area: P6-3;
+#three3{
+    grid-area: Th3;
 }
 
-#sixFour{
-    grid-area: P6-4;
+#three4{
+    grid-area: Th4;
 }
 
-#sixFive{
-    grid-area: P6-5;
+#three5{
+    grid-area: Th5;
 }
 
-#sixSix{
-    grid-area: P6-6;
+#three6{
+    grid-area: Th6;
 }
-
-#sixSeven{
-    grid-area: P6-7;
+#three7{
+    grid-area: Th7;
 }
 
-#sixEight{
-    grid-area: P6-8;
+#three8{
+    grid-area: Th8;
 }
 
-#sixNine{
-    grid-area: P6-9;
+#three9{
+    grid-area: Th9;
 }
 
-#sixTen{
-    grid-area: P6-10;
+#three10{
+    grid-area: Th10;
 }
 
-#sixEleven{
-    grid-area: P6-11;
+#three11{
+    grid-area: Th11;
 }
 
-/* *** */
+/* Row Four */
 
-#sevenZero{
-    grid-area: P7-0;
+#four0{
+    grid-area: Fo0;
 }
 
-#sevenOne{
-    grid-area: P7-1;
+#four1{
+    grid-area: Fo1;
 }
 
-#sevenTwo{
-    grid-area: P7-2;
+#four2{
+    grid-area: Fo2;
 }
 
-#sevenThree{
-    grid-area: P7-3;
+#four3{
+    grid-area: Fo3;
 }
 
-#sevenFour{
-    grid-area: P7-4;
+#four4{
+    grid-area: Fo4;
 }
 
-#sevenFive{
-    grid-area: P7-5;
+#four5{
+    grid-area: Fo5;
 }
 
-#sevenSix{
-    grid-area: P7-6;
+#four6{
+    grid-area: Fo6;
 }
 
-#sevenSeven{
-    grid-area: P7-7;
+#four7{
+    grid-area: Fo7;
 }
 
-#sevenEight{
-    grid-area: P7-8;
+#four8{
+    grid-area: Fo8;
 }
 
-#sevenNine{
-    grid-area: P7-9;
+#four9{
+    grid-area: Fo9;
 }
 
-#sevenTen{
-    grid-area: P7-10;
+#four10{
+    grid-area: Fo10;
 }
 
-#sevenEleven{
-    grid-area: P7-11;
+#four11{
+    grid-area: Fo11;
 }
 
-/* *** */
+/* Row Five */
 
-#eightZero{
-    grid-area: P8-0;
+#five0{
+    grid-area: Fi0;
 }
 
-#eightOne{
-    grid-area: P8-1;
+#five1{
+    grid-area: Fi1;
 }
 
-#eightTwo{
-    grid-area: P8-2;
+#five2{
+    grid-area: Fi2;
 }
 
-#eightThree{
-    grid-area: P8-3;
+#five3{
+    grid-area: Fi3;
 }
 
-#eightFour{
-    grid-area: P8-4;
+#five4{
+    grid-area: Fi4;
 }
 
-#eightFive{
-    grid-area: P8-5;
+#five5{
+    grid-area: Fi5;
 }
 
-#eightSix{
-    grid-area: P8-6;
+#five6{
+    grid-area: Fi6;
 }
 
-#eightSeven{
-    grid-area: P8-7;
+#five7{
+    grid-area: Fi7;
 }
 
-#eightEight{
-    grid-area: P8-8;
+#five8{
+    grid-area: Fi8;
 }
 
-#eightNine{
-    grid-area: P8-9;
+#five9{
+    grid-area: Fi9;
 }
 
-#eightTen{
-    grid-area: P8-10;
+#five10{
+    grid-area: Fi10;
 }
 
-#eightEleven{
-    grid-area: P8-11;
+#five11{
+    grid-area: Fi11;
 }
 
-/* *** */
+/* Row Six */
 
-#nineZero{
-    grid-area: P9-0;
+#six0{
+    grid-area: Si0;
 }
 
-#nineOne{
-    grid-area: P9-1;
+#six1{
+    grid-area: Si1;
 }
 
-#nineTwo{
-    grid-area: P9-2;
+#six2{
+    grid-area: Si2;
 }
 
-#nineThree{
-    grid-area: P9-3;
+#six3{
+    grid-area: Si3;
 }
 
-#nineFour{
-    grid-area: P9-4;
+#six4{
+    grid-area: Si4;
 }
 
-#nineFive{
-    grid-area: P9-5;
+#six5{
+    grid-area: Si5;
 }
 
-#nineSix{
-    grid-area: P9-6;
+#six6{
+    grid-area: Si6;
 }
 
-#nineSeven{
-    grid-area: P9-7;
+#six7{
+    grid-area: Si7;
 }
 
-#nineEight{
-    grid-area: P9-8;
+#six8{
+    grid-area: Si8;
 }
 
-#nineNine{
-    grid-area: P9-9;
+#six9{
+    grid-area: Si9;
 }
 
-#nineTen{
-    grid-area: P9-10;
+#six10{
+    grid-area: Si10;
 }
 
-#nineEleven{
-    grid-area: P9-11;
+#six11{
+    grid-area: Si11;
 }
 
-/* *** */
+/* Row Seven */
 
-#tenZero{
-    grid-area: P10-0;
+#seven0{
+    grid-area: Se0;
 }
 
-#tenOne{
-    grid-area: P10-1;
+#seven1{
+    grid-area: Se1;
 }
 
-#tenTwo{
-    grid-area: P10-2;
+#seven2{
+    grid-area: Se2;
 }
 
-#tenThree{
-    grid-area: P10-3;
+#seven3{
+    grid-area: Se3;
 }
 
-#tenFour{
-    grid-area: P10-4;
+#seven4{
+    grid-area: Se4;
 }
 
-#tenFive{
-    grid-area: P10-5;
+#seven5{
+    grid-area: Se5;
 }
 
-#tenSix{
-    grid-area: P10-6;
+#seven6{
+    grid-area: Se6;
 }
 
-#tenSeven{
-    grid-area: P10-7;
+#seven7{
+    grid-area: Se7;
 }
 
-#tenEight{
-    grid-area: P10-8;
+#seven8{
+    grid-area: Se8;
 }
 
-#tenNine{
-    grid-area: P10-9;
+#seven9{
+    grid-area: Se9;
 }
 
-#tenTen{
-    grid-area: P10-10;
+#seven10{
+    grid-area: Se10;
 }
 
-#tenEleven{
-    grid-area: P10-11;
+#seven11{
+    grid-area: Se11;
 }
 
-/* *** */
+/* Row Eight */
 
-#elevenZero{
-    grid-area: P11-0;
+#eight0{
+    grid-area: Ei0;
 }
 
-#elevenOne{
-    grid-area: P11-1;
+#eight1{
+    grid-area: Ei1;
 }
 
-#elevenTwo{
-    grid-area: P11-2;
+#eight2{
+    grid-area: Ei2;
 }
 
-#elevenThree{
-    grid-area: P11-3;
+#eight3{
+    grid-area: Ei3;
 }
 
-#elevenFour{
-    grid-area: P11-4;
+#eight4{
+    grid-area: Ei4;
 }
 
-#elevenFive{
-    grid-area: P11-5;
+#eight5{
+    grid-area: Ei5;
 }
 
-#elevenSix{
-    grid-area: P11-6;
+#eight6{
+    grid-area: Ei6;
 }
 
-#elevenSeven{
-    grid-area: P11-7;
+#eight7{
+    grid-area: Ei7;
 }
 
-#elevenEight{
-    grid-area: P11-8;
+#eight8{
+    grid-area: Ei8;
 }
 
-#elevenNine{
-    grid-area: P11-9;
+#eight9{
+    grid-area: Ei9;
 }
 
-#elevenTen{
-    grid-area: P11-10;
+#eight10{
+    grid-area: Ei10;
 }
 
-#elevenEleven{
-    grid-area: P11-11;
+#eight11{
+    grid-area: Ei11;
 }
 
-/* *** */
+/* Row Nine */
 
-#retroZero{
-    grid-area: R0;
+#nine0{
+    grid-area: N0;
 }
 
-#retroOne{
-    grid-area: R1;
+#nine1{
+    grid-area: N1;
 }
 
-#retroTwo{
-    grid-area: R2;
+#nine2{
+    grid-area: N2;
 }
 
-#retroThree{
-    grid-area: R3;
+#nine3{
+    grid-area: N3;
 }
 
-#retroFour{
-    grid-area: R4;
+#nine4{
+    grid-area: N4;
 }
 
-#retroFive{
-    grid-area: R5;
+#nine5{
+    grid-area: N5;
 }
 
-#retroSix{
-    grid-area: R6;
+#nine6{
+    grid-area: N6;
 }
 
-#retroSeven{
-    grid-area: R7;
+#nine7{
+    grid-area: N7;
 }
 
-#retroEight{
-    grid-area: R8;
+#nine8{
+    grid-area: N8;
 }
 
-#retroNine{
-    grid-area: R9;
+#nine9{
+    grid-area: N9;
 }
 
-#retroTen{
-    grid-area: R10;
+#nine10{
+    grid-area: N10;
 }
 
-#retroEleven{
-    grid-area: R11;
+#nine11{
+    grid-area: N11;
 }
 
-/* *** */
+/* Row Ten */
 
-#invZero{
-    grid-area: I0;
+#ten0{
+    grid-area: Te0;
 }
 
-#invOne{
-    grid-area: I1;
+#ten1{
+    grid-area: Te1;
 }
 
-#invTwo{
-    grid-area: I2;
+#ten2{
+    grid-area: Te2;
 }
 
-#invThree{
-    grid-area: I3;
+#ten3{
+    grid-area: Te3;
 }
 
-#invFour{
-    grid-area: I4;
+#ten4{
+    grid-area: Te4;
 }
 
-#invFive{
-    grid-area: I5;
+#ten5{
+    grid-area: Te5;
 }
 
-#invSix{
-    grid-area: I6;
+#ten6{
+    grid-area: Te6;
 }
 
-#invSeven{
-    grid-area: I7;
+#ten7{
+    grid-area: Te7;
 }
 
-#invEight{
-    grid-area: I8;
+#ten8{
+    grid-area: Te8;
 }
 
-#invNine{
-    grid-area: I9;
+#ten9{
+    grid-area: Te9;
 }
 
-#invTen{
-    grid-area: I10;
+#ten10{
+    grid-area: Te10;
 }
 
-#invEleven{
-    grid-area: I11;
+#ten11{
+    grid-area: Te11;
 }
 
-/* *** */
+/* Row Eleven */
 
-#retroInvZero{
-    grid-area: RI0;
+#eleven0{
+    grid-area: El0;
 }
 
-#retroInvOne{
-    grid-area: RI1;
+#eleven1{
+    grid-area: El1;
 }
 
-#retroInvTwo{
-    grid-area: RI2;
+#eleven2{
+    grid-area: El2;
 }
 
-#retroInvThree{
-    grid-area: RI3;
+#eleven3{
+    grid-area: El3;
 }
 
-#retroInvFour{
-    grid-area: RI4;
+#eleven4{
+    grid-area: El4;
 }
 
-#retroInvFive{
-    grid-area: RI5;
+#eleven5{
+    grid-area: El5;
 }
 
-#retroInvSix{
-    grid-area: RI6;
+#eleven6{
+    grid-area: El6;
 }
 
-#retroInvSeven{
-    grid-area: RI7;
+#eleven7{
+    grid-area: El7;
 }
 
-#retroInvEight{
-    grid-area: RI8;
+#eleven8{
+    grid-area: El8;
 }
 
-#retroInvNine{
-    grid-area: RI9;
+#eleven9{
+    grid-area: El9;
 }
 
-#retroInvTen{
-    grid-area: RI10;
+#eleven10{
+    grid-area: El10;
 }
 
-#retroInvEleven{
-    grid-area: RI11;
+#eleven11{
+    grid-area: El11;
 }
