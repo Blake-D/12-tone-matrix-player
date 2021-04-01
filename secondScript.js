@@ -14,9 +14,20 @@ let tenClicked = false
 let elevenClicked = false
 
 let pitchClass = [null, null, null, null, null, null, null, null, null, null, null, null]
+let intervalSequence = [null, null, null, null, null, null, null, null, null, null, null]
 
-function incrementInputCount(){
-    inputCount++
+function getIntervalSequence(){
+    intervalSequence[0] = pitchClass[0] - pitchClass[1]
+    intervalSequence[1] = pitchClass[0] - pitchClass[2]
+    intervalSequence[2] = pitchClass[0] - pitchClass[3]
+    intervalSequence[3] = pitchClass[0] - pitchClass[4]
+    intervalSequence[4] = pitchClass[0] - pitchClass[5]
+    intervalSequence[5] = pitchClass[0] - pitchClass[6]
+    intervalSequence[6] = pitchClass[0] - pitchClass[7]
+    intervalSequence[7] = pitchClass[0] - pitchClass[8]
+    intervalSequence[8] = pitchClass[0] - pitchClass[9]
+    intervalSequence[9] = pitchClass[0] - pitchClass[10]
+    intervalSequence[10] = pitchClass[0] - pitchClass[11]
 }
 
 document.getElementById('buttonZero').addEventListener('click', () => {
@@ -28,6 +39,8 @@ document.getElementById('buttonZero').addEventListener('click', () => {
         buttonZero.innerText = ""
         if(inputCount === 12){
             console.log(pitchClass)
+            getIntervalSequence()
+            console.log(intervalSequence)
         }
     }
 })
@@ -41,6 +54,8 @@ document.getElementById('buttonOne').addEventListener('click', () => {
         buttonOne.innerText = ""
         if(inputCount === 12){
             console.log(pitchClass)
+            getIntervalSequence()
+            console.log(intervalSequence)
         }
     }
 })
@@ -54,6 +69,8 @@ document.getElementById('buttonTwo').addEventListener('click', () => {
         buttonTwo.innerText = ""
         if(inputCount === 12){
             console.log(pitchClass)
+            getIntervalSequence()
+            console.log(intervalSequence)
         }
     }
 })
@@ -67,6 +84,8 @@ document.getElementById('buttonThree').addEventListener('click', () => {
         buttonThree.innerText = ""
         if(inputCount === 12){
             console.log(pitchClass)
+            getIntervalSequence()
+            console.log(intervalSequence)
         }
     }
 })
@@ -80,6 +99,8 @@ document.getElementById('buttonFour').addEventListener('click', () => {
         buttonFour.innerText = ""
         if(inputCount === 12){
             console.log(pitchClass)
+            getIntervalSequence()
+            console.log(intervalSequence)
         }
     }
 })
@@ -93,6 +114,8 @@ document.getElementById('buttonFive').addEventListener('click', () => {
         buttonFive.innerText = ""
         if(inputCount === 12){
             console.log(pitchClass)
+            getIntervalSequence()
+            console.log(intervalSequence)
         }
     }
 })
@@ -106,6 +129,8 @@ document.getElementById('buttonSix').addEventListener('click', () => {
         buttonSix.innerText = ""
         if(inputCount === 12){
             console.log(pitchClass)
+            getIntervalSequence()
+            console.log(intervalSequence)
         }
     }
 })
@@ -119,6 +144,8 @@ document.getElementById('buttonSeven').addEventListener('click', () => {
         buttonSeven.innerText = ""
         if(inputCount === 12){
             console.log(pitchClass)
+            getIntervalSequence()
+            console.log(intervalSequence)
         }
     }
 })
@@ -132,6 +159,8 @@ document.getElementById('buttonEight').addEventListener('click', () => {
         buttonEight.innerText = ""
         if(inputCount === 12){
             console.log(pitchClass)
+            getIntervalSequence()
+            console.log(intervalSequence)
         }
     }
 })
@@ -145,6 +174,8 @@ document.getElementById('buttonNine').addEventListener('click', () => {
         buttonNine.innerText = ""
         if(inputCount === 12){
             console.log(pitchClass)
+            getIntervalSequence()
+            console.log(intervalSequence)
         }
     }
 })
@@ -158,6 +189,8 @@ document.getElementById('buttonTen').addEventListener('click', () => {
         buttonTen.innerText = ""
         if(inputCount === 12){
             console.log(pitchClass)
+            getIntervalSequence()
+            console.log(intervalSequence)
         }
     }
 })
@@ -171,138 +204,8 @@ document.getElementById('buttonEleven').addEventListener('click', () => {
         buttonEleven.innerText = ""
         if(inputCount === 12){
             console.log(pitchClass)
+            getIntervalSequence()
+            console.log(intervalSequence)
         }
     }
 })
-
-// document.getElementById('buttonZero').addEventListener('click', () => {
-//     if(inputCount < 12 && zeroClicked == false){
-//         if(inputCount === 0){
-//             pitchClass[0] = 0
-//         } else if(inputCount === 1){
-//             pitchClass[1] = 0
-//         } else if(inputCount === 2){
-//             pitchClass[2] = 0
-//         } else if(inputCount === 3){
-//             pitchClass[3] = 0
-//         } else if(inputCount === 4){
-//             pitchClass[4] = 0
-//         } else if(inputCount === 5){
-//             pitchClass[5] = 0
-//         } else if(inputCount === 6){
-//             pitchClass[6] = 0
-//         } else if(inputCount === 7){
-//             pitchClass[7] = 0
-//         } else if(inputCount === 8){
-//             pitchClass[8] = 0
-//         } else if(inputCount === 9){
-//             pitchClass[9] = 0
-//         } else if(inputCount === 10){
-//             pitchClass[10] = 0
-//         } else if(inputCount === 11){
-//             pitchClass[11] = 0
-//         }
-//         inputCount++
-//         zeroClicked = true
-//         buttonZero.innerText = ""
-//     }
-// })
-
-// document.getElementById('buttonOne').addEventListener('click', () => {
-//     if(inputCount < 12 && oneClicked == false){
-//         if(inputCount === 0){
-//             pitchClass[0] = 1
-//         } else if(inputCount === 1){
-//             pitchClass[1] = 1
-//         } else if(inputCount === 2){
-//             pitchClass[2] = 1
-//         } else if(inputCount === 3){
-//             pitchClass[3] = 1
-//         } else if(inputCount === 4){
-//             pitchClass[4] = 1
-//         } else if(inputCount === 5){
-//             pitchClass[5] = 1
-//         } else if(inputCount === 6){
-//             pitchClass[6] = 1
-//         } else if(inputCount === 7){
-//             pitchClass[7] = 1
-//         } else if(inputCount === 8){
-//             pitchClass[8] = 1
-//         } else if(inputCount === 9){
-//             pitchClass[9] = 1
-//         } else if(inputCount === 10){
-//             pitchClass[10] = 1
-//         } else if(inputCount === 11){
-//             pitchClass[11] = 1
-//         }
-//         inputCount++
-//         oneClicked = true
-//         buttonOne.innerText = ""
-//     }
-// })
-
-// document.getElementById('buttonTwo').addEventListener('click', () => {
-//     if(inputCount < 12 && twoClicked == false){
-//         if(inputCount === 0){
-//             pitchClass[0] = 2
-//         } else if(inputCount === 1){
-//             pitchClass[1] = 2
-//         } else if(inputCount === 2){
-//             pitchClass[2] = 2
-//         } else if(inputCount === 3){
-//             pitchClass[3] = 2
-//         } else if(inputCount === 4){
-//             pitchClass[4] = 2
-//         } else if(inputCount === 5){
-//             pitchClass[5] = 2
-//         } else if(inputCount === 6){
-//             pitchClass[6] = 2
-//         } else if(inputCount === 7){
-//             pitchClass[7] = 2
-//         } else if(inputCount === 8){
-//             pitchClass[8] = 2
-//         } else if(inputCount === 9){
-//             pitchClass[9] = 2
-//         } else if(inputCount === 10){
-//             pitchClass[10] = 2
-//         } else if(inputCount === 11){
-//             pitchClass[11] = 2
-//         }
-//         inputCount++
-//         twoClicked = true
-//         buttonTwo.innerText = ""
-//     }
-// })
-
-// document.getElementById('buttonThree').addEventListener('click', () => {
-//     if(inputCount < 12 && threeClicked == false){
-//         if(inputCount === 0){
-//             pitchClass[0] = 3
-//         } else if(inputCount === 1){
-//             pitchClass[1] = 3
-//         } else if(inputCount === 2){
-//             pitchClass[2] = 3
-//         } else if(inputCount === 3){
-//             pitchClass[3] = 3
-//         } else if(inputCount === 4){
-//             pitchClass[4] = 3
-//         } else if(inputCount === 5){
-//             pitchClass[5] = 3
-//         } else if(inputCount === 6){
-//             pitchClass[6] = 3
-//         } else if(inputCount === 7){
-//             pitchClass[7] = 3
-//         } else if(inputCount === 8){
-//             pitchClass[8] = 3
-//         } else if(inputCount === 9){
-//             pitchClass[9] = 3
-//         } else if(inputCount === 10){
-//             pitchClass[10] = 3
-//         } else if(inputCount === 11){
-//             pitchClass[11] = 3
-//         }
-//         inputCount++
-//         threeClicked = true
-//         buttonThree.innerText = ""
-//     }
-// })
