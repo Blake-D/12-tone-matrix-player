@@ -26,6 +26,22 @@ let num9 = null
 let num10 = null
 let num11 = null
 
+let intervalSequence = []
+
+function getIntervalSequence(){
+    intervalSequence[0] = num0 - num1
+    intervalSequence[1] = num0 - num2
+    intervalSequence[2] = num0 - num3
+    intervalSequence[3] = num0 - num4
+    intervalSequence[4] = num0 - num5
+    intervalSequence[5] = num0 - num6
+    intervalSequence[6] = num0 - num7
+    intervalSequence[7] = num0 - num8
+    intervalSequence[8] = num0 - num9
+    intervalSequence[9] = num0 - num10
+    intervalSequence[10] = num0 - num11
+}
+
 document.getElementById('buttonZero').addEventListener('click', () => {
     if(inputCount < 12 && zeroClicked == false){
         if(inputCount === 0){
@@ -196,6 +212,7 @@ document.getElementById('buttonZero').addEventListener('click', () => {
             retroElevenB.innerText = "R" + posTemp
             invElevenB.innerText = "I" + posTemp2
             retroInvElevenB.innerText = "RI" + posTemp2
+            getIntervalSequence()
         }
         inputCount++
         zeroClicked = true
@@ -373,6 +390,7 @@ document.getElementById('buttonOne').addEventListener('click', () => {
             retroElevenB.innerText = "R" + posTemp
             invElevenB.innerText = "I" + posTemp2
             retroInvElevenB.innerText = "RI" + posTemp2
+            getIntervalSequence()
         }
         inputCount++
         oneClicked = true
@@ -550,6 +568,7 @@ document.getElementById('buttonTwo').addEventListener('click', () => {
             retroElevenB.innerText = "R" + posTemp
             invElevenB.innerText = "I" + posTemp2
             retroInvElevenB.innerText = "RI" + posTemp2
+            getIntervalSequence()
         }
         inputCount++
         twoClicked = true
@@ -727,6 +746,7 @@ document.getElementById('buttonThree').addEventListener('click', () => {
             retroElevenB.innerText = "R" + posTemp
             invElevenB.innerText = "I" + posTemp2
             retroInvElevenB.innerText = "RI" + posTemp2
+            getIntervalSequence()
         }
         inputCount++
         threeClicked = true
@@ -904,6 +924,7 @@ document.getElementById('buttonFour').addEventListener('click', () => {
             retroElevenB.innerText = "R" + posTemp
             invElevenB.innerText = "I" + posTemp2
             retroInvElevenB.innerText = "RI" + posTemp2
+            getIntervalSequence()
         }
         inputCount++
         fourClicked = true
@@ -1081,6 +1102,7 @@ document.getElementById('buttonFive').addEventListener('click', () => {
             retroElevenB.innerText = "R" + posTemp
             invElevenB.innerText = "I" + posTemp2
             retroInvElevenB.innerText = "RI" + posTemp2
+            getIntervalSequence()
         }
         inputCount++
         fiveClicked = true
@@ -1258,6 +1280,7 @@ document.getElementById('buttonSix').addEventListener('click', () => {
             retroElevenB.innerText = "R" + posTemp
             invElevenB.innerText = "I" + posTemp2
             retroInvElevenB.innerText = "RI" + posTemp2
+            getIntervalSequence()
         }
         inputCount++
         sixClicked = true
@@ -1435,6 +1458,7 @@ document.getElementById('buttonSeven').addEventListener('click', () => {
             retroElevenB.innerText = "R" + posTemp
             invElevenB.innerText = "I" + posTemp2
             retroInvElevenB.innerText = "RI" + posTemp2
+            getIntervalSequence()
         }
         inputCount++
         sevenClicked = true
@@ -1612,6 +1636,7 @@ document.getElementById('buttonEight').addEventListener('click', () => {
             retroElevenB.innerText = "R" + posTemp
             invElevenB.innerText = "I" + posTemp2
             retroInvElevenB.innerText = "RI" + posTemp2
+            getIntervalSequence()
         }
         inputCount++
         eightClicked = true
@@ -1789,6 +1814,7 @@ document.getElementById('buttonNine').addEventListener('click', () => {
             retroElevenB.innerText = "R" + posTemp
             invElevenB.innerText = "I" + posTemp2
             retroInvElevenB.innerText = "RI" + posTemp2
+            getIntervalSequence()
         }
         inputCount++
         nineClicked = true
@@ -1966,6 +1992,7 @@ document.getElementById('buttonTen').addEventListener('click', () => {
             retroElevenB.innerText = "R" + posTemp
             invElevenB.innerText = "I" + posTemp2
             retroInvElevenB.innerText = "RI" + posTemp2
+            getIntervalSequence()
         }
         inputCount++
         tenClicked = true
@@ -2143,6 +2170,7 @@ document.getElementById('buttonEleven').addEventListener('click', () => {
             retroElevenB.innerText = "R" + posTemp
             invElevenB.innerText = "I" + posTemp2
             retroInvElevenB.innerText = "RI" + posTemp2
+            getIntervalSequence()
         }
         inputCount++
         elevenClicked = true
