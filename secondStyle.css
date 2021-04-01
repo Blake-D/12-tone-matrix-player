@@ -20,6 +20,23 @@ body {
                             "B3     OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      B4"
 }
 
+.lcButton{
+    float: right;
+    margin-top: 2vh;
+}
+
+.trButton{
+    margin-top: 4vh;
+}
+
+.rcButton{
+    margin-top: 2vh;
+}
+
+.topRow, .botRow{
+    text-align: center;
+}
+
 .box{
     border: solid black;
 }
