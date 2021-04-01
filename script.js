@@ -138,6 +138,72 @@ function fillMatrix(){
     } else{
         matrix.row11Button = temp
     }
+    for(let i = 0; i < 12; i++){
+        matrix.p1[i] = matrix.p0[i] + 1
+        if(matrix.p1[i] === 12){
+            matrix.p1[i] = 0
+        }
+    }
+    for(let i = 0; i < 12; i++){
+        matrix.p2[i] = matrix.p1[i] + 1
+        if(matrix.p2[i] === 12){
+            matrix.p2[i] = 0
+        }
+    }
+    for(let i = 0; i < 12; i++){
+        matrix.p3[i] = matrix.p2[i] + 1
+        if(matrix.p3[i] === 12){
+            matrix.p3[i] = 0
+        }
+    }
+    for(let i = 0; i < 12; i++){
+        matrix.p4[i] = matrix.p3[i] + 1
+        if(matrix.p4[i] === 12){
+            matrix.p4[i] = 0
+        }
+    }
+    for(let i = 0; i < 12; i++){
+        matrix.p5[i] = matrix.p4[i] + 1
+        if(matrix.p5[i] === 12){
+            matrix.p5[i] = 0
+        }
+    }
+    for(let i = 0; i < 12; i++){
+        matrix.p6[i] = matrix.p5[i] + 1
+        if(matrix.p6[i] === 12){
+            matrix.p6[i] = 0
+        }
+    }
+    for(let i = 0; i < 12; i++){
+        matrix.p7[i] = matrix.p6[i] + 1
+        if(matrix.p7[i] === 12){
+            matrix.p7[i] = 0
+        }
+    }
+    for(let i = 0; i < 12; i++){
+        matrix.p8[i] = matrix.p7[i] + 1
+        if(matrix.p8[i] === 12){
+            matrix.p8[i] = 0
+        }
+    }
+    for(let i = 0; i < 12; i++){
+        matrix.p9[i] = matrix.p8[i] + 1
+        if(matrix.p9[i] === 12){
+            matrix.p9[i] = 0
+        }
+    }
+    for(let i = 0; i < 12; i++){
+        matrix.p10[i] = matrix.p9[i] + 1
+        if(matrix.p10[i] === 12){
+            matrix.p10[i] = 0
+        }
+    }
+    for(let i = 0; i < 12; i++){
+        matrix.p11[i] = matrix.p10[i] + 1
+        if(matrix.p11[i] === 12){
+            matrix.p11[i] = 0
+        }
+    }
 }
 
 document.getElementById('buttonZero').addEventListener('click', () => {
