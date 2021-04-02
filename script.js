@@ -13,6 +13,14 @@ let nineClicked = false
 let tenClicked = false
 let elevenClicked = false
 
+let divs = {
+    lcButtons: [lcButton0, lcButton1, lcButton2, lcButton3, lcButton4, lcButton5, lcButton6, lcButton7, lcButton8, lcButton9, lcButton10, lcButton11],
+    rcButtons: [rcButton0, rcButton1, rcButton2, rcButton3, rcButton4, rcButton5, rcButton6, rcButton7, rcButton8, rcButton9, rcButton10, rcButton11],
+    trButtons: [trButton0, trButton1, trButton2, trButton3, trButton4, trButton5, trButton6, trButton7, trButton8, trButton9, trButton10, trButton11],
+    brButtons: [brButton0, brButton1, brButton2, brButton3, brButton4, brButton5, brButton6, brButton7, brButton8, brButton9, brButton10, brButton11],
+    rows: [[zero0, zero1, zero2, zero3, zero4, zero5, zero6, zero7, zero8, zero9, zero10, zero11], [one0, one1, one2, one3, one4, one5, one6, one7, one8, one9, one10, one11], [two0, two1, two2, two3, two4, two5, two6, two7, two8, two9, two10, two11], [three0, three1, three2, three3, three4, three5, three6, three7, three8, three9, three10, three11], [four0, four1, four2, four3, four4, four5, four6, four7, four8, four9, four10, four11], [five0, five1, five2, five3, five4, five5, five6, five7, five8, five9, five10, five11], [six0, six1, six2, six3, six4, six5, six6, six7, six8, six9, six10, six11], [seven0, seven1, seven2, seven3, seven4, seven5, seven6, seven7, seven8, seven9, seven10, seven11], [eight0, eight1, eight2, eight3, eight4, eight5, eight6, eight7, eight8, eight9, eight10, eight11], [nine0, nine1, nine2, nine3, nine4, nine5, nine6, nine7, nine8, nine9, nine10, nine11], [ten0, ten1, ten2, ten3, ten4, ten5, ten6, ten7, ten8, ten9, ten10, ten11], [eleven0, eleven1, eleven2, eleven3, eleven4, eleven5, eleven6, eleven7, eleven8, eleven9, eleven10, eleven11]]
+}
+
 let matrix = {
     p0: [null, null, null, null, null, null, null, null, null, null, null, null],
     p1: [null, null, null, null, null, null, null, null, null, null, null, null],
@@ -61,908 +69,108 @@ function convertToPos(int){
 }
 
 function fillMatrix(){
-    zero0.innerText = matrix.p0[0]
-    zero1.innerText = matrix.p0[1]
-    zero2.innerText = matrix.p0[2]
-    zero3.innerText = matrix.p0[3]
-    zero4.innerText = matrix.p0[4]
-    zero5.innerText = matrix.p0[5]
-    zero6.innerText = matrix.p0[6]
-    zero7.innerText = matrix.p0[7]
-    zero8.innerText = matrix.p0[8]
-    zero9.innerText = matrix.p0[9]
-    zero10.innerText = matrix.p0[10]
-    zero11.innerText = matrix.p0[11]
 
-    let temp = matrix.p0[0] - matrix.p0[1]
-    if(temp < 0){
-        temp = convertToPos(temp)
-    } 
-    lcButton1.innerText = "P" + temp
-    rcButton1.innerText = "R" + temp
-    trButton1.innerText = "I" + (12 - temp)
-    brButton1.innerText = "RI" + (12 - temp)
-    let temp2 = matrix.p0[0] + temp
-    if(temp2 > 11){
-        one0.innerText = temp2 - 12
-    } else{
-        one0.innerText = temp2
-    }
-    temp2 = matrix.p0[1] + temp
-    if(temp2 > 11){
-        one1.innerText = temp2 - 12
-    } else{
-        one1.innerText = temp2
-    }
-    temp2 = matrix.p0[2] + temp
-    if(temp2 > 11){
-        one2.innerText = temp2 - 12
-    } else{
-        one2.innerText = temp2
-    }
-    temp2 = matrix.p0[3] + temp
-    if(temp2 > 11){
-        one3.innerText = temp2 - 12
-    } else{
-        one3.innerText = temp2
-    }
-    temp2 = matrix.p0[4] + temp
-    if(temp2 > 11){
-        one4.innerText = temp2 - 12
-    } else{
-        one4.innerText = temp2
-    }
-    temp2 = matrix.p0[5] + temp
-    if(temp2 > 11){
-        one5.innerText = temp2 - 12
-    } else{
-        one5.innerText = temp2
-    }
-    temp2 = matrix.p0[6] + temp
-    if(temp2 > 11){
-        one6.innerText = temp2 - 12
-    } else{
-        one6.innerText = temp2
-    }
-    temp2 = matrix.p0[7] + temp
-    if(temp2 > 11){
-        one7.innerText = temp2 - 12
-    } else{
-        one7.innerText = temp2
-    }
-    temp2 = matrix.p0[8] + temp
-    if(temp2 > 11){
-        one8.innerText = temp2 - 12
-    } else{
-        one8.innerText = temp2
-    }
-    temp2 = matrix.p0[9] + temp
-    if(temp2 > 11){
-        one9.innerText = temp2 - 12
-    } else{
-        one9.innerText = temp2
-    }
-    temp2 = matrix.p0[10] + temp
-    if(temp2 > 11){
-        one10.innerText = temp2 - 12
-    } else{
-        one10.innerText = temp2
-    }
-    temp2 = matrix.p0[11] + temp
-    if(temp2 > 11){
-        one11.innerText = temp2 - 12
-    } else{
-        one11.innerText = temp2
+    let temp = null
+    let temp2 = null
+  
+    for(let i = 0; i < 12; i++){
+        divs.rows[0][i].innerText = matrix.p0[i]
     }
 
-    temp = matrix.p0[0] - matrix.p0[2]
-    if(temp < 0){
-        temp = convertToPos(temp)
-    } 
-    lcButton2.innerText = "P" + temp
-    rcButton2.innerText = "R" + temp
-    trButton2.innerText = "I" + (12 - temp)
-    brButton2.innerText = "RI" + (12 - temp)
-    temp2 = matrix.p0[0] + temp
-    if(temp2 > 11){
-        two0.innerText = temp2 - 12
-    } else{
-        two0.innerText = temp2
-    }
-    temp2 = matrix.p0[1] + temp
-    if(temp2 > 11){
-        two1.innerText = temp2 - 12
-    } else{
-        two1.innerText = temp2
-    }
-    temp2 = matrix.p0[2] + temp
-    if(temp2 > 11){
-        two2.innerText = temp2 - 12
-    } else{
-        two2.innerText = temp2
-    }
-    temp2 = matrix.p0[3] + temp
-    if(temp2 > 11){
-        two3.innerText = temp2 - 12
-    } else{
-        two3.innerText = temp2
-    }
-    temp2 = matrix.p0[4] + temp
-    if(temp2 > 11){
-        two4.innerText = temp2 - 12
-    } else{
-        two4.innerText = temp2
-    }
-    temp2 = matrix.p0[5] + temp
-    if(temp2 > 11){
-        two5.innerText = temp2 - 12
-    } else{
-        two5.innerText = temp2
-    }
-    temp2 = matrix.p0[6] + temp
-    if(temp2 > 11){
-        two6.innerText = temp2 - 12
-    } else{
-        two6.innerText = temp2
-    }
-    temp2 = matrix.p0[7] + temp
-    if(temp2 > 11){
-        two7.innerText = temp2 - 12
-    } else{
-        two7.innerText = temp2
-    }
-    temp2 = matrix.p0[8] + temp
-    if(temp2 > 11){
-        two8.innerText = temp2 - 12
-    } else{
-        two8.innerText = temp2
-    }
-    temp2 = matrix.p0[9] + temp
-    if(temp2 > 11){
-        two9.innerText = temp2 - 12
-    } else{
-        two9.innerText = temp2
-    }
-    temp2 = matrix.p0[10] + temp
-    if(temp2 > 11){
-        two10.innerText = temp2 - 12
-    } else{
-        two10.innerText = temp2
-    }
-    temp2 = matrix.p0[11] + temp
-    if(temp2 > 11){
-        two11.innerText = temp2 - 12
-    } else{
-        two11.innerText = temp2
-    }
-
-    temp = matrix.p0[0] - matrix.p0[3]
-    if(temp < 0){
-        temp = convertToPos(temp)
-    } 
-    lcButton3.innerText = "P" + temp
-    rcButton3.innerText = "R" + temp
-    trButton3.innerText = "I" + (12 - temp)
-    brButton3.innerText = "RI" + (12 - temp)
-    temp2 = matrix.p0[0] + temp
-    if(temp2 > 11){
-        three0.innerText = temp2 - 12
-    } else{
-        three0.innerText = temp2
-    }
-    temp2 = matrix.p0[1] + temp
-    if(temp2 > 11){
-        three1.innerText = temp2 - 12
-    } else{
-        three1.innerText = temp2
-    }
-    temp2 = matrix.p0[2] + temp
-    if(temp2 > 11){
-        three2.innerText = temp2 - 12
-    } else{
-        three2.innerText = temp2
-    }
-    temp2 = matrix.p0[3] + temp
-    if(temp2 > 11){
-        three3.innerText = temp2 - 12
-    } else{
-        three3.innerText = temp2
-    }
-    temp2 = matrix.p0[4] + temp
-    if(temp2 > 11){
-        three4.innerText = temp2 - 12
-    } else{
-        three4.innerText = temp2
-    }
-    temp2 = matrix.p0[5] + temp
-    if(temp2 > 11){
-        three5.innerText = temp2 - 12
-    } else{
-        three5.innerText = temp2
-    }
-    temp2 = matrix.p0[6] + temp
-    if(temp2 > 11){
-        three6.innerText = temp2 - 12
-    } else{
-        three6.innerText = temp2
-    }
-    temp2 = matrix.p0[7] + temp
-    if(temp2 > 11){
-        three7.innerText = temp2 - 12
-    } else{
-        three7.innerText = temp2
-    }
-    temp2 = matrix.p0[8] + temp
-    if(temp2 > 11){
-        three8.innerText = temp2 - 12
-    } else{
-        three8.innerText = temp2
-    }
-    temp2 = matrix.p0[9] + temp
-    if(temp2 > 11){
-        three9.innerText = temp2 - 12
-    } else{
-        three9.innerText = temp2
-    }
-    temp2 = matrix.p0[10] + temp
-    if(temp2 > 11){
-        three10.innerText = temp2 - 12
-    } else{
-        three10.innerText = temp2
-    }
-    temp2 = matrix.p0[11] + temp
-    if(temp2 > 11){
-        three11.innerText = temp2 - 12
-    } else{
-        three11.innerText = temp2
-    }
-
-    temp = matrix.p0[0] - matrix.p0[4]
-    if(temp < 0){
-        temp = convertToPos(temp)
-    } 
-    lcButton4.innerText = "P" + temp
-    rcButton4.innerText = "R" + temp
-    trButton4.innerText = "I" + (12 - temp)
-    brButton4.innerText = "RI" + (12 - temp)
-    temp2 = matrix.p0[0] + temp
-    if(temp2 > 11){
-        four0.innerText = temp2 - 12
-    } else{
-        four0.innerText = temp2
-    }
-    temp2 = matrix.p0[1] + temp
-    if(temp2 > 11){
-        four1.innerText = temp2 - 12
-    } else{
-        four1.innerText = temp2
-    }
-    temp2 = matrix.p0[2] + temp
-    if(temp2 > 11){
-        four2.innerText = temp2 - 12
-    } else{
-        four2.innerText = temp2
-    }
-    temp2 = matrix.p0[3] + temp
-    if(temp2 > 11){
-        four3.innerText = temp2 - 12
-    } else{
-        four3.innerText = temp2
-    }
-    temp2 = matrix.p0[4] + temp
-    if(temp2 > 11){
-        four4.innerText = temp2 - 12
-    } else{
-        four4.innerText = temp2
-    }
-    temp2 = matrix.p0[5] + temp
-    if(temp2 > 11){
-        four5.innerText = temp2 - 12
-    } else{
-        four5.innerText = temp2
-    }
-    temp2 = matrix.p0[6] + temp
-    if(temp2 > 11){
-        four6.innerText = temp2 - 12
-    } else{
-        four6.innerText = temp2
-    }
-    temp2 = matrix.p0[7] + temp
-    if(temp2 > 11){
-        four7.innerText = temp2 - 12
-    } else{
-        four7.innerText = temp2
-    }
-    temp2 = matrix.p0[8] + temp
-    if(temp2 > 11){
-        four8.innerText = temp2 - 12
-    } else{
-        four8.innerText = temp2
-    }
-    temp2 = matrix.p0[9] + temp
-    if(temp2 > 11){
-        four9.innerText = temp2 - 12
-    } else{
-        four9.innerText = temp2
-    }
-    temp2 = matrix.p0[10] + temp
-    if(temp2 > 11){
-        four10.innerText = temp2 - 12
-    } else{
-        four10.innerText = temp2
-    }
-    temp2 = matrix.p0[11] + temp
-    if(temp2 > 11){
-        four11.innerText = temp2 - 12
-    } else{
-        four11.innerText = temp2
-    }
-
-    temp = matrix.p0[0] - matrix.p0[5]
-    if(temp < 0){
-        temp = convertToPos(temp)
-    } 
-    lcButton5.innerText = "P" + temp
-    rcButton5.innerText = "R" + temp
-    trButton5.innerText = "I" + (12 - temp)
-    brButton5.innerText = "RI" + (12 - temp)
-    temp2 = matrix.p0[0] + temp
-    if(temp2 > 11){
-        five0.innerText = temp2 - 12
-    } else{
-        five0.innerText = temp2
-    }
-    temp2 = matrix.p0[1] + temp
-    if(temp2 > 11){
-        five1.innerText = temp2 - 12
-    } else{
-        five1.innerText = temp2
-    }
-    temp2 = matrix.p0[2] + temp
-    if(temp2 > 11){
-        five2.innerText = temp2 - 12
-    } else{
-        five2.innerText = temp2
-    }
-    temp2 = matrix.p0[3] + temp
-    if(temp2 > 11){
-        five3.innerText = temp2 - 12
-    } else{
-        five3.innerText = temp2
-    }
-    temp2 = matrix.p0[4] + temp
-    if(temp2 > 11){
-        five4.innerText = temp2 - 12
-    } else{
-        five4.innerText = temp2
-    }
-    temp2 = matrix.p0[5] + temp
-    if(temp2 > 11){
-        five5.innerText = temp2 - 12
-    } else{
-        five5.innerText = temp2
-    }
-    temp2 = matrix.p0[6] + temp
-    if(temp2 > 11){
-        five6.innerText = temp2 - 12
-    } else{
-        five6.innerText = temp2
-    }
-    temp2 = matrix.p0[7] + temp
-    if(temp2 > 11){
-        five7.innerText = temp2 - 12
-    } else{
-        five7.innerText = temp2
-    }
-    temp2 = matrix.p0[8] + temp
-    if(temp2 > 11){
-        five8.innerText = temp2 - 12
-    } else{
-        five8.innerText = temp2
-    }
-    temp2 = matrix.p0[9] + temp
-    if(temp2 > 11){
-        five9.innerText = temp2 - 12
-    } else{
-        five9.innerText = temp2
-    }
-    temp2 = matrix.p0[10] + temp
-    if(temp2 > 11){
-        five10.innerText = temp2 - 12
-    } else{
-        five10.innerText = temp2
-    }
-    temp2 = matrix.p0[11] + temp
-    if(temp2 > 11){
-        five11.innerText = temp2 - 12
-    } else{
-        five11.innerText = temp2
-    }
-
-    temp = matrix.p0[0] - matrix.p0[6]
-    if(temp < 0){
-        temp = convertToPos(temp)
-    } 
-    lcButton6.innerText = "P" + temp
-    rcButton6.innerText = "R" + temp
-    trButton6.innerText = "I" + (12 - temp)
-    brButton6.innerText = "RI" + (12 - temp)
-    temp2 = matrix.p0[0] + temp
-    if(temp2 > 11){
-        six0.innerText = temp2 - 12
-    } else{
-        six0.innerText = temp2
-    }
-    temp2 = matrix.p0[1] + temp
-    if(temp2 > 11){
-        six1.innerText = temp2 - 12
-    } else{
-        six1.innerText = temp2
-    }
-    temp2 = matrix.p0[2] + temp
-    if(temp2 > 11){
-        six2.innerText = temp2 - 12
-    } else{
-        six2.innerText = temp2
-    }
-    temp2 = matrix.p0[3] + temp
-    if(temp2 > 11){
-        six3.innerText = temp2 - 12
-    } else{
-        six3.innerText = temp2
-    }
-    temp2 = matrix.p0[4] + temp
-    if(temp2 > 11){
-        six4.innerText = temp2 - 12
-    } else{
-        six4.innerText = temp2
-    }
-    temp2 = matrix.p0[5] + temp
-    if(temp2 > 11){
-        six5.innerText = temp2 - 12
-    } else{
-        six5.innerText = temp2
-    }
-    temp2 = matrix.p0[6] + temp
-    if(temp2 > 11){
-        six6.innerText = temp2 - 12
-    } else{
-        six6.innerText = temp2
-    }
-    temp2 = matrix.p0[7] + temp
-    if(temp2 > 11){
-        six7.innerText = temp2 - 12
-    } else{
-        six7.innerText = temp2
-    }
-    temp2 = matrix.p0[8] + temp
-    if(temp2 > 11){
-        six8.innerText = temp2 - 12
-    } else{
-        six8.innerText = temp2
-    }
-    temp2 = matrix.p0[9] + temp
-    if(temp2 > 11){
-        six9.innerText = temp2 - 12
-    } else{
-        six9.innerText = temp2
-    }
-    temp2 = matrix.p0[10] + temp
-    if(temp2 > 11){
-        six10.innerText = temp2 - 12
-    } else{
-        six10.innerText = temp2
-    }
-    temp2 = matrix.p0[11] + temp
-    if(temp2 > 11){
-        six11.innerText = temp2 - 12
-    } else{
-        six11.innerText = temp2
-    }
-
-    temp = matrix.p0[0] - matrix.p0[7]
-    if(temp < 0){
-        temp = convertToPos(temp)
-    } 
-    lcButton7.innerText = "P" + temp
-    rcButton7.innerText = "R" + temp
-    trButton7.innerText = "I" + (12 - temp)
-    brButton7.innerText = "RI" + (12 - temp)
-    temp2 = matrix.p0[0] + temp
-    if(temp2 > 11){
-        seven0.innerText = temp2 - 12
-    } else{
-        seven0.innerText = temp2
-    }
-    temp2 = matrix.p0[1] + temp
-    if(temp2 > 11){
-        seven1.innerText = temp2 - 12
-    } else{
-        seven1.innerText = temp2
-    }
-    temp2 = matrix.p0[2] + temp
-    if(temp2 > 11){
-        seven2.innerText = temp2 - 12
-    } else{
-        seven2.innerText = temp2
-    }
-    temp2 = matrix.p0[3] + temp
-    if(temp2 > 11){
-        seven3.innerText = temp2 - 12
-    } else{
-        seven3.innerText = temp2
-    }
-    temp2 = matrix.p0[4] + temp
-    if(temp2 > 11){
-        seven4.innerText = temp2 - 12
-    } else{
-        seven4.innerText = temp2
-    }
-    temp2 = matrix.p0[5] + temp
-    if(temp2 > 11){
-        seven5.innerText = temp2 - 12
-    } else{
-        seven5.innerText = temp2
-    }
-    temp2 = matrix.p0[6] + temp
-    if(temp2 > 11){
-        seven6.innerText = temp2 - 12
-    } else{
-        seven6.innerText = temp2
-    }
-    temp2 = matrix.p0[7] + temp
-    if(temp2 > 11){
-        seven7.innerText = temp2 - 12
-    } else{
-        seven7.innerText = temp2
-    }
-    temp2 = matrix.p0[8] + temp
-    if(temp2 > 11){
-        seven8.innerText = temp2 - 12
-    } else{
-        seven8.innerText = temp2
-    }
-    temp2 = matrix.p0[9] + temp
-    if(temp2 > 11){
-        seven9.innerText = temp2 - 12
-    } else{
-        seven9.innerText = temp2
-    }
-    temp2 = matrix.p0[10] + temp
-    if(temp2 > 11){
-        seven10.innerText = temp2 - 12
-    } else{
-        seven10.innerText = temp2
-    }
-    temp2 = matrix.p0[11] + temp
-    if(temp2 > 11){
-        seven11.innerText = temp2 - 12
-    } else{
-        seven11.innerText = temp2
-    }
-
-    temp = matrix.p0[0] - matrix.p0[8]
-    if(temp < 0){
-        temp = convertToPos(temp)
-    } 
-    lcButton8.innerText = "P" + temp
-    rcButton8.innerText = "R" + temp
-    trButton8.innerText = "I" + (12 - temp)
-    brButton8.innerText = "RI" + (12 - temp)
-    temp2 = matrix.p0[0] + temp
-    if(temp2 > 11){
-        eight0.innerText = temp2 - 12
-    } else{
-        eight0.innerText = temp2
-    }
-    temp2 = matrix.p0[1] + temp
-    if(temp2 > 11){
-        eight1.innerText = temp2 - 12
-    } else{
-        eight1.innerText = temp2
-    }
-    temp2 = matrix.p0[2] + temp
-    if(temp2 > 11){
-        eight2.innerText = temp2 - 12
-    } else{
-        eight2.innerText = temp2
-    }
-    temp2 = matrix.p0[3] + temp
-    if(temp2 > 11){
-        eight3.innerText = temp2 - 12
-    } else{
-        eight3.innerText = temp2
-    }
-    temp2 = matrix.p0[4] + temp
-    if(temp2 > 11){
-        eight4.innerText = temp2 - 12
-    } else{
-        eight4.innerText = temp2
-    }
-    temp2 = matrix.p0[5] + temp
-    if(temp2 > 11){
-        eight5.innerText = temp2 - 12
-    } else{
-        eight5.innerText = temp2
-    }
-    temp2 = matrix.p0[6] + temp
-    if(temp2 > 11){
-        eight6.innerText = temp2 - 12
-    } else{
-        eight6.innerText = temp2
-    }
-    temp2 = matrix.p0[7] + temp
-    if(temp2 > 11){
-        eight7.innerText = temp2 - 12
-    } else{
-        eight7.innerText = temp2
-    }
-    temp2 = matrix.p0[8] + temp
-    if(temp2 > 11){
-        eight8.innerText = temp2 - 12
-    } else{
-        eight8.innerText = temp2
-    }
-    temp2 = matrix.p0[9] + temp
-    if(temp2 > 11){
-        eight9.innerText = temp2 - 12
-    } else{
-        eight9.innerText = temp2
-    }
-    temp2 = matrix.p0[10] + temp
-    if(temp2 > 11){
-        eight10.innerText = temp2 - 12
-    } else{
-        eight10.innerText = temp2
-    }
-    temp2 = matrix.p0[11] + temp
-    if(temp2 > 11){
-        eight11.innerText = temp2 - 12
-    } else{
-        eight11.innerText = temp2
-    }
-
-    temp = matrix.p0[0] - matrix.p0[9]
-    if(temp < 0){
-        temp = convertToPos(temp)
-    } 
-    lcButton9.innerText = "P" + temp
-    rcButton9.innerText = "R" + temp
-    trButton9.innerText = "I" + (12 - temp)
-    brButton9.innerText = "RI" + (12 - temp)
-    temp2 = matrix.p0[0] + temp
-    if(temp2 > 11){
-        nine0.innerText = temp2 - 12
-    } else{
-        nine0.innerText = temp2
-    }
-    temp2 = matrix.p0[1] + temp
-    if(temp2 > 11){
-        nine1.innerText = temp2 - 12
-    } else{
-        nine1.innerText = temp2
-    }
-    temp2 = matrix.p0[2] + temp
-    if(temp2 > 11){
-        nine2.innerText = temp2 - 12
-    } else{
-        nine2.innerText = temp2
-    }
-    temp2 = matrix.p0[3] + temp
-    if(temp2 > 11){
-        nine3.innerText = temp2 - 12
-    } else{
-        nine3.innerText = temp2
-    }
-    temp2 = matrix.p0[4] + temp
-    if(temp2 > 11){
-        nine4.innerText = temp2 - 12
-    } else{
-        nine4.innerText = temp2
-    }
-    temp2 = matrix.p0[5] + temp
-    if(temp2 > 11){
-        nine5.innerText = temp2 - 12
-    } else{
-        nine5.innerText = temp2
-    }
-    temp2 = matrix.p0[6] + temp
-    if(temp2 > 11){
-        nine6.innerText = temp2 - 12
-    } else{
-        nine6.innerText = temp2
-    }
-    temp2 = matrix.p0[7] + temp
-    if(temp2 > 11){
-        nine7.innerText = temp2 - 12
-    } else{
-        nine7.innerText = temp2
-    }
-    temp2 = matrix.p0[8] + temp
-    if(temp2 > 11){
-        nine8.innerText = temp2 - 12
-    } else{
-        nine8.innerText = temp2
-    }
-    temp2 = matrix.p0[9] + temp
-    if(temp2 > 11){
-        nine9.innerText = temp2 - 12
-    } else{
-        nine9.innerText = temp2
-    }
-    temp2 = matrix.p0[10] + temp
-    if(temp2 > 11){
-        nine10.innerText = temp2 - 12
-    } else{
-        nine10.innerText = temp2
-    }
-    temp2 = matrix.p0[11] + temp
-    if(temp2 > 11){
-        nine11.innerText = temp2 - 12
-    } else{
-        nine11.innerText = temp2
-    }
-
-    temp = matrix.p0[0] - matrix.p0[10]
-    if(temp < 0){
-        temp = convertToPos(temp)
-    } 
-    lcButton10.innerText = "P" + temp
-    rcButton10.innerText = "R" + temp
-    trButton10.innerText = "I" + (12 - temp)
-    brButton10.innerText = "RI" + (12 - temp)
-    temp2 = matrix.p0[0] + temp
-    if(temp2 > 11){
-        ten0.innerText = temp2 - 12
-    } else{
-        ten0.innerText = temp2
-    }
-    temp2 = matrix.p0[1] + temp
-    if(temp2 > 11){
-        ten1.innerText = temp2 - 12
-    } else{
-        ten1.innerText = temp2
-    }
-    temp2 = matrix.p0[2] + temp
-    if(temp2 > 11){
-        ten2.innerText = temp2 - 12
-    } else{
-        ten2.innerText = temp2
-    }
-    temp2 = matrix.p0[3] + temp
-    if(temp2 > 11){
-        ten3.innerText = temp2 - 12
-    } else{
-        ten3.innerText = temp2
-    }
-    temp2 = matrix.p0[4] + temp
-    if(temp2 > 11){
-        ten4.innerText = temp2 - 12
-    } else{
-        ten4.innerText = temp2
-    }
-    temp2 = matrix.p0[5] + temp
-    if(temp2 > 11){
-        ten5.innerText = temp2 - 12
-    } else{
-        ten5.innerText = temp2
-    }
-    temp2 = matrix.p0[6] + temp
-    if(temp2 > 11){
-        ten6.innerText = temp2 - 12
-    } else{
-        ten6.innerText = temp2
-    }
-    temp2 = matrix.p0[7] + temp
-    if(temp2 > 11){
-        ten7.innerText = temp2 - 12
-    } else{
-        ten7.innerText = temp2
-    }
-    temp2 = matrix.p0[8] + temp
-    if(temp2 > 11){
-        ten8.innerText = temp2 - 12
-    } else{
-        ten8.innerText = temp2
-    }
-    temp2 = matrix.p0[9] + temp
-    if(temp2 > 11){
-        ten9.innerText = temp2 - 12
-    } else{
-        ten9.innerText = temp2
-    }
-    temp2 = matrix.p0[10] + temp
-    if(temp2 > 11){
-        ten10.innerText = temp2 - 12
-    } else{
-        ten10.innerText = temp2
-    }
-    temp2 = matrix.p0[11] + temp
-    if(temp2 > 11){
-        ten11.innerText = temp2 - 12
-    } else{
-        ten11.innerText = temp2
-    }
-
-    temp = matrix.p0[0] - matrix.p0[11]
-    if(temp < 0){
-        temp = convertToPos(temp)
-    } 
-    lcButton11.innerText = "P" + temp
-    rcButton11.innerText = "R" + temp
-    trButton11.innerText = "I" + (12 - temp)
-    brButton11.innerText = "RI" + (12 - temp)
-    temp2 = matrix.p0[0] + temp
-    if(temp2 > 11){
-        eleven0.innerText = temp2 - 12
-    } else{
-        eleven0.innerText = temp2
-    }
-    temp2 = matrix.p0[1] + temp
-    if(temp2 > 11){
-        eleven1.innerText = temp2 - 12
-    } else{
-        eleven1.innerText = temp2
-    }
-    temp2 = matrix.p0[2] + temp
-    if(temp2 > 11){
-        eleven2.innerText = temp2 - 12
-    } else{
-        eleven2.innerText = temp2
-    }
-    temp2 = matrix.p0[3] + temp
-    if(temp2 > 11){
-        eleven3.innerText = temp2 - 12
-    } else{
-        eleven3.innerText = temp2
-    }
-    temp2 = matrix.p0[4] + temp
-    if(temp2 > 11){
-        eleven4.innerText = temp2 - 12
-    } else{
-        eleven4.innerText = temp2
-    }
-    temp2 = matrix.p0[5] + temp
-    if(temp2 > 11){
-        eleven5.innerText = temp2 - 12
-    } else{
-        eleven5.innerText = temp2
-    }
-    temp2 = matrix.p0[6] + temp
-    if(temp2 > 11){
-        eleven6.innerText = temp2 - 12
-    } else{
-        eleven6.innerText = temp2
-    }
-    temp2 = matrix.p0[7] + temp
-    if(temp2 > 11){
-        eleven7.innerText = temp2 - 12
-    } else{
-        eleven7.innerText = temp2
-    }
-    temp2 = matrix.p0[8] + temp
-    if(temp2 > 11){
-        eleven8.innerText = temp2 - 12
-    } else{
-        eleven8.innerText = temp2
-    }
-    temp2 = matrix.p0[9] + temp
-    if(temp2 > 11){
-        eleven9.innerText = temp2 - 12
-    } else{
-        eleven9.innerText = temp2
-    }
-    temp2 = matrix.p0[10] + temp
-    if(temp2 > 11){
-        eleven10.innerText = temp2 - 12
-    } else{
-        eleven10.innerText = temp2
-    }
-    temp2 = matrix.p0[11] + temp
-    if(temp2 > 11){
-        eleven11.innerText = temp2 - 12
-    } else{
-        eleven11.innerText = temp2
+    // zero0.innerText = matrix.p0[0]
+    // zero1.innerText = matrix.p0[1]
+    // zero2.innerText = matrix.p0[2]
+    // zero3.innerText = matrix.p0[3]
+    // zero4.innerText = matrix.p0[4]
+    // zero5.innerText = matrix.p0[5]
+    // zero6.innerText = matrix.p0[6]
+    // zero7.innerText = matrix.p0[7]
+    // zero8.innerText = matrix.p0[8]
+    // zero9.innerText = matrix.p0[9]
+    // zero10.innerText = matrix.p0[10]
+    // zero11.innerText = matrix.p0[11]
+    
+    for(let i = 1; i < 12; i++){
+        temp = matrix.p0[0] - matrix.p0[i]
+        if(temp < 0){
+            temp = convertToPos(temp)
+        }
+        divs.lcButtons[i].innerText = "P" + temp
+        divs.rcButtons[i].innerText = "R" + temp
+        divs.trButtons[i].innerText = "I" + (12 - temp)
+        divs.brButtons[i].innerText = "RI" + (12 - temp)
+        temp2 = matrix.p0[0] + temp
+        if(temp2 > 11){
+            divs.rows[i][0].innerText = temp2 - 12
+        } else{
+            divs.rows[i][0].innerText = temp2
+        }
+        temp2 = matrix.p0[1] + temp
+        if(temp2 > 11){
+            divs.rows[i][1].innerText = temp2 - 12
+        } else{
+            divs.rows[i][1].innerText = temp2
+        }
+        temp2 = matrix.p0[2] + temp
+        if(temp2 > 11){
+            divs.rows[i][2].innerText = temp2 - 12
+        } else{
+            divs.rows[i][2].innerText = temp2
+        }
+        temp2 = matrix.p0[3] + temp
+        if(temp2 > 11){
+            divs.rows[i][3].innerText = temp2 - 12
+        } else{
+            divs.rows[i][3].innerText = temp2
+        }
+        temp2 = matrix.p0[4] + temp
+        if(temp2 > 11){
+            divs.rows[i][4].innerText = temp2 - 12
+        } else{
+            divs.rows[i][4].innerText = temp2
+        }
+        temp2 = matrix.p0[5] + temp
+        if(temp2 > 11){
+            divs.rows[i][5].innerText = temp2 - 12
+        } else{
+            divs.rows[i][5].innerText = temp2
+        }
+        temp2 = matrix.p0[6] + temp
+        if(temp2 > 11){
+            divs.rows[i][6].innerText = temp2 - 12
+        } else{
+            divs.rows[i][6].innerText = temp2
+        }
+        temp2 = matrix.p0[7] + temp
+        if(temp2 > 11){
+            divs.rows[i][7].innerText = temp2 - 12
+        } else{
+            divs.rows[i][7].innerText = temp2
+        }
+        temp2 = matrix.p0[8] + temp
+        if(temp2 > 11){
+            divs.rows[i][8].innerText = temp2 - 12
+        } else{
+            divs.rows[i][8].innerText = temp2
+        }
+        temp2 = matrix.p0[9] + temp
+        if(temp2 > 11){
+            divs.rows[i][9].innerText = temp2 - 12
+        } else{
+            divs.rows[i][9].innerText = temp2
+        }
+        temp2 = matrix.p0[10] + temp
+        if(temp2 > 11){
+            divs.rows[i][10].innerText = temp2 - 12
+        } else{
+            divs.rows[i][10].innerText = temp2
+        }
+        temp2 = matrix.p0[11] + temp
+        if(temp2 > 11){
+            divs.rows[i][11].innerText = temp2 - 12
+        } else{
+            divs.rows[i][11].innerText = temp2
+        }
     }
 }
 
