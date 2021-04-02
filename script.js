@@ -13,7 +13,7 @@ let nineClicked = false
 let tenClicked = false
 let elevenClicked = false
 
-let divs = {
+const divs = {
     lcButtons: [lcButton0, lcButton1, lcButton2, lcButton3, lcButton4, lcButton5, lcButton6, lcButton7, lcButton8, lcButton9, lcButton10, lcButton11],
     rcButtons: [rcButton0, rcButton1, rcButton2, rcButton3, rcButton4, rcButton5, rcButton6, rcButton7, rcButton8, rcButton9, rcButton10, rcButton11],
     trButtons: [trButton0, trButton1, trButton2, trButton3, trButton4, trButton5, trButton6, trButton7, trButton8, trButton9, trButton10, trButton11],
@@ -45,22 +45,6 @@ let matrix = {
     row9Button: null,
     row10Button: null,
     row11Button: null
-}
-
-let intervalSequence = [null, null, null, null, null, null, null, null, null, null, null]
-
-function getIntervalSequence(){
-    intervalSequence[0] = matrix.p0[0] - matrix.p0[1]
-    intervalSequence[1] = matrix.p0[0] - matrix.p0[2]
-    intervalSequence[2] = matrix.p0[0] - matrix.p0[3]
-    intervalSequence[3] = matrix.p0[0] - matrix.p0[4]
-    intervalSequence[4] = matrix.p0[0] - matrix.p0[5]
-    intervalSequence[5] = matrix.p0[0] - matrix.p0[6]
-    intervalSequence[6] = matrix.p0[0] - matrix.p0[7]
-    intervalSequence[7] = matrix.p0[0] - matrix.p0[8]
-    intervalSequence[8] = matrix.p0[0] - matrix.p0[9]
-    intervalSequence[9] = matrix.p0[0] - matrix.p0[10]
-    intervalSequence[10] = matrix.p0[0] - matrix.p0[11]
 }
 
 function convertToPos(int){
@@ -102,9 +86,7 @@ document.getElementById('buttonZero').addEventListener('click', () => {
         zeroClicked = true
         buttonZero.innerText = ""
         if(inputCount === 12){
-            getIntervalSequence()
             fillMatrix()
-            console.log(matrix)
         }
     }
 })
@@ -117,9 +99,7 @@ document.getElementById('buttonOne').addEventListener('click', () => {
         oneClicked = true
         buttonOne.innerText = ""
         if(inputCount === 12){
-            getIntervalSequence()
             fillMatrix()
-            console.log(matrix)
         }
     }
 })
@@ -132,9 +112,7 @@ document.getElementById('buttonTwo').addEventListener('click', () => {
         twoClicked = true
         buttonTwo.innerText = ""
         if(inputCount === 12){
-            getIntervalSequence()
             fillMatrix()
-            console.log(matrix)
         }
     }
 })
@@ -147,9 +125,7 @@ document.getElementById('buttonThree').addEventListener('click', () => {
         threeClicked = true
         buttonThree.innerText = ""
         if(inputCount === 12){
-            getIntervalSequence()
             fillMatrix()
-            console.log(matrix)
         }
     }
 })
@@ -162,9 +138,7 @@ document.getElementById('buttonFour').addEventListener('click', () => {
         fourClicked = true
         buttonFour.innerText = ""
         if(inputCount === 12){
-            getIntervalSequence()
             fillMatrix()
-            console.log(matrix)
         }
     }
 })
@@ -177,9 +151,7 @@ document.getElementById('buttonFive').addEventListener('click', () => {
         fiveClicked = true
         buttonFive.innerText = ""
         if(inputCount === 12){
-            getIntervalSequence()
             fillMatrix()
-            console.log(matrix)
         }
     }
 })
@@ -192,9 +164,7 @@ document.getElementById('buttonSix').addEventListener('click', () => {
         sixClicked = true
         buttonSix.innerText = ""
         if(inputCount === 12){
-            getIntervalSequence()
             fillMatrix()
-            console.log(matrix)
         }
     }
 })
@@ -207,9 +177,7 @@ document.getElementById('buttonSeven').addEventListener('click', () => {
         sevenClicked = true
         buttonSeven.innerText = ""
         if(inputCount === 12){
-            getIntervalSequence()
             fillMatrix()
-            console.log(matrix)
         }
     }
 })
@@ -222,9 +190,7 @@ document.getElementById('buttonEight').addEventListener('click', () => {
         eightClicked = true
         buttonEight.innerText = ""
         if(inputCount === 12){
-            getIntervalSequence()
             fillMatrix()
-            console.log(matrix)
         }
     }
 })
@@ -237,9 +203,7 @@ document.getElementById('buttonNine').addEventListener('click', () => {
         nineClicked = true
         buttonNine.innerText = ""
         if(inputCount === 12){
-            getIntervalSequence()
             fillMatrix()
-            console.log(matrix)
         }
     }
 })
@@ -252,9 +216,7 @@ document.getElementById('buttonTen').addEventListener('click', () => {
         tenClicked = true
         buttonTen.innerText = ""
         if(inputCount === 12){
-            getIntervalSequence()
             fillMatrix()
-            console.log(matrix)
         }
     }
 })
@@ -267,9 +229,7 @@ document.getElementById('buttonEleven').addEventListener('click', () => {
         elevenClicked = true
         buttonEleven.innerText = ""
         if(inputCount === 12){
-            getIntervalSequence()
             fillMatrix()
-            console.log(matrix)
         }
     }
 })
