@@ -83,77 +83,13 @@ function fillMatrix(){
         divs.rcButtons[i].innerText = "R" + temp
         divs.trButtons[i].innerText = "I" + (12 - temp)
         divs.brButtons[i].innerText = "RI" + (12 - temp)
-        temp2 = matrix.p0[0] + temp
-        if(temp2 > 11){
-            divs.rows[i][0].innerText = temp2 - 12
-        } else{
-            divs.rows[i][0].innerText = temp2
-        }
-        temp2 = matrix.p0[1] + temp
-        if(temp2 > 11){
-            divs.rows[i][1].innerText = temp2 - 12
-        } else{
-            divs.rows[i][1].innerText = temp2
-        }
-        temp2 = matrix.p0[2] + temp
-        if(temp2 > 11){
-            divs.rows[i][2].innerText = temp2 - 12
-        } else{
-            divs.rows[i][2].innerText = temp2
-        }
-        temp2 = matrix.p0[3] + temp
-        if(temp2 > 11){
-            divs.rows[i][3].innerText = temp2 - 12
-        } else{
-            divs.rows[i][3].innerText = temp2
-        }
-        temp2 = matrix.p0[4] + temp
-        if(temp2 > 11){
-            divs.rows[i][4].innerText = temp2 - 12
-        } else{
-            divs.rows[i][4].innerText = temp2
-        }
-        temp2 = matrix.p0[5] + temp
-        if(temp2 > 11){
-            divs.rows[i][5].innerText = temp2 - 12
-        } else{
-            divs.rows[i][5].innerText = temp2
-        }
-        temp2 = matrix.p0[6] + temp
-        if(temp2 > 11){
-            divs.rows[i][6].innerText = temp2 - 12
-        } else{
-            divs.rows[i][6].innerText = temp2
-        }
-        temp2 = matrix.p0[7] + temp
-        if(temp2 > 11){
-            divs.rows[i][7].innerText = temp2 - 12
-        } else{
-            divs.rows[i][7].innerText = temp2
-        }
-        temp2 = matrix.p0[8] + temp
-        if(temp2 > 11){
-            divs.rows[i][8].innerText = temp2 - 12
-        } else{
-            divs.rows[i][8].innerText = temp2
-        }
-        temp2 = matrix.p0[9] + temp
-        if(temp2 > 11){
-            divs.rows[i][9].innerText = temp2 - 12
-        } else{
-            divs.rows[i][9].innerText = temp2
-        }
-        temp2 = matrix.p0[10] + temp
-        if(temp2 > 11){
-            divs.rows[i][10].innerText = temp2 - 12
-        } else{
-            divs.rows[i][10].innerText = temp2
-        }
-        temp2 = matrix.p0[11] + temp
-        if(temp2 > 11){
-            divs.rows[i][11].innerText = temp2 - 12
-        } else{
-            divs.rows[i][11].innerText = temp2
+        for(let x = 0; x < 12; x++){
+            temp2 = matrix.p0[x] + temp
+            if(temp2 > 11){
+              divs.rows[i][x].innerText = temp2 - 12
+            } else{
+              divs.rows[i][x].innerText = temp2
+            }
         }
     }
 }
