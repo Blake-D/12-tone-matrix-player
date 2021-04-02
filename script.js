@@ -69,27 +69,11 @@ function convertToPos(int){
 }
 
 function fillMatrix(){
-
     let temp = null
     let temp2 = null
-  
     for(let i = 0; i < 12; i++){
         divs.rows[0][i].innerText = matrix.p0[i]
     }
-
-    // zero0.innerText = matrix.p0[0]
-    // zero1.innerText = matrix.p0[1]
-    // zero2.innerText = matrix.p0[2]
-    // zero3.innerText = matrix.p0[3]
-    // zero4.innerText = matrix.p0[4]
-    // zero5.innerText = matrix.p0[5]
-    // zero6.innerText = matrix.p0[6]
-    // zero7.innerText = matrix.p0[7]
-    // zero8.innerText = matrix.p0[8]
-    // zero9.innerText = matrix.p0[9]
-    // zero10.innerText = matrix.p0[10]
-    // zero11.innerText = matrix.p0[11]
-    
     for(let i = 1; i < 12; i++){
         temp = matrix.p0[0] - matrix.p0[i]
         if(temp < 0){
