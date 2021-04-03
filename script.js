@@ -21,31 +21,7 @@ const divs = {
     rows: [[zero0, zero1, zero2, zero3, zero4, zero5, zero6, zero7, zero8, zero9, zero10, zero11], [one0, one1, one2, one3, one4, one5, one6, one7, one8, one9, one10, one11], [two0, two1, two2, two3, two4, two5, two6, two7, two8, two9, two10, two11], [three0, three1, three2, three3, three4, three5, three6, three7, three8, three9, three10, three11], [four0, four1, four2, four3, four4, four5, four6, four7, four8, four9, four10, four11], [five0, five1, five2, five3, five4, five5, five6, five7, five8, five9, five10, five11], [six0, six1, six2, six3, six4, six5, six6, six7, six8, six9, six10, six11], [seven0, seven1, seven2, seven3, seven4, seven5, seven6, seven7, seven8, seven9, seven10, seven11], [eight0, eight1, eight2, eight3, eight4, eight5, eight6, eight7, eight8, eight9, eight10, eight11], [nine0, nine1, nine2, nine3, nine4, nine5, nine6, nine7, nine8, nine9, nine10, nine11], [ten0, ten1, ten2, ten3, ten4, ten5, ten6, ten7, ten8, ten9, ten10, ten11], [eleven0, eleven1, eleven2, eleven3, eleven4, eleven5, eleven6, eleven7, eleven8, eleven9, eleven10, eleven11]]
 }
 
-let matrix = {
-    p0: [null, null, null, null, null, null, null, null, null, null, null, null],
-    p1: [null, null, null, null, null, null, null, null, null, null, null, null],
-    p2: [null, null, null, null, null, null, null, null, null, null, null, null],
-    p3: [null, null, null, null, null, null, null, null, null, null, null, null],
-    p4: [null, null, null, null, null, null, null, null, null, null, null, null],
-    p5: [null, null, null, null, null, null, null, null, null, null, null, null],
-    p6: [null, null, null, null, null, null, null, null, null, null, null, null],
-    p7: [null, null, null, null, null, null, null, null, null, null, null, null],
-    p8: [null, null, null, null, null, null, null, null, null, null, null, null],
-    p9: [null, null, null, null, null, null, null, null, null, null, null, null],
-    p10: [null, null, null, null, null, null, null, null, null, null, null, null],
-    p11: [null, null, null, null, null, null, null, null, null, null, null, null],
-    row1Button: null,
-    row2Button: null,
-    row3Button: null,
-    row4Button: null,
-    row5Button: null,
-    row6Button: null,
-    row7Button: null,
-    row8Button: null,
-    row9Button: null,
-    row10Button: null,
-    row11Button: null
-}
+let primeRow = [null, null, null, null, null, null, null, null, null, null, null, null]
 
 function convertToPos(int){
     let posInt = 12 + int
@@ -56,10 +32,10 @@ function fillMatrix(){
     let temp = null
     let temp2 = null
     for(let i = 0; i < 12; i++){
-        divs.rows[0][i].innerText = matrix.p0[i]
+        divs.rows[0][i].innerText = primeRow[i]
     }
     for(let i = 1; i < 12; i++){
-        temp = matrix.p0[0] - matrix.p0[i]
+        temp = primeRow[0] - primeRow[i]
         if(temp < 0){
             temp = convertToPos(temp)
         }
@@ -68,7 +44,7 @@ function fillMatrix(){
         divs.trButtons[i].innerText = "I" + (12 - temp)
         divs.brButtons[i].innerText = "RI" + (12 - temp)
         for(let x = 0; x < 12; x++){
-            temp2 = matrix.p0[x] + temp
+            temp2 = primeRow[x] + temp
             if(temp2 > 11){
               divs.rows[i][x].innerText = temp2 - 12
             } else{
@@ -81,7 +57,7 @@ function fillMatrix(){
 document.getElementById('buttonZero').addEventListener('click', () => {
     if(inputCount < 12 && zeroClicked === false){
         let i = inputCount
-        matrix.p0[i] = 0
+        primeRow[i] = 0
         inputCount++
         zeroClicked = true
         buttonZero.innerText = ""
@@ -94,7 +70,7 @@ document.getElementById('buttonZero').addEventListener('click', () => {
 document.getElementById('buttonOne').addEventListener('click', () => {
     if(inputCount < 12 && oneClicked === false){
         let i = inputCount
-        matrix.p0[i] = 1
+        primeRow[i] = 1
         inputCount++
         oneClicked = true
         buttonOne.innerText = ""
@@ -107,7 +83,7 @@ document.getElementById('buttonOne').addEventListener('click', () => {
 document.getElementById('buttonTwo').addEventListener('click', () => {
     if(inputCount < 12 && twoClicked === false){
         let i = inputCount
-        matrix.p0[i] = 2
+        primeRow[i] = 2
         inputCount++
         twoClicked = true
         buttonTwo.innerText = ""
@@ -120,7 +96,7 @@ document.getElementById('buttonTwo').addEventListener('click', () => {
 document.getElementById('buttonThree').addEventListener('click', () => {
     if(inputCount < 12 && threeClicked === false){
         let i = inputCount
-        matrix.p0[i] = 3
+        primeRow[i] = 3
         inputCount++
         threeClicked = true
         buttonThree.innerText = ""
@@ -133,7 +109,7 @@ document.getElementById('buttonThree').addEventListener('click', () => {
 document.getElementById('buttonFour').addEventListener('click', () => {
     if(inputCount < 12 && fourClicked === false){
         let i = inputCount
-        matrix.p0[i] = 4
+        primeRow[i] = 4
         inputCount++
         fourClicked = true
         buttonFour.innerText = ""
@@ -146,7 +122,7 @@ document.getElementById('buttonFour').addEventListener('click', () => {
 document.getElementById('buttonFive').addEventListener('click', () => {
     if(inputCount < 12 && fiveClicked === false){
         let i = inputCount
-        matrix.p0[i] = 5
+        primeRow[i] = 5
         inputCount++
         fiveClicked = true
         buttonFive.innerText = ""
@@ -159,7 +135,7 @@ document.getElementById('buttonFive').addEventListener('click', () => {
 document.getElementById('buttonSix').addEventListener('click', () => {
     if(inputCount < 12 && sixClicked === false){
         let i = inputCount
-        matrix.p0[i] = 6
+        primeRow[i] = 6
         inputCount++
         sixClicked = true
         buttonSix.innerText = ""
@@ -172,7 +148,7 @@ document.getElementById('buttonSix').addEventListener('click', () => {
 document.getElementById('buttonSeven').addEventListener('click', () => {
     if(inputCount < 12 && sevenClicked === false){
         let i = inputCount
-        matrix.p0[i] = 7
+        primeRow[i] = 7
         inputCount++
         sevenClicked = true
         buttonSeven.innerText = ""
@@ -185,7 +161,7 @@ document.getElementById('buttonSeven').addEventListener('click', () => {
 document.getElementById('buttonEight').addEventListener('click', () => {
     if(inputCount < 12 && eightClicked === false){
         let i = inputCount
-        matrix.p0[i] = 8
+        primeRow[i] = 8
         inputCount++
         eightClicked = true
         buttonEight.innerText = ""
@@ -198,7 +174,7 @@ document.getElementById('buttonEight').addEventListener('click', () => {
 document.getElementById('buttonNine').addEventListener('click', () => {
     if(inputCount < 12 && nineClicked === false){
         let i = inputCount
-        matrix.p0[i] = 9
+        primeRow[i] = 9
         inputCount++
         nineClicked = true
         buttonNine.innerText = ""
@@ -211,7 +187,7 @@ document.getElementById('buttonNine').addEventListener('click', () => {
 document.getElementById('buttonTen').addEventListener('click', () => {
     if(inputCount < 12 && tenClicked === false){
         let i = inputCount
-        matrix.p0[i] = 10
+        primeRow[i] = 10
         inputCount++
         tenClicked = true
         buttonTen.innerText = ""
@@ -224,7 +200,7 @@ document.getElementById('buttonTen').addEventListener('click', () => {
 document.getElementById('buttonEleven').addEventListener('click', () => {
     if(inputCount < 12 && elevenClicked === false){
         let i = inputCount
-        matrix.p0[i] = 11
+        primeRow[i] = 11
         inputCount++
         elevenClicked = true
         buttonEleven.innerText = ""
