@@ -1,4 +1,5 @@
 let inputCount = 0
+let matrixFilled = false
 
 let zeroClicked = false
 let oneClicked = false
@@ -13,6 +14,8 @@ let nineClicked = false
 let tenClicked = false
 let elevenClicked = false
 
+let primeRow = [null, null, null, null, null, null, null, null, null, null, null, null]
+
 const divs = {
     lcButtons: [lcButton0, lcButton1, lcButton2, lcButton3, lcButton4, lcButton5, lcButton6, lcButton7, lcButton8, lcButton9, lcButton10, lcButton11],
     rcButtons: [rcButton0, rcButton1, rcButton2, rcButton3, rcButton4, rcButton5, rcButton6, rcButton7, rcButton8, rcButton9, rcButton10, rcButton11],
@@ -20,8 +23,6 @@ const divs = {
     brButtons: [brButton0, brButton1, brButton2, brButton3, brButton4, brButton5, brButton6, brButton7, brButton8, brButton9, brButton10, brButton11],
     rows: [[zero0, zero1, zero2, zero3, zero4, zero5, zero6, zero7, zero8, zero9, zero10, zero11], [one0, one1, one2, one3, one4, one5, one6, one7, one8, one9, one10, one11], [two0, two1, two2, two3, two4, two5, two6, two7, two8, two9, two10, two11], [three0, three1, three2, three3, three4, three5, three6, three7, three8, three9, three10, three11], [four0, four1, four2, four3, four4, four5, four6, four7, four8, four9, four10, four11], [five0, five1, five2, five3, five4, five5, five6, five7, five8, five9, five10, five11], [six0, six1, six2, six3, six4, six5, six6, six7, six8, six9, six10, six11], [seven0, seven1, seven2, seven3, seven4, seven5, seven6, seven7, seven8, seven9, seven10, seven11], [eight0, eight1, eight2, eight3, eight4, eight5, eight6, eight7, eight8, eight9, eight10, eight11], [nine0, nine1, nine2, nine3, nine4, nine5, nine6, nine7, nine8, nine9, nine10, nine11], [ten0, ten1, ten2, ten3, ten4, ten5, ten6, ten7, ten8, ten9, ten10, ten11], [eleven0, eleven1, eleven2, eleven3, eleven4, eleven5, eleven6, eleven7, eleven8, eleven9, eleven10, eleven11]]
 }
-
-let primeRow = [null, null, null, null, null, null, null, null, null, null, null, null]
 
 function convertToPos(int){
     let posInt = 12 + int
@@ -52,6 +53,7 @@ function fillMatrix(){
             }
         }
     }
+    matrixFilled = true
 }
 
 document.getElementById('buttonZero').addEventListener('click', () => {

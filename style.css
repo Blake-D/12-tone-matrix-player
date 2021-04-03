@@ -17,7 +17,7 @@ body {
                             "LC10   Te0     Te1     Te2     Te3     Te4     Te5     Te6     Te7     Te8     Te9     Te10    Te11    RC10"
                             "LC11   El0     El1     El2     El3     El4     El5     El6     El7     El8     El9     El10    El11    RC11"
                             "B3     BR0     BR1     BR2     BR3     BR4     BR5     BR6     BR7     BR8     BR9     BR10    BR11    B4"
-                            "B3     OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      B4"
+                            "B3     OB      OB      OB      OB      OB      OB      PB      PB      PB      PB      PB      PB      B4"
 }
 
 .lcButton{
@@ -39,6 +39,10 @@ body {
 
 .box{
     border: solid black;
+}
+
+#playbackBar{
+    grid-area: PB;
 }
 
 #ordering-bar{
