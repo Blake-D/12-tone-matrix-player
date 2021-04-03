@@ -1,18 +1,7 @@
 let inputCount = 0
 let matrixFilled = false
 
-let zeroClicked = false
-let oneClicked = false
-let twoClicked = false
-let threeClicked = false
-let fourClicked = false
-let fiveClicked = false
-let sixClicked = false
-let sevenClicked = false
-let eightClicked = false
-let nineClicked = false
-let tenClicked = false
-let elevenClicked = false
+let clicked = [false, false, false, false, false, false, false, false, false, false, false, false]
 
 let primeRow = [null, null, null, null, null, null, null, null, null, null, null, null]
 
@@ -57,11 +46,11 @@ function fillMatrix(){
 }
 
 document.getElementById('buttonZero').addEventListener('click', () => {
-    if(inputCount < 12 && zeroClicked === false){
+    if(inputCount < 12 && clicked[0] === false){
         let i = inputCount
         primeRow[i] = 0
         inputCount++
-        zeroClicked = true
+        clicked[0] = true
         buttonZero.innerText = ""
         if(inputCount === 12){
             fillMatrix()
@@ -70,11 +59,11 @@ document.getElementById('buttonZero').addEventListener('click', () => {
 })
 
 document.getElementById('buttonOne').addEventListener('click', () => {
-    if(inputCount < 12 && oneClicked === false){
+    if(inputCount < 12 && clicked[1] === false){
         let i = inputCount
         primeRow[i] = 1
         inputCount++
-        oneClicked = true
+        clicked[1] = true
         buttonOne.innerText = ""
         if(inputCount === 12){
             fillMatrix()
@@ -83,11 +72,11 @@ document.getElementById('buttonOne').addEventListener('click', () => {
 })
 
 document.getElementById('buttonTwo').addEventListener('click', () => {
-    if(inputCount < 12 && twoClicked === false){
+    if(inputCount < 12 && clicked[2] === false){
         let i = inputCount
         primeRow[i] = 2
         inputCount++
-        twoClicked = true
+        clicked[2] = true
         buttonTwo.innerText = ""
         if(inputCount === 12){
             fillMatrix()
@@ -96,11 +85,11 @@ document.getElementById('buttonTwo').addEventListener('click', () => {
 })
 
 document.getElementById('buttonThree').addEventListener('click', () => {
-    if(inputCount < 12 && threeClicked === false){
+    if(inputCount < 12 && clicked[3] === false){
         let i = inputCount
         primeRow[i] = 3
         inputCount++
-        threeClicked = true
+        clicked[3] = true
         buttonThree.innerText = ""
         if(inputCount === 12){
             fillMatrix()
@@ -109,11 +98,11 @@ document.getElementById('buttonThree').addEventListener('click', () => {
 })
 
 document.getElementById('buttonFour').addEventListener('click', () => {
-    if(inputCount < 12 && fourClicked === false){
+    if(inputCount < 12 && clicked[4] === false){
         let i = inputCount
         primeRow[i] = 4
         inputCount++
-        fourClicked = true
+        clicked[4] = true
         buttonFour.innerText = ""
         if(inputCount === 12){
             fillMatrix()
@@ -122,11 +111,11 @@ document.getElementById('buttonFour').addEventListener('click', () => {
 })
 
 document.getElementById('buttonFive').addEventListener('click', () => {
-    if(inputCount < 12 && fiveClicked === false){
+    if(inputCount < 12 && clicked[5] === false){
         let i = inputCount
         primeRow[i] = 5
         inputCount++
-        fiveClicked = true
+        clicked[5] = true
         buttonFive.innerText = ""
         if(inputCount === 12){
             fillMatrix()
@@ -135,11 +124,11 @@ document.getElementById('buttonFive').addEventListener('click', () => {
 })
 
 document.getElementById('buttonSix').addEventListener('click', () => {
-    if(inputCount < 12 && sixClicked === false){
+    if(inputCount < 12 && clicked[6] === false){
         let i = inputCount
         primeRow[i] = 6
         inputCount++
-        sixClicked = true
+        clicked[6] = true
         buttonSix.innerText = ""
         if(inputCount === 12){
             fillMatrix()
@@ -148,11 +137,11 @@ document.getElementById('buttonSix').addEventListener('click', () => {
 })
 
 document.getElementById('buttonSeven').addEventListener('click', () => {
-    if(inputCount < 12 && sevenClicked === false){
+    if(inputCount < 12 && clicked[7] === false){
         let i = inputCount
         primeRow[i] = 7
         inputCount++
-        sevenClicked = true
+        clicked[7] = true
         buttonSeven.innerText = ""
         if(inputCount === 12){
             fillMatrix()
@@ -161,11 +150,11 @@ document.getElementById('buttonSeven').addEventListener('click', () => {
 })
 
 document.getElementById('buttonEight').addEventListener('click', () => {
-    if(inputCount < 12 && eightClicked === false){
+    if(inputCount < 12 && clicked[8] === false){
         let i = inputCount
         primeRow[i] = 8
         inputCount++
-        eightClicked = true
+        clicked[8] = true
         buttonEight.innerText = ""
         if(inputCount === 12){
             fillMatrix()
@@ -174,11 +163,11 @@ document.getElementById('buttonEight').addEventListener('click', () => {
 })
 
 document.getElementById('buttonNine').addEventListener('click', () => {
-    if(inputCount < 12 && nineClicked === false){
+    if(inputCount < 12 && clicked[9] === false){
         let i = inputCount
         primeRow[i] = 9
         inputCount++
-        nineClicked = true
+        clicked[9] = true
         buttonNine.innerText = ""
         if(inputCount === 12){
             fillMatrix()
@@ -187,11 +176,11 @@ document.getElementById('buttonNine').addEventListener('click', () => {
 })
 
 document.getElementById('buttonTen').addEventListener('click', () => {
-    if(inputCount < 12 && tenClicked === false){
+    if(inputCount < 12 && clicked[10] === false){
         let i = inputCount
         primeRow[i] = 10
         inputCount++
-        tenClicked = true
+        clicked[10] = true
         buttonTen.innerText = ""
         if(inputCount === 12){
             fillMatrix()
@@ -200,11 +189,11 @@ document.getElementById('buttonTen').addEventListener('click', () => {
 })
 
 document.getElementById('buttonEleven').addEventListener('click', () => {
-    if(inputCount < 12 && elevenClicked === false){
+    if(inputCount < 12 && clicked[11] === false){
         let i = inputCount
         primeRow[i] = 11
         inputCount++
-        elevenClicked = true
+        clicked[11] = true
         buttonEleven.innerText = ""
         if(inputCount === 12){
             fillMatrix()
