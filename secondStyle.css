@@ -1,0 +1,12 @@
+#main{
+    height: 500px;
+    width: 500px;
+    margin: 10vmin 20vmin 20vmin 20vmin;
+    border: solid black;
+    border-width: thin;
+}
+
+.row{
+    height: 34.7px;
+    border-bottom: 1px solid black;
+}
