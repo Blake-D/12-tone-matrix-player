@@ -6,7 +6,16 @@
     border-width: thin;
 }
 
-.row{
+#top-row{
     height: 18.7px;
     border-bottom: 1px solid black;
+}
+
+#middle-row{
+    height: 428.6px;
+    border-bottom: 1px solid black;
+}
+
+#bottom-row{
+    height: 18.7px;
 }
