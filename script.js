@@ -455,22 +455,3 @@ document.getElementById('retroInvPlayback').addEventListener('click', () => {
         sleep(3600).then(() => {playing = false})
     }
 })
-
-// document.getElementById('retroInvPlayback').addEventListener('click', () => {
-//     if(playing === false){
-//         playing = true
-//         invPlaybackOrder[11].play()
-//         sleep(300).then(() => {invPlaybackOrder[10].play()})
-//         sleep(600).then(() => {invPlaybackOrder[9].play()})
-//         sleep(900).then(() => {invPlaybackOrder[8].play()})
-//         sleep(1200).then(() => {invPlaybackOrder[7].play()})
-//         sleep(1500).then(() => {invPlaybackOrder[6].play()})
-//         sleep(1800).then(() => {invPlaybackOrder[5].play()})
-//         sleep(2100).then(() => {invPlaybackOrder[4].play()})
-//         sleep(2400).then(() => {invPlaybackOrder[3].play()})
-//         sleep(2700).then(() => {invPlaybackOrder[2].play()})
-//         sleep(3000).then(() => {invPlaybackOrder[1].play()})
-//         sleep(3300).then(() => {invPlaybackOrder[0].play()})
-//         sleep(3600).then(() => {playing = false})
-//     }
-// })
