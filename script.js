@@ -201,11 +201,81 @@ document.getElementById('buttonEleven').addEventListener('click', () => {
     }
 })
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms))
+}
+
 function play0(){
     const audio = new Audio("audio/0.mp3")
     audio.play()
 }
 
+function play1(){
+    const audio = new Audio("audio/1.mp3")
+    audio.play()
+}
+
+function play2(){
+    const audio = new Audio("audio/2.mp3")
+    audio.play()
+}
+
+function play3(){
+    const audio = new Audio("audio/3.mp3")
+    audio.play()
+}
+
+function play4(){
+    const audio = new Audio("audio/4.mp3")
+    audio.play()
+}
+
+function play5(){
+    const audio = new Audio("audio/5.mp3")
+    audio.play()
+}
+
+function play6(){
+    const audio = new Audio("audio/6.mp3")
+    audio.play()
+}
+
+function play7(){
+    const audio = new Audio("audio/7.mp3")
+    audio.play()
+}
+
+function play8(){
+    const audio = new Audio("audio/8.mp3")
+    audio.play()
+}
+
+function play9(){
+    const audio = new Audio("audio/9.mp3")
+    audio.play()
+}
+
+function play10(){
+    const audio = new Audio("audio/10.mp3")
+    audio.play()
+}
+
+function play11(){
+    const audio = new Audio("audio/11.mp3")
+    audio.play()
+}
+
 document.getElementById('primePlayback').addEventListener('click', () => {
     play0()
+    sleep(300).then(() => {play1()})
+    sleep(600).then(() => {play2()})
+    sleep(900).then(() => {play3()})
+    sleep(1200).then(() => {play4()})
+    sleep(1500).then(() => {play5()})
+    sleep(1800).then(() => {play6()})
+    sleep(2100).then(() => {play7()})
+    sleep(2400).then(() => {play8()})
+    sleep(2700).then(() => {play9()})
+    sleep(3000).then(() => {play10()})
+    sleep(3300).then(() => {play11()})
 })
