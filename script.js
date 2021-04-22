@@ -46,11 +46,23 @@ const pitchOptions = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "1
 
 let playbackOrder = []
 
+let invPlaybackOrder = []
+
 function getPlaybackOrder(){
     for(let i = 0; i < 12; i++){
         for(let j = 0; j < 12; j++){
             if(divs.rows[0][i].innerText === pitchOptions[j]){
                 playbackOrder[i] = audioArray[j]
+            }
+        }
+    }
+}
+
+function getInvPlaybackOrder(){
+    for(let i = 0; i < 12; i++){
+        for(let j = 0; j < 12; j++){
+            if(divs.rows[i][0].innerText === pitchOptions[j]){
+                invPlaybackOrder[i] = audioArray[j]
             }
         }
     }
@@ -102,6 +114,7 @@ document.getElementById('buttonZero').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
+            getInvPlaybackOrder()
         }
     }
 })
@@ -116,6 +129,7 @@ document.getElementById('buttonOne').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
+            getInvPlaybackOrder()
         }
     }
 })
@@ -130,6 +144,7 @@ document.getElementById('buttonTwo').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
+            getInvPlaybackOrder()
         }
     }
 })
@@ -144,6 +159,7 @@ document.getElementById('buttonThree').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
+            getInvPlaybackOrder()
         }
     }
 })
@@ -158,6 +174,7 @@ document.getElementById('buttonFour').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
+            getInvPlaybackOrder()
         }
     }
 })
@@ -172,6 +189,7 @@ document.getElementById('buttonFive').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
+            getInvPlaybackOrder()
         }
     }
 })
@@ -186,6 +204,7 @@ document.getElementById('buttonSix').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
+            getInvPlaybackOrder()
         }
     }
 })
@@ -200,6 +219,7 @@ document.getElementById('buttonSeven').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
+            getInvPlaybackOrder()
         }
     }
 })
@@ -214,6 +234,7 @@ document.getElementById('buttonEight').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
+            getInvPlaybackOrder()
         }
     }
 })
@@ -228,6 +249,7 @@ document.getElementById('buttonNine').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
+            getInvPlaybackOrder()
         }
     }
 })
@@ -242,6 +264,7 @@ document.getElementById('buttonTen').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
+            getInvPlaybackOrder()
         }
     }
 })
@@ -256,6 +279,7 @@ document.getElementById('buttonEleven').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
+            getInvPlaybackOrder()
         }
     }
 })
@@ -294,6 +318,44 @@ document.getElementById('retroPlayback').addEventListener('click', () => {
         sleep(2700).then(() => {playbackOrder[2].play()})
         sleep(3000).then(() => {playbackOrder[1].play()})
         sleep(3300).then(() => {playbackOrder[0].play()})
+        sleep(3600).then(() => {playing = false})
+    }
+})
+
+document.getElementById('invPlayback').addEventListener('click', () => {
+    if(playing === false){
+        playing = true
+        invPlaybackOrder[0].play()
+        sleep(300).then(() => {invPlaybackOrder[1].play()})
+        sleep(600).then(() => {invPlaybackOrder[2].play()})
+        sleep(900).then(() => {invPlaybackOrder[3].play()})
+        sleep(1200).then(() => {invPlaybackOrder[4].play()})
+        sleep(1500).then(() => {invPlaybackOrder[5].play()})
+        sleep(1800).then(() => {invPlaybackOrder[6].play()})
+        sleep(2100).then(() => {invPlaybackOrder[7].play()})
+        sleep(2400).then(() => {invPlaybackOrder[8].play()})
+        sleep(2700).then(() => {invPlaybackOrder[9].play()})
+        sleep(3000).then(() => {invPlaybackOrder[10].play()})
+        sleep(3300).then(() => {invPlaybackOrder[11].play()})
+        sleep(3600).then(() => {playing = false})
+    }
+})
+
+document.getElementById('retroInvPlayback').addEventListener('click', () => {
+    if(playing === false){
+        playing = true
+        invPlaybackOrder[11].play()
+        sleep(300).then(() => {invPlaybackOrder[10].play()})
+        sleep(600).then(() => {invPlaybackOrder[9].play()})
+        sleep(900).then(() => {invPlaybackOrder[8].play()})
+        sleep(1200).then(() => {invPlaybackOrder[7].play()})
+        sleep(1500).then(() => {invPlaybackOrder[6].play()})
+        sleep(1800).then(() => {invPlaybackOrder[5].play()})
+        sleep(2100).then(() => {invPlaybackOrder[4].play()})
+        sleep(2400).then(() => {invPlaybackOrder[3].play()})
+        sleep(2700).then(() => {invPlaybackOrder[2].play()})
+        sleep(3000).then(() => {invPlaybackOrder[1].play()})
+        sleep(3300).then(() => {invPlaybackOrder[0].play()})
         sleep(3600).then(() => {playing = false})
     }
 })
