@@ -200,3 +200,12 @@ document.getElementById('buttonEleven').addEventListener('click', () => {
         }
     }
 })
+
+function play0(){
+    const audio = new Audio("audio/0.mp3")
+    audio.play()
+}
+
+document.getElementById('primePlayback').addEventListener('click', () => {
+    play0()
+})
