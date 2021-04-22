@@ -10,7 +10,11 @@ const eight = new Audio("audio/8.mp3")
 const nine = new Audio("audio/9.mp3")
 const ten = new Audio("audio/10.mp3")
 const eleven = new Audio("audio/11.mp3")
+
+let playing = false
+
 let inputCount = 0
+
 let matrixFilled = false
 
 let clicked = [false, false, false, false, false, false, false, false, false, false, false, false]
@@ -98,7 +102,6 @@ document.getElementById('buttonZero').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
-            console.log(playbackOrder)
         }
     }
 })
@@ -113,7 +116,6 @@ document.getElementById('buttonOne').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
-            console.log(playbackOrder)
         }
     }
 })
@@ -128,7 +130,6 @@ document.getElementById('buttonTwo').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
-            console.log(playbackOrder)
         }
     }
 })
@@ -143,7 +144,6 @@ document.getElementById('buttonThree').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
-            console.log(playbackOrder)
         }
     }
 })
@@ -172,7 +172,6 @@ document.getElementById('buttonFive').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
-            console.log(playbackOrder)
         }
     }
 })
@@ -187,7 +186,6 @@ document.getElementById('buttonSix').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
-            console.log(playbackOrder)
         }
     }
 })
@@ -202,7 +200,6 @@ document.getElementById('buttonSeven').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
-            console.log(playbackOrder)
         }
     }
 })
@@ -217,7 +214,6 @@ document.getElementById('buttonEight').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
-            console.log(playbackOrder)
         }
     }
 })
@@ -232,7 +228,6 @@ document.getElementById('buttonNine').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
-            console.log(playbackOrder)
         }
     }
 })
@@ -247,7 +242,6 @@ document.getElementById('buttonTen').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
-            console.log(playbackOrder)
         }
     }
 })
@@ -262,22 +256,44 @@ document.getElementById('buttonEleven').addEventListener('click', () => {
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
-            console.log(playbackOrder)
         }
     }
 })
 
 document.getElementById('primePlayback').addEventListener('click', () => {
-    playbackOrder[0].play()
-    sleep(300).then(() => {playbackOrder[1].play()})
-    sleep(600).then(() => {playbackOrder[2].play()})
-    sleep(900).then(() => {playbackOrder[3].play()})
-    sleep(1200).then(() => {playbackOrder[4].play()})
-    sleep(1500).then(() => {playbackOrder[5].play()})
-    sleep(1800).then(() => {playbackOrder[6].play()})
-    sleep(2100).then(() => {playbackOrder[7].play()})
-    sleep(2400).then(() => {playbackOrder[8].play()})
-    sleep(2700).then(() => {playbackOrder[9].play()})
-    sleep(3000).then(() => {playbackOrder[10].play()})
-    sleep(3300).then(() => {playbackOrder[11].play()})
+    if(playing === false){
+        playing = true
+        playbackOrder[0].play()
+        sleep(300).then(() => {playbackOrder[1].play()})
+        sleep(600).then(() => {playbackOrder[2].play()})
+        sleep(900).then(() => {playbackOrder[3].play()})
+        sleep(1200).then(() => {playbackOrder[4].play()})
+        sleep(1500).then(() => {playbackOrder[5].play()})
+        sleep(1800).then(() => {playbackOrder[6].play()})
+        sleep(2100).then(() => {playbackOrder[7].play()})
+        sleep(2400).then(() => {playbackOrder[8].play()})
+        sleep(2700).then(() => {playbackOrder[9].play()})
+        sleep(3000).then(() => {playbackOrder[10].play()})
+        sleep(3300).then(() => {playbackOrder[11].play()})
+        sleep(3600).then(() => {playing = false})
+    }
+})
+
+document.getElementById('retroPlayback').addEventListener('click', () => {
+    if(playing === false){
+        playing = true
+        playbackOrder[11].play()
+        sleep(300).then(() => {playbackOrder[10].play()})
+        sleep(600).then(() => {playbackOrder[9].play()})
+        sleep(900).then(() => {playbackOrder[8].play()})
+        sleep(1200).then(() => {playbackOrder[7].play()})
+        sleep(1500).then(() => {playbackOrder[6].play()})
+        sleep(1800).then(() => {playbackOrder[5].play()})
+        sleep(2100).then(() => {playbackOrder[4].play()})
+        sleep(2400).then(() => {playbackOrder[3].play()})
+        sleep(2700).then(() => {playbackOrder[2].play()})
+        sleep(3000).then(() => {playbackOrder[1].play()})
+        sleep(3300).then(() => {playbackOrder[0].play()})
+        sleep(3600).then(() => {playing = false})
+    }
 })
