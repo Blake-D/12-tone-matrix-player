@@ -2,22 +2,22 @@ body {
     display: grid;
     min-height: 90vh;
     grid-template-rows: 60px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 1fr 1fr;
-    grid-template-columns: 60px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 60px;
-    grid-template-areas:    "B1     TR0     TR1     TR2     TR3     TR4     TR5     TR6     TR7     TR8     TR9     TR10    TR11    B2"
-                            "LC0    Z0      Z1      Z2      Z3      Z4      Z5      Z6      Z7      Z8      Z9      Z10     Z11     RC0"
-                            "LC1    O0      O1      O2      O3      O4      O5      O6      O7      O8      O9      O10     O11     RC1"
-                            "LC2    Tw0     Tw1     Tw2     Tw3     Tw4     Tw5     Tw6     Tw7     Tw8     Tw9     Tw10    Tw11    RC2"
-                            "LC3    Th0     Th1     Th2     Th3     Th4     Th5     Th6     Th7     Th8     Th9     Th10    Th11    RC3"
-                            "LC4    Fo0     Fo1     Fo2     Fo3     Fo4     Fo5     Fo6     Fo7     Fo8     Fo9     Fo10    Fo11    RC4"
-                            "LC5    Fi0     Fi1     Fi2     Fi3     Fi4     Fi5     Fi6     Fi7     Fi8     Fi9     Fi10    Fi11    RC5"
-                            "LC6    Si0     Si1     Si2     Si3     Si4     Si5     Si6     Si7     Si8     Si9     Si10    Si11    RC6"
-                            "LC7    Se0     Se1     Se2     Se3     Se4     Se5     Se6     Se7     Se8     Se9     Se10    Se11    RC7"
-                            "LC8    Ei0     Ei1     Ei2     Ei3     Ei4     Ei5     Ei6     Ei7     Ei8     Ei9     Ei10    Ei11    RC8"
-                            "LC9    N0      N1      N2      N3      N4      N5      N6      N7      N8      N9      N10     N11     RC9"
-                            "LC10   Te0     Te1     Te2     Te3     Te4     Te5     Te6     Te7     Te8     Te9     Te10    Te11    RC10"
-                            "LC11   El0     El1     El2     El3     El4     El5     El6     El7     El8     El9     El10    El11    RC11"
-                            "B3     BR0     BR1     BR2     BR3     BR4     BR5     BR6     BR7     BR8     BR9     BR10    BR11    B4"
-                            "B3     OB      OB      OB      OB      OB      OB      PB      PB      PB      PB      PB      PB      B4"
+    grid-template-columns: 60px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 60px 60px 60px;
+    grid-template-areas:    "B1     TR0     TR1     TR2     TR3     TR4     TR5     TR6     TR7     TR8     TR9     TR10    TR11    B2      B2      B2"
+                            "LC0    Z0      Z1      Z2      Z3      Z4      Z5      Z6      Z7      Z8      Z9      Z10     Z11     RC0     PB      PB"
+                            "LC1    O0      O1      O2      O3      O4      O5      O6      O7      O8      O9      O10     O11     RC1     PB      PB"
+                            "LC2    Tw0     Tw1     Tw2     Tw3     Tw4     Tw5     Tw6     Tw7     Tw8     Tw9     Tw10    Tw11    RC2     PB      PB"
+                            "LC3    Th0     Th1     Th2     Th3     Th4     Th5     Th6     Th7     Th8     Th9     Th10    Th11    RC3     PB      PB"
+                            "LC4    Fo0     Fo1     Fo2     Fo3     Fo4     Fo5     Fo6     Fo7     Fo8     Fo9     Fo10    Fo11    RC4     PB      PB"
+                            "LC5    Fi0     Fi1     Fi2     Fi3     Fi4     Fi5     Fi6     Fi7     Fi8     Fi9     Fi10    Fi11    RC5     PB      PB"
+                            "LC6    Si0     Si1     Si2     Si3     Si4     Si5     Si6     Si7     Si8     Si9     Si10    Si11    RC6     PB      PB"
+                            "LC7    Se0     Se1     Se2     Se3     Se4     Se5     Se6     Se7     Se8     Se9     Se10    Se11    RC7     PB      PB"
+                            "LC8    Ei0     Ei1     Ei2     Ei3     Ei4     Ei5     Ei6     Ei7     Ei8     Ei9     Ei10    Ei11    RC8     PB      PB"
+                            "LC9    N0      N1      N2      N3      N4      N5      N6      N7      N8      N9      N10     N11     RC9     PB      PB"
+                            "LC10   Te0     Te1     Te2     Te3     Te4     Te5     Te6     Te7     Te8     Te9     Te10    Te11    RC10    PB      PB"
+                            "LC11   El0     El1     El2     El3     El4     El5     El6     El7     El8     El9     El10    El11    RC11    PB      PB"
+                            "B3     BR0     BR1     BR2     BR3     BR4     BR5     BR6     BR7     BR8     BR9     BR10    BR11    B4      B4      B4"
+                            "B3     OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      B4      B4      B4"
 }
 
 .lcButton{

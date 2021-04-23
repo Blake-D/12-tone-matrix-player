@@ -284,7 +284,7 @@ document.getElementById('buttonEleven').addEventListener('click', () => {
     }
 })
 
-document.getElementById('primePlayback').addEventListener('click', () => {
+document.getElementById('lcButton0').addEventListener('click', () => {
     if(playing === false){
         playing = true
         zero0.style.backgroundColor = "yellow"
@@ -327,7 +327,7 @@ document.getElementById('primePlayback').addEventListener('click', () => {
     }
 })
 
-document.getElementById('retroPlayback').addEventListener('click', () => {
+document.getElementById('rcButton0').addEventListener('click', () => {
     if(playing === false){
         playing = true
         zero11.style.backgroundColor = "yellow"
@@ -370,7 +370,7 @@ document.getElementById('retroPlayback').addEventListener('click', () => {
     }
 })
 
-document.getElementById('invPlayback').addEventListener('click', () => {
+document.getElementById('trButton0').addEventListener('click', () => {
     if(playing === false){
         playing = true
         zero0.style.backgroundColor = "yellow"
@@ -413,7 +413,7 @@ document.getElementById('invPlayback').addEventListener('click', () => {
     }
 })
 
-document.getElementById('retroInvPlayback').addEventListener('click', () => {
+document.getElementById('brButton0').addEventListener('click', () => {
     if(playing === false){
         playing = true
         eleven0.style.backgroundColor = "yellow"
