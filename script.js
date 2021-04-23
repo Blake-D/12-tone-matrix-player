@@ -284,7 +284,7 @@ document.getElementById('buttonEleven').addEventListener('click', () => {
     }
 })
 
-document.getElementById('lcButton0').addEventListener('click', () => {
+document.getElementById('primePlayback').addEventListener('click', () => {
     if(playing === false){
         playing = true
         playbackOrder[0].play()
@@ -303,7 +303,7 @@ document.getElementById('lcButton0').addEventListener('click', () => {
     }
 })
 
-document.getElementById('rcButton0').addEventListener('click', () => {
+document.getElementById('retroPlayback').addEventListener('click', () => {
     if(playing === false){
         playing = true
         playbackOrder[11].play()
@@ -322,7 +322,7 @@ document.getElementById('rcButton0').addEventListener('click', () => {
     }
 })
 
-document.getElementById('trButton0').addEventListener('click', () => {
+document.getElementById('invPlayback').addEventListener('click', () => {
     if(playing === false){
         playing = true
         invPlaybackOrder[0].play()
@@ -341,7 +341,7 @@ document.getElementById('trButton0').addEventListener('click', () => {
     }
 })
 
-document.getElementById('brButton0').addEventListener('click', () => {
+document.getElementById('retroInvPlayback').addEventListener('click', () => {
     if(playing === false){
         playing = true
         invPlaybackOrder[11].play()
