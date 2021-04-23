@@ -110,7 +110,7 @@ document.getElementById('buttonZero').addEventListener('click', () => {
         primeRow[i] = 0
         inputCount++
         clicked[0] = true
-        buttonZero.innerText = ""
+        buttonZero.style.backgroundColor = "darkgray"
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
@@ -125,7 +125,7 @@ document.getElementById('buttonOne').addEventListener('click', () => {
         primeRow[i] = 1
         inputCount++
         clicked[1] = true
-        buttonOne.innerText = ""
+        buttonOne.style.backgroundColor = "darkgray"
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
@@ -140,7 +140,7 @@ document.getElementById('buttonTwo').addEventListener('click', () => {
         primeRow[i] = 2
         inputCount++
         clicked[2] = true
-        buttonTwo.innerText = ""
+        buttonTwo.style.backgroundColor = "darkgray"
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
@@ -155,7 +155,7 @@ document.getElementById('buttonThree').addEventListener('click', () => {
         primeRow[i] = 3
         inputCount++
         clicked[3] = true
-        buttonThree.innerText = ""
+        buttonThree.style.backgroundColor = "darkgray"
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
@@ -170,7 +170,7 @@ document.getElementById('buttonFour').addEventListener('click', () => {
         primeRow[i] = 4
         inputCount++
         clicked[4] = true
-        buttonFour.innerText = ""
+        buttonFour.style.backgroundColor = "darkgray"
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
@@ -185,7 +185,7 @@ document.getElementById('buttonFive').addEventListener('click', () => {
         primeRow[i] = 5
         inputCount++
         clicked[5] = true
-        buttonFive.innerText = ""
+        buttonFive.style.backgroundColor = "darkgray"
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
@@ -200,7 +200,7 @@ document.getElementById('buttonSix').addEventListener('click', () => {
         primeRow[i] = 6
         inputCount++
         clicked[6] = true
-        buttonSix.innerText = ""
+        buttonSix.style.backgroundColor = "darkgray"
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
@@ -215,7 +215,7 @@ document.getElementById('buttonSeven').addEventListener('click', () => {
         primeRow[i] = 7
         inputCount++
         clicked[7] = true
-        buttonSeven.innerText = ""
+        buttonSeven.style.backgroundColor = "darkgray"
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
@@ -230,7 +230,7 @@ document.getElementById('buttonEight').addEventListener('click', () => {
         primeRow[i] = 8
         inputCount++
         clicked[8] = true
-        buttonEight.innerText = ""
+        buttonEight.style.backgroundColor = "darkgray"
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
@@ -245,7 +245,7 @@ document.getElementById('buttonNine').addEventListener('click', () => {
         primeRow[i] = 9
         inputCount++
         clicked[9] = true
-        buttonNine.innerText = ""
+        buttonNine.style.backgroundColor = "darkgray"
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
@@ -260,7 +260,7 @@ document.getElementById('buttonTen').addEventListener('click', () => {
         primeRow[i] = 10
         inputCount++
         clicked[10] = true
-        buttonTen.innerText = ""
+        buttonTen.style.backgroundColor = "darkgray"
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
@@ -275,7 +275,7 @@ document.getElementById('buttonEleven').addEventListener('click', () => {
         primeRow[i] = 11
         inputCount++
         clicked[11] = true
-        buttonEleven.innerText = ""
+        buttonEleven.style.backgroundColor = "darkgray"
         if(inputCount === 12){
             fillMatrix()
             getPlaybackOrder()
