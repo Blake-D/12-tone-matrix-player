@@ -43,8 +43,14 @@ body {
     margin-top: 2vh;
 } */
 
-.topRow, .botRow{
+.topRow{
     text-align: center;
+    margin: 10px 10px 10px 0px;
+}
+
+.botRow{
+    text-align: center;
+    margin: 10px 10px 10px 0px;
 }
 
 .box{
