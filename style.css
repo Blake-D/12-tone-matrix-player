@@ -39,11 +39,9 @@ body {
 
 .box{
     border: 1px solid black;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
 }
-
-/* #playbackBar{
-    grid-area: PB;
-} */
 
 #ordering-bar{
     grid-area: OB;

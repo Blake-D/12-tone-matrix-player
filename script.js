@@ -88,10 +88,10 @@ function fillMatrix(){
         if(temp < 0){
             temp = convertToPos(temp)
         }
-        divs.lcButtons[i].innerText = "P" + temp
-        divs.rcButtons[i].innerText = "R" + temp
-        divs.trButtons[i].innerText = "I" + (12 - temp)
-        divs.brButtons[i].innerText = "RI" + (12 - temp)
+        divs.lcButtons[i].innerText = "p" + temp
+        divs.rcButtons[i].innerText = "r" + temp
+        divs.trButtons[i].innerText = "i" + (12 - temp)
+        divs.brButtons[i].innerText = "ri" + (12 - temp)
         for(let x = 0; x < 12; x++){
             temp2 = primeRow[x] + temp
             if(temp2 > 11){
