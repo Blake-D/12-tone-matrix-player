@@ -56,7 +56,7 @@ body {
     color: white;
 }
 
-.box{
+.box0, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11{
     border: 1px solid black;
     text-align: center;
     padding: 10px 10px 10px 10px;
@@ -969,3 +969,687 @@ body {
 #eleven11{
     grid-area: El11;
 }
+
+#zero0, #one0, #two0, #three0, #four0, #five0, #six0, #seven0, #eight0, #nine0, #ten0, #eleven0{
+    animation: fade ease 0.5s;
+    -webkit-animation: fade ease 0.5s;
+    -moz-animation: fade ease 0.5s;
+    -o-animation: fade ease 0.5s;
+    -ms-animation: fade ease 0.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  #zero1, #one1, #two1, #three1, #four1, #five1, #six1, #seven1, #eight1, #nine1, #ten1, #eleven1{
+    animation: fade ease 1s;
+    -webkit-animation: fade ease 1s;
+    -moz-animation: fade ease 1s;
+    -o-animation: fade ease 1s;
+    -ms-animation: fade ease 1s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  #zero2, #one2, #two2, #three2, #four2, #five2, #six2, #seven2, #eight2, #nine2, #ten2, #eleven2{
+    animation: fade ease 1.5s;
+    -webkit-animation: fade ease 1.5s;
+    -moz-animation: fade ease 1.5s;
+    -o-animation: fade ease 1.5s;
+    -ms-animation: fade ease 1.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  #zero3, #one3, #two3, #three3, #four3, #five3, #six3, #seven3, #eight3, #nine3, #ten3, #eleven3{
+    animation: fade ease 2s;
+    -webkit-animation: fade ease 2s;
+    -moz-animation: fade ease 2s;
+    -o-animation: fade ease 2s;
+    -ms-animation: fade ease 2s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  #zero4, #one4, #two4, #three4, #four4, #five4, #six4, #seven4, #eight4, #nine4, #ten4, #eleven4{
+    animation: fade ease 2.5s;
+    -webkit-animation: fade ease 2.5s;
+    -moz-animation: fade ease 2.5s;
+    -o-animation: fade ease 2.5s;
+    -ms-animation: fade ease 2.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  #zero5, #one5, #two5, #three5, #four5, #five5, #six5, #seven5, #eight5, #nine5, #ten5, #eleven5{
+    animation: fade ease 3s;
+    -webkit-animation: fade ease 3s;
+    -moz-animation: fade ease 3s;
+    -o-animation: fade ease 3s;
+    -ms-animation: fade ease 3s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  #zero6, #one6, #two6, #three6, #four6, #five6, #six6, #seven6, #eight6, #nine6, #ten6, #eleven6{
+    animation: fade ease 3.5s;
+    -webkit-animation: fade ease 3.5s;
+    -moz-animation: fade ease 3.5s;
+    -o-animation: fade ease 3.5s;
+    -ms-animation: fade ease 3.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  #zero7, #one7, #two7, #three7, #four7, #five7, #six7, #seven7, #eight7, #nine7, #ten7, #eleven7{
+    animation: fade ease 4s;
+    -webkit-animation: fade ease 4s;
+    -moz-animation: fade ease 4s;
+    -o-animation: fade ease 4s;
+    -ms-animation: fade ease 4s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  #zero8, #one8, #two8, #three8, #four8, #five8, #six8, #seven8, #eight8, #nine8, #ten8, #eleven8{
+    animation: fade ease 4.5s;
+    -webkit-animation: fade ease 4.5s;
+    -moz-animation: fade ease 4.5s;
+    -o-animation: fade ease 4.5s;
+    -ms-animation: fade ease 4.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  #zero9, #one9, #two9, #three9, #four9, #five9, #six9, #seven9, #eight9, #nine9, #ten9, #eleven9{
+    animation: fade ease 5s;
+    -webkit-animation: fade ease 5s;
+    -moz-animation: fade ease 5s;
+    -o-animation: fade ease 5s;
+    -ms-animation: fade ease 5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  #zero10, #one10, #two10, #three10, #four10, #five10, #six10, #seven10, #eight10, #nine10, #ten10, #eleven10{
+    animation: fade ease 5.5s;
+    -webkit-animation: fade ease 5.5s;
+    -moz-animation: fade ease 5.5s;
+    -o-animation: fade ease 5.5s;
+    -ms-animation: fade ease 5.5s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  #zero11, #one11, #two11, #three11, #four11, #five11, #six11, #seven11, #eight11, #nine11, #ten11, #eleven11{
+    animation: fade ease 6s;
+    -webkit-animation: fade ease 6s;
+    -moz-animation: fade ease 6s;
+    -o-animation: fade ease 6s;
+    -ms-animation: fade ease 6s;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fade {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
