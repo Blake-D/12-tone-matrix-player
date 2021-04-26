@@ -21,6 +21,8 @@ let clicked = [false, false, false, false, false, false, false, false, false, fa
 
 let primeRow = [null, null, null, null, null, null, null, null, null, null, null, null]
 
+let previewRow = [preview0, preview1, preview2, preview3, preview4, preview5, preview6, preview7, preview8, preview9, preview10, preview11]
+
 const divs = {
     lcButtons: [lcButton0, lcButton1, lcButton2, lcButton3, lcButton4, lcButton5, lcButton6, lcButton7, lcButton8, lcButton9, lcButton10, lcButton11],
     rcButtons: [rcButton0, rcButton1, rcButton2, rcButton3, rcButton4, rcButton5, rcButton6, rcButton7, rcButton8, rcButton9, rcButton10, rcButton11],
@@ -116,6 +118,7 @@ document.getElementById('buttonZero').addEventListener('click', () => {
     if (inputCount < 12 && clicked[0] === false) {
         let i = inputCount
         primeRow[i] = 0
+        previewRow[i].innerText = "0"
         inputCount++
         clicked[0] = true
         buttonZero.style.backgroundColor = "darkgray"
@@ -132,6 +135,7 @@ document.getElementById('buttonOne').addEventListener('click', () => {
     if (inputCount < 12 && clicked[1] === false) {
         let i = inputCount
         primeRow[i] = 1
+        previewRow[i].innerText = "1"
         inputCount++
         clicked[1] = true
         buttonOne.style.backgroundColor = "darkgray"
@@ -148,6 +152,7 @@ document.getElementById('buttonTwo').addEventListener('click', () => {
     if (inputCount < 12 && clicked[2] === false) {
         let i = inputCount
         primeRow[i] = 2
+        previewRow[i].innerText = "2"
         inputCount++
         clicked[2] = true
         buttonTwo.style.backgroundColor = "darkgray"
@@ -164,6 +169,7 @@ document.getElementById('buttonThree').addEventListener('click', () => {
     if (inputCount < 12 && clicked[3] === false) {
         let i = inputCount
         primeRow[i] = 3
+        previewRow[i].innerText = "3"
         inputCount++
         clicked[3] = true
         buttonThree.style.backgroundColor = "darkgray"
@@ -180,6 +186,7 @@ document.getElementById('buttonFour').addEventListener('click', () => {
     if (inputCount < 12 && clicked[4] === false) {
         let i = inputCount
         primeRow[i] = 4
+        previewRow[i].innerText = "4"
         inputCount++
         clicked[4] = true
         buttonFour.style.backgroundColor = "darkgray"
@@ -196,6 +203,7 @@ document.getElementById('buttonFive').addEventListener('click', () => {
     if (inputCount < 12 && clicked[5] === false) {
         let i = inputCount
         primeRow[i] = 5
+        previewRow[i].innerText = "5"
         inputCount++
         clicked[5] = true
         buttonFive.style.backgroundColor = "darkgray"
@@ -212,6 +220,7 @@ document.getElementById('buttonSix').addEventListener('click', () => {
     if (inputCount < 12 && clicked[6] === false) {
         let i = inputCount
         primeRow[i] = 6
+        previewRow[i].innerText = "6"
         inputCount++
         clicked[6] = true
         buttonSix.style.backgroundColor = "darkgray"
@@ -228,6 +237,7 @@ document.getElementById('buttonSeven').addEventListener('click', () => {
     if (inputCount < 12 && clicked[7] === false) {
         let i = inputCount
         primeRow[i] = 7
+        previewRow[i].innerText = "7"
         inputCount++
         clicked[7] = true
         buttonSeven.style.backgroundColor = "darkgray"
@@ -244,6 +254,7 @@ document.getElementById('buttonEight').addEventListener('click', () => {
     if (inputCount < 12 && clicked[8] === false) {
         let i = inputCount
         primeRow[i] = 8
+        previewRow[i].innerText = "8"
         inputCount++
         clicked[8] = true
         buttonEight.style.backgroundColor = "darkgray"
@@ -260,6 +271,7 @@ document.getElementById('buttonNine').addEventListener('click', () => {
     if (inputCount < 12 && clicked[9] === false) {
         let i = inputCount
         primeRow[i] = 9
+        previewRow[i].innerText = "9"
         inputCount++
         clicked[9] = true
         buttonNine.style.backgroundColor = "darkgray"
@@ -276,6 +288,7 @@ document.getElementById('buttonTen').addEventListener('click', () => {
     if (inputCount < 12 && clicked[10] === false) {
         let i = inputCount
         primeRow[i] = 10
+        previewRow[i].innerText = "10"
         inputCount++
         clicked[10] = true
         buttonTen.style.backgroundColor = "darkgray"
@@ -292,6 +305,7 @@ document.getElementById('buttonEleven').addEventListener('click', () => {
     if (inputCount < 12 && clicked[11] === false) {
         let i = inputCount
         primeRow[i] = 11
+        previewRow[i].innerText = "11"
         inputCount++
         clicked[11] = true
         buttonEleven.style.backgroundColor = "darkgray"

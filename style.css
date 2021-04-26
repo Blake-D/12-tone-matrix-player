@@ -65,14 +65,15 @@ body {
 
 .preview-box{
   border: 1px solid black;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
 }
 
 #preview-bar{
   grid-area: Pr;
   display: flex;
-  margin-left: 86px;
+  margin-left: 148px;
 }
 
 #ordering-bar{
