@@ -1,7 +1,7 @@
 body {
     display: grid;
     min-height: 90vh;
-    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+    grid-template-rows: 40px 50px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
     grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 120px;
     grid-template-areas:    "OB     OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      PB"
                             "Pr     Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      PB"
@@ -65,10 +65,14 @@ body {
 
 .preview-box{
   border: 1px solid black;
+  width: 30px;
+  height: 30px;
 }
 
 #preview-bar{
   grid-area: Pr;
+  display: flex;
+  margin-left: 86px;
 }
 
 #ordering-bar{
