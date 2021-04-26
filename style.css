@@ -1,9 +1,10 @@
 body {
     display: grid;
     min-height: 90vh;
-    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 120px;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
     grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 120px;
-    grid-template-areas:    "B1     TR0     TR1     TR2     TR3     TR4     TR5     TR6     TR7     TR8     TR9     TR10    TR11    B2      PB"
+    grid-template-areas:    "OB     OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      PB"
+                            "B1     TR0     TR1     TR2     TR3     TR4     TR5     TR6     TR7     TR8     TR9     TR10    TR11    B2      PB"
                             "LC0    Z0      Z1      Z2      Z3      Z4      Z5      Z6      Z7      Z8      Z9      Z10     Z11     RC0     PB"
                             "LC1    O0      O1      O2      O3      O4      O5      O6      O7      O8      O9      O10     O11     RC1     PB"
                             "LC2    Tw0     Tw1     Tw2     Tw3     Tw4     Tw5     Tw6     Tw7     Tw8     Tw9     Tw10    Tw11    RC2     PB"
@@ -17,7 +18,6 @@ body {
                             "LC10   Te0     Te1     Te2     Te3     Te4     Te5     Te6     Te7     Te8     Te9     Te10    Te11    RC10    PB"
                             "LC11   El0     El1     El2     El3     El4     El5     El6     El7     El8     El9     El10    El11    RC11    PB"
                             "B3     BR0     BR1     BR2     BR3     BR4     BR5     BR6     BR7     BR8     BR9     BR10    BR11    B4      PB"
-                            "OB     OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      PB"
 }
 
 .leftColumn{
@@ -64,7 +64,7 @@ body {
 
 #ordering-bar{
     grid-area: OB;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     margin-left: 110px;
 }
 
