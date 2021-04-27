@@ -11,17 +11,87 @@ const nine = new Audio("audio/9.mp3")
 const ten = new Audio("audio/10.mp3")
 const eleven = new Audio("audio/11.mp3")
 
-let playing = false
+let btn0 = {
+    clicked: false,
+    button: buttonZero
+}
 
-let inputCount = 0
+let btn1 = {
+    clicked: false,
+    button: buttonOne
+}
+
+let btn2 = {
+    clicked: false,
+    button: buttonTwo
+}
+
+let btn3 = {
+    clicked: false,
+    button: buttonThree
+}
+
+let btn4 = {
+    clicked: false,
+    button: buttonFour
+}
+
+let btn5 = {
+    clicked: false,
+    button: buttonFive
+}
+
+let btn6 = {
+    clicked: false,
+    button: buttonSix
+}
+
+let btn7 = {
+    clicked: false,
+    button: buttonSeven
+}
+
+let btn8 = {
+    clicked: false,
+    button: buttonEight
+}
+
+let btn9 = {
+    clicked: false,
+    button: buttonNine
+}
+
+let btn10 = {
+    clicked: false,
+    button: buttonTen
+}
+
+let btn11 = {
+    clicked: false,
+    button: buttonEleven
+}
+
+let playing = false
 
 let matrixFilled = false
 
-let clicked = [false, false, false, false, false, false, false, false, false, false, false, false]
+let inputCount = 0
+
+let lastClicked = undefined
+
+let lastClickedOrder = []
+
+let playbackOrder = []
+
+let invPlaybackOrder = []
 
 let primeRow = [null, null, null, null, null, null, null, null, null, null, null, null]
 
 let previewRow = [preview0, preview1, preview2, preview3, preview4, preview5, preview6, preview7, preview8, preview9, preview10, preview11]
+
+const audioArray = [zero, one, two, three, four, five, six, seven, eight, nine, ten, eleven]
+
+const pitchOptions = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
 
 const divs = {
     lcButtons: [lcButton0, lcButton1, lcButton2, lcButton3, lcButton4, lcButton5, lcButton6, lcButton7, lcButton8, lcButton9, lcButton10, lcButton11],
@@ -41,14 +111,6 @@ const divs = {
     [ten0, ten1, ten2, ten3, ten4, ten5, ten6, ten7, ten8, ten9, ten10, ten11],
     [eleven0, eleven1, eleven2, eleven3, eleven4, eleven5, eleven6, eleven7, eleven8, eleven9, eleven10, eleven11]]
 }
-
-const audioArray = [zero, one, two, three, four, five, six, seven, eight, nine, ten, eleven]
-
-const pitchOptions = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
-
-let playbackOrder = []
-
-let invPlaybackOrder = []
 
 function cueAnims(){
     for(let i = 0; i < 12; i++){
@@ -115,12 +177,14 @@ function fillMatrix() {
 }
 
 document.getElementById('buttonZero').addEventListener('click', () => {
-    if (inputCount < 12 && clicked[0] === false) {
+    if (inputCount < 12 && btn0.clicked === false) {
         let i = inputCount
         primeRow[i] = 0
+        lastClicked = btn0
+        lastClickedOrder[i] = btn0
         previewRow[i].innerText = "0"
         inputCount++
-        clicked[0] = true
+        btn0.clicked = true
         buttonZero.style.backgroundColor = "darkgray"
         if (inputCount === 12) {
             fillMatrix()
@@ -132,12 +196,14 @@ document.getElementById('buttonZero').addEventListener('click', () => {
 })
 
 document.getElementById('buttonOne').addEventListener('click', () => {
-    if (inputCount < 12 && clicked[1] === false) {
+    if (inputCount < 12 && btn1.clicked === false) {
         let i = inputCount
         primeRow[i] = 1
+        lastClicked = btn1
+        lastClickedOrder[i] = btn1
         previewRow[i].innerText = "1"
         inputCount++
-        clicked[1] = true
+        btn1.clicked = true
         buttonOne.style.backgroundColor = "darkgray"
         if (inputCount === 12) {
             fillMatrix()
@@ -149,12 +215,14 @@ document.getElementById('buttonOne').addEventListener('click', () => {
 })
 
 document.getElementById('buttonTwo').addEventListener('click', () => {
-    if (inputCount < 12 && clicked[2] === false) {
+    if (inputCount < 12 && btn2.clicked === false) {
         let i = inputCount
         primeRow[i] = 2
+        lastClicked = btn2
+        lastClickedOrder[i] = btn2
         previewRow[i].innerText = "2"
         inputCount++
-        clicked[2] = true
+        btn2.clicked = true
         buttonTwo.style.backgroundColor = "darkgray"
         if (inputCount === 12) {
             fillMatrix()
@@ -166,12 +234,14 @@ document.getElementById('buttonTwo').addEventListener('click', () => {
 })
 
 document.getElementById('buttonThree').addEventListener('click', () => {
-    if (inputCount < 12 && clicked[3] === false) {
+    if (inputCount < 12 && btn3.clicked === false) {
         let i = inputCount
         primeRow[i] = 3
+        lastClicked = btn3
+        lastClickedOrder[i] = btn3
         previewRow[i].innerText = "3"
         inputCount++
-        clicked[3] = true
+        btn3.clicked = true
         buttonThree.style.backgroundColor = "darkgray"
         if (inputCount === 12) {
             fillMatrix()
@@ -183,12 +253,14 @@ document.getElementById('buttonThree').addEventListener('click', () => {
 })
 
 document.getElementById('buttonFour').addEventListener('click', () => {
-    if (inputCount < 12 && clicked[4] === false) {
+    if (inputCount < 12 && btn4.clicked === false) {
         let i = inputCount
         primeRow[i] = 4
+        lastClicked = btn4
+        lastClickedOrder[i] = btn4
         previewRow[i].innerText = "4"
         inputCount++
-        clicked[4] = true
+        btn4.clicked = true
         buttonFour.style.backgroundColor = "darkgray"
         if (inputCount === 12) {
             fillMatrix()
@@ -200,12 +272,14 @@ document.getElementById('buttonFour').addEventListener('click', () => {
 })
 
 document.getElementById('buttonFive').addEventListener('click', () => {
-    if (inputCount < 12 && clicked[5] === false) {
+    if (inputCount < 12 && btn5.clicked === false) {
         let i = inputCount
         primeRow[i] = 5
+        lastClicked = btn5
+        lastClickedOrder[i] = btn5
         previewRow[i].innerText = "5"
         inputCount++
-        clicked[5] = true
+        btn5.clicked = true
         buttonFive.style.backgroundColor = "darkgray"
         if (inputCount === 12) {
             fillMatrix()
@@ -217,12 +291,14 @@ document.getElementById('buttonFive').addEventListener('click', () => {
 })
 
 document.getElementById('buttonSix').addEventListener('click', () => {
-    if (inputCount < 12 && clicked[6] === false) {
+    if (inputCount < 12 && btn6.clicked === false) {
         let i = inputCount
         primeRow[i] = 6
+        lastClicked = btn6
+        lastClickedOrder[i] = btn6
         previewRow[i].innerText = "6"
         inputCount++
-        clicked[6] = true
+        btn6.clicked = true
         buttonSix.style.backgroundColor = "darkgray"
         if (inputCount === 12) {
             fillMatrix()
@@ -234,12 +310,14 @@ document.getElementById('buttonSix').addEventListener('click', () => {
 })
 
 document.getElementById('buttonSeven').addEventListener('click', () => {
-    if (inputCount < 12 && clicked[7] === false) {
+    if (inputCount < 12 && btn7.clicked === false) {
         let i = inputCount
         primeRow[i] = 7
+        lastClicked = btn7
+        lastClickedOrder[i] = btn7
         previewRow[i].innerText = "7"
         inputCount++
-        clicked[7] = true
+        btn7.clicked = true
         buttonSeven.style.backgroundColor = "darkgray"
         if (inputCount === 12) {
             fillMatrix()
@@ -251,12 +329,14 @@ document.getElementById('buttonSeven').addEventListener('click', () => {
 })
 
 document.getElementById('buttonEight').addEventListener('click', () => {
-    if (inputCount < 12 && clicked[8] === false) {
+    if (inputCount < 12 && btn8.clicked === false) {
         let i = inputCount
         primeRow[i] = 8
+        lastClicked = btn8
+        lastClickedOrder[i] = btn8
         previewRow[i].innerText = "8"
         inputCount++
-        clicked[8] = true
+        btn8.clicked = true
         buttonEight.style.backgroundColor = "darkgray"
         if (inputCount === 12) {
             fillMatrix()
@@ -268,12 +348,14 @@ document.getElementById('buttonEight').addEventListener('click', () => {
 })
 
 document.getElementById('buttonNine').addEventListener('click', () => {
-    if (inputCount < 12 && clicked[9] === false) {
+    if (inputCount < 12 && btn9.clicked === false) {
         let i = inputCount
         primeRow[i] = 9
+        lastClicked = btn9
+        lastClickedOrder[i] = btn9
         previewRow[i].innerText = "9"
         inputCount++
-        clicked[9] = true
+        btn9.clicked = true
         buttonNine.style.backgroundColor = "darkgray"
         if (inputCount === 12) {
             fillMatrix()
@@ -285,12 +367,14 @@ document.getElementById('buttonNine').addEventListener('click', () => {
 })
 
 document.getElementById('buttonTen').addEventListener('click', () => {
-    if (inputCount < 12 && clicked[10] === false) {
+    if (inputCount < 12 && btn10.clicked === false) {
         let i = inputCount
         primeRow[i] = 10
+        lastClicked = btn10
+        lastClickedOrder[i] = btn10
         previewRow[i].innerText = "10"
         inputCount++
-        clicked[10] = true
+        btn10.clicked = true
         buttonTen.style.backgroundColor = "darkgray"
         if (inputCount === 12) {
             fillMatrix()
@@ -302,12 +386,14 @@ document.getElementById('buttonTen').addEventListener('click', () => {
 })
 
 document.getElementById('buttonEleven').addEventListener('click', () => {
-    if (inputCount < 12 && clicked[11] === false) {
+    if (inputCount < 12 && btn11.clicked === false) {
         let i = inputCount
         primeRow[i] = 11
+        lastClicked = btn11
+        lastClickedOrder[i] = btn11
         previewRow[i].innerText = "11"
         inputCount++
-        clicked[11] = true
+        btn11.clicked = true
         buttonEleven.style.backgroundColor = "darkgray"
         if (inputCount === 12) {
             fillMatrix()
@@ -315,6 +401,19 @@ document.getElementById('buttonEleven').addEventListener('click', () => {
             getInvPlaybackOrder()
             cueAnims()
         }
+    }
+})
+
+document.getElementById('undo').addEventListener('click', () => {
+    if(inputCount > 0 && inputCount < 12){
+        let i = inputCount
+        primeRow[i] = null
+        previewRow[i - 1].innerText = ""
+        lastClicked.button.style.backgroundColor = ""
+        lastClicked.clicked = false
+        lastClickedOrder[i] = null
+        lastClicked = lastClickedOrder[i - 2]
+        inputCount--
     }
 })
 
