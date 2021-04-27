@@ -1,9 +1,12 @@
 body {
     display: grid;
     min-height: 90vh;
-    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
-    grid-template-columns: 30vw 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 120px;
-    grid-template-areas:    "BL     OB     OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      PB"
+    margin-left: 0vw;
+    margin-right: 0vw;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+    grid-template-columns: 30vw 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 1fr;
+    grid-template-areas:    "TPL    T      T       T       T       T       T       T       T       T       T       T       T       T       T       TPR" 
+                            "BL     OB     OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      PB"
                             "BL     Pr     Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      PB"
                             "BL     B1     TR0     TR1     TR2     TR3     TR4     TR5     TR6     TR7     TR8     TR9     TR10    TR11    B2      PB"
                             "BL     LC0    Z0      Z1      Z2      Z3      Z4      Z5      Z6      Z7      Z8      Z9      Z10     Z11     RC0     PB"
@@ -85,6 +88,29 @@ button{
 
 #blankLeft{
   grid-area: BL;
+}
+
+#title{
+  grid-area: T;
+  background-color: rgba(0, 0, 0, 0.678);
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+
+#title-text{
+  margin-top: 6px;
+}
+
+#title-pad-left{
+  grid-area: TPL;
+  background-color: rgba(0, 0, 0, 0.678);
+}
+
+#title-pad-right{
+  grid-area: TPR;
+  background-color: rgba(0, 0, 0, 0.678);
+  padding-right: 0vw;
 }
 
 #undo{
