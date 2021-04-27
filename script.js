@@ -188,7 +188,7 @@ document.getElementById('buttonZero').addEventListener('click', () => {
         previewRow[i].innerText = "0"
         inputCount++
         btn0.clicked = true
-        buttonZero.style.backgroundColor = "darkgray"
+        buttonZero.style.backgroundColor = "black"
         if (inputCount === 12) {
             fillMatrix()
             getPlaybackOrder()
@@ -207,7 +207,7 @@ document.getElementById('buttonOne').addEventListener('click', () => {
         previewRow[i].innerText = "1"
         inputCount++
         btn1.clicked = true
-        buttonOne.style.backgroundColor = "darkgray"
+        buttonOne.style.backgroundColor = "black"
         if (inputCount === 12) {
             fillMatrix()
             getPlaybackOrder()
@@ -226,7 +226,7 @@ document.getElementById('buttonTwo').addEventListener('click', () => {
         previewRow[i].innerText = "2"
         inputCount++
         btn2.clicked = true
-        buttonTwo.style.backgroundColor = "darkgray"
+        buttonTwo.style.backgroundColor = "black"
         if (inputCount === 12) {
             fillMatrix()
             getPlaybackOrder()
@@ -245,7 +245,7 @@ document.getElementById('buttonThree').addEventListener('click', () => {
         previewRow[i].innerText = "3"
         inputCount++
         btn3.clicked = true
-        buttonThree.style.backgroundColor = "darkgray"
+        buttonThree.style.backgroundColor = "black"
         if (inputCount === 12) {
             fillMatrix()
             getPlaybackOrder()
@@ -264,7 +264,7 @@ document.getElementById('buttonFour').addEventListener('click', () => {
         previewRow[i].innerText = "4"
         inputCount++
         btn4.clicked = true
-        buttonFour.style.backgroundColor = "darkgray"
+        buttonFour.style.backgroundColor = "black"
         if (inputCount === 12) {
             fillMatrix()
             getPlaybackOrder()
@@ -283,7 +283,7 @@ document.getElementById('buttonFive').addEventListener('click', () => {
         previewRow[i].innerText = "5"
         inputCount++
         btn5.clicked = true
-        buttonFive.style.backgroundColor = "darkgray"
+        buttonFive.style.backgroundColor = "black"
         if (inputCount === 12) {
             fillMatrix()
             getPlaybackOrder()
@@ -302,7 +302,7 @@ document.getElementById('buttonSix').addEventListener('click', () => {
         previewRow[i].innerText = "6"
         inputCount++
         btn6.clicked = true
-        buttonSix.style.backgroundColor = "darkgray"
+        buttonSix.style.backgroundColor = "black"
         if (inputCount === 12) {
             fillMatrix()
             getPlaybackOrder()
@@ -321,7 +321,7 @@ document.getElementById('buttonSeven').addEventListener('click', () => {
         previewRow[i].innerText = "7"
         inputCount++
         btn7.clicked = true
-        buttonSeven.style.backgroundColor = "darkgray"
+        buttonSeven.style.backgroundColor = "black"
         if (inputCount === 12) {
             fillMatrix()
             getPlaybackOrder()
@@ -340,7 +340,7 @@ document.getElementById('buttonEight').addEventListener('click', () => {
         previewRow[i].innerText = "8"
         inputCount++
         btn8.clicked = true
-        buttonEight.style.backgroundColor = "darkgray"
+        buttonEight.style.backgroundColor = "black"
         if (inputCount === 12) {
             fillMatrix()
             getPlaybackOrder()
@@ -359,7 +359,7 @@ document.getElementById('buttonNine').addEventListener('click', () => {
         previewRow[i].innerText = "9"
         inputCount++
         btn9.clicked = true
-        buttonNine.style.backgroundColor = "darkgray"
+        buttonNine.style.backgroundColor = "black"
         if (inputCount === 12) {
             fillMatrix()
             getPlaybackOrder()
@@ -378,7 +378,7 @@ document.getElementById('buttonTen').addEventListener('click', () => {
         previewRow[i].innerText = "10"
         inputCount++
         btn10.clicked = true
-        buttonTen.style.backgroundColor = "darkgray"
+        buttonTen.style.backgroundColor = "black"
         if (inputCount === 12) {
             fillMatrix()
             getPlaybackOrder()
@@ -397,7 +397,7 @@ document.getElementById('buttonEleven').addEventListener('click', () => {
         previewRow[i].innerText = "11"
         inputCount++
         btn11.clicked = true
-        buttonEleven.style.backgroundColor = "darkgray"
+        buttonEleven.style.backgroundColor = "black"
         if (inputCount === 12) {
             fillMatrix()
             getPlaybackOrder()
