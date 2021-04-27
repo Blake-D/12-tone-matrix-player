@@ -116,6 +116,9 @@ function cueAnims(){
     for(let i = 0; i < 12; i++){
         for(let j = 0; j < 12; j++){
             divs.rows[i][j].style.webkitAnimationPlayState = "running"
+            divs.rows[i][j].style.oAnimationPlayState = "running"
+            divs.rows[i][j].style.mozAnimationPlayState = "running"
+            divs.rows[i][j].style.msAnimationPlayState = "running"
         }
     }
 }

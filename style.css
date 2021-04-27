@@ -70,6 +70,10 @@ body {
   text-align: center;
 }
 
+.orderButton{
+  width: 30px;
+}
+
 #undo{
   height: 22px;
   margin-left: 10px;
@@ -83,8 +87,7 @@ body {
 
 #ordering-bar{
     grid-area: OB;
-    /* margin-top: 40px; */
-    margin-left: 110px;
+    margin-left: 78px;
 }
 
 #playbackBar{
