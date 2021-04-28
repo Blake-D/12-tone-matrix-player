@@ -7,7 +7,7 @@ body {
     margin-left: 0vw;
     margin-right: 0vw;
     grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
-    grid-template-columns: 30vw 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 1fr;
+    grid-template-columns: 5vw 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 1fr;
     grid-template-areas:    "TPL    T      T       T       T       T       T       T       T       T       T       T       T       T       T       TPR" 
                             "BL     OB     OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      PB"
                             "BL     Pr     Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      PB"
@@ -28,43 +28,44 @@ body {
 }
 
 button{
-  background-color: lightgray;
-  box-shadow: -5px 5px 5px gray;
+  background-color: black;
+  /* box-shadow: -5px 5px 5px black; */
+  color: white;
 }
 
 .leftColumn{
     text-align: center;
     padding: 10px 10px 10px 8px;
-    border-top: 1px dashed black;
-    border-bottom: 1px dashed black;
-    background-color: darkgray;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color: black;
     color: white;
 }
 
 .rightColumn{
     text-align: center;
     padding: 10px 10px 10px 0px;
-    border-top: 1px dashed black;
-    border-bottom: 1px dashed black;
-    background-color: darkgray;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color: black;
     color: white;
 }
 
 .topRow{
     text-align: center;
     padding: 10px 10px 10px 6px;
-    border-left: 1px dashed black;
-    border-right: 1px dashed black;
-    background-color: darkgray;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    background-color: black;
     color: white;
 }
 
 .botRow{
     text-align: center;
     padding: 10px 10px 10px 6px;
-    border-left: 1px dashed black;
-    border-right: 1px dashed black;
-    background-color: darkgray;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    background-color: black;
     color: white;
 }
 
@@ -96,7 +97,7 @@ button{
 
 #title{
   grid-area: T;
-  background-color: rgba(0, 0, 0, 0.678);
+  background-color: black;
   margin-bottom: 10px;
   text-align: center;
   color: white;
@@ -108,12 +109,12 @@ button{
 
 #title-pad-left{
   grid-area: TPL;
-  background-color: rgba(0, 0, 0, 0.678);
+  background-color: black;
 }
 
 #title-pad-right{
   grid-area: TPR;
-  background-color: rgba(0, 0, 0, 0.678);
+  background-color: black;
   padding-right: 0vw;
 }
 
@@ -141,32 +142,33 @@ button{
 
 #blankOne{
     grid-area: B1;
-    border-right: 1px dashed black;
-    border-bottom: 1px dashed black;
+    /* border-right: 1px dashed black;
+    border-bottom: 1px dashed black; */
 }
 
 #blankTwo{
     grid-area: B2;
-    border-left: 1px dashed black;
-    border-bottom: 1px dashed black;
+    /* border-left: 1px dashed black;
+    border-bottom: 1px dashed black; */
 }
 
 #blankThree{
     grid-area: B3;
-    border-right: 1px dashed black;
-    border-top: 1px dashed black;
+    /* border-right: 1px dashed black;
+    border-top: 1px dashed black; */
 }
 
 #blankFour{
     grid-area: B4;
-    border-left: 1px dashed black;
-    border-top: 1px dashed black;
+    /* border-left: 1px dashed black;
+    border-top: 1px dashed black; */
 }
 
 /* Left Column */
 
 #leftColumn0{
     grid-area: LC0;
+    border-top: none;
 }
 
 #leftColumn1{
@@ -211,12 +213,14 @@ button{
 
 #leftColumn11{
     grid-area: LC11;
+    border-bottom: none;
 }
 
 /* Right Column */
 
 #rightColumn0{
     grid-area: RC0;
+    border-top: none;
 }
 
 #rightColumn1{
@@ -261,12 +265,14 @@ button{
 
 #rightColumn11{
     grid-area: RC11;
+    border-bottom: none;
 }
 
 /* Top Row */
 
 #topRow0{
     grid-area: TR0;
+    border-left: none;
 }
 
 #topRow1{
@@ -311,13 +317,14 @@ button{
 
 #topRow11{
     grid-area: TR11;
+    border-right: none;
 }
 
 /* Bottom Row */
 
-#bopRow0{
+#botRow0{
     grid-area: BR0;
-    margin-left: 2px;
+    border-left: none;
 }
 
 #botRow1{
@@ -362,6 +369,7 @@ button{
 
 #botRow11{
     grid-area: BR11;
+    border-right: none;
 }
 
 /* Row Zero */
