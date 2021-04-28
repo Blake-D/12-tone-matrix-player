@@ -84,12 +84,14 @@ button{
 }
 
 .orderButton{
+  color: lightgray;
   width: 30px;
 }
 
 .playbackButton{
   width: 100px;
   height: auto;
+  border-radius: 10px;
 }
 
 #blankLeft{
@@ -168,6 +170,7 @@ button{
 /* Left Column */
 
 #leftColumn0{
+    border-radius: 10px 0px 0px 0px;
     grid-area: LC0;
     border-top: none;
 }
@@ -213,6 +216,7 @@ button{
 }
 
 #leftColumn11{
+    border-radius: 0px 0px 0px 10px;
     grid-area: LC11;
     border-bottom: none;
 }
@@ -220,6 +224,7 @@ button{
 /* Right Column */
 
 #rightColumn0{
+    border-radius: 0px 10px 0px 0px;
     grid-area: RC0;
     border-top: none;
 }
@@ -265,6 +270,7 @@ button{
 }
 
 #rightColumn11{
+    border-radius: 0px 0px 10px 0px;
     grid-area: RC11;
     border-bottom: none;
 }
@@ -272,6 +278,7 @@ button{
 /* Top Row */
 
 #topRow0{
+    border-radius: 10px 0px 0px 0px;
     grid-area: TR0;
     border-left: none;
 }
@@ -317,6 +324,7 @@ button{
 }
 
 #topRow11{
+    border-radius: 0px 10px 0px 0px;
     grid-area: TR11;
     border-right: none;
 }
@@ -324,6 +332,7 @@ button{
 /* Bottom Row */
 
 #botRow0{
+    border-radius: 0px 0px 0px 10px;
     grid-area: BR0;
     border-left: none;
 }
@@ -369,6 +378,7 @@ button{
 }
 
 #botRow11{
+    border-radius: 0px 0px 10px 0px;
     grid-area: BR11;
     border-right: none;
 }
