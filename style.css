@@ -29,15 +29,14 @@ body {
 
 button{
   background-color: black;
-  /* box-shadow: -5px 5px 5px black; */
   color: white;
 }
 
 .leftColumn{
     text-align: center;
     padding: 10px 10px 10px 8px;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
     background-color: black;
     color: white;
 }
@@ -45,8 +44,8 @@ button{
 .rightColumn{
     text-align: center;
     padding: 10px 10px 10px 0px;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
     background-color: black;
     color: white;
 }
@@ -54,8 +53,8 @@ button{
 .topRow{
     text-align: center;
     padding: 10px 10px 10px 6px;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
     background-color: black;
     color: white;
 }
@@ -63,8 +62,8 @@ button{
 .botRow{
     text-align: center;
     padding: 10px 10px 10px 6px;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
     background-color: black;
     color: white;
 }
@@ -76,6 +75,8 @@ button{
 }
 
 .preview-box{
+  background-color: white;
+  color: white;
   border: 1px solid black;
   width: 20px;
   height: 20px;

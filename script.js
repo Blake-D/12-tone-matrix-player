@@ -186,6 +186,8 @@ document.getElementById('buttonZero').addEventListener('click', () => {
         lastClicked = btn0
         lastClickedOrder[i] = btn0
         previewRow[i].innerText = "0"
+        previewRow[i].style.backgroundColor = "black"
+        previewRow[i].style.borderColor = "white"
         inputCount++
         btn0.clicked = true
         buttonZero.style.backgroundColor = "white"
@@ -205,6 +207,8 @@ document.getElementById('buttonOne').addEventListener('click', () => {
         lastClicked = btn1
         lastClickedOrder[i] = btn1
         previewRow[i].innerText = "1"
+        previewRow[i].style.backgroundColor = "black"
+        previewRow[i].style.borderColor = "white"
         inputCount++
         btn1.clicked = true
         buttonOne.style.backgroundColor = "white"
@@ -224,6 +228,8 @@ document.getElementById('buttonTwo').addEventListener('click', () => {
         lastClicked = btn2
         lastClickedOrder[i] = btn2
         previewRow[i].innerText = "2"
+        previewRow[i].style.backgroundColor = "black"
+        previewRow[i].style.borderColor = "white"
         inputCount++
         btn2.clicked = true
         buttonTwo.style.backgroundColor = "white"
@@ -243,6 +249,8 @@ document.getElementById('buttonThree').addEventListener('click', () => {
         lastClicked = btn3
         lastClickedOrder[i] = btn3
         previewRow[i].innerText = "3"
+        previewRow[i].style.backgroundColor = "black"
+        previewRow[i].style.borderColor = "white"
         inputCount++
         btn3.clicked = true
         buttonThree.style.backgroundColor = "white"
@@ -262,6 +270,8 @@ document.getElementById('buttonFour').addEventListener('click', () => {
         lastClicked = btn4
         lastClickedOrder[i] = btn4
         previewRow[i].innerText = "4"
+        previewRow[i].style.backgroundColor = "black"
+        previewRow[i].style.borderColor = "white"
         inputCount++
         btn4.clicked = true
         buttonFour.style.backgroundColor = "white"
@@ -281,6 +291,8 @@ document.getElementById('buttonFive').addEventListener('click', () => {
         lastClicked = btn5
         lastClickedOrder[i] = btn5
         previewRow[i].innerText = "5"
+        previewRow[i].style.backgroundColor = "black"
+        previewRow[i].style.borderColor = "white"
         inputCount++
         btn5.clicked = true
         buttonFive.style.backgroundColor = "white"
@@ -300,6 +312,8 @@ document.getElementById('buttonSix').addEventListener('click', () => {
         lastClicked = btn6
         lastClickedOrder[i] = btn6
         previewRow[i].innerText = "6"
+        previewRow[i].style.backgroundColor = "black"
+        previewRow[i].style.borderColor = "white"
         inputCount++
         btn6.clicked = true
         buttonSix.style.backgroundColor = "white"
@@ -319,6 +333,8 @@ document.getElementById('buttonSeven').addEventListener('click', () => {
         lastClicked = btn7
         lastClickedOrder[i] = btn7
         previewRow[i].innerText = "7"
+        previewRow[i].style.backgroundColor = "black"
+        previewRow[i].style.borderColor = "white"
         inputCount++
         btn7.clicked = true
         buttonSeven.style.backgroundColor = "white"
@@ -338,6 +354,8 @@ document.getElementById('buttonEight').addEventListener('click', () => {
         lastClicked = btn8
         lastClickedOrder[i] = btn8
         previewRow[i].innerText = "8"
+        previewRow[i].style.backgroundColor = "black"
+        previewRow[i].style.borderColor = "white"
         inputCount++
         btn8.clicked = true
         buttonEight.style.backgroundColor = "white"
@@ -357,6 +375,8 @@ document.getElementById('buttonNine').addEventListener('click', () => {
         lastClicked = btn9
         lastClickedOrder[i] = btn9
         previewRow[i].innerText = "9"
+        previewRow[i].style.backgroundColor = "black"
+        previewRow[i].style.borderColor = "white"
         inputCount++
         btn9.clicked = true
         buttonNine.style.backgroundColor = "white"
@@ -376,6 +396,8 @@ document.getElementById('buttonTen').addEventListener('click', () => {
         lastClicked = btn10
         lastClickedOrder[i] = btn10
         previewRow[i].innerText = "10"
+        previewRow[i].style.backgroundColor = "black"
+        previewRow[i].style.borderColor = "white"
         inputCount++
         btn10.clicked = true
         buttonTen.style.backgroundColor = "white"
@@ -395,6 +417,8 @@ document.getElementById('buttonEleven').addEventListener('click', () => {
         lastClicked = btn11
         lastClickedOrder[i] = btn11
         previewRow[i].innerText = "11"
+        previewRow[i].style.backgroundColor = "black"
+        previewRow[i].style.borderColor = "white"
         inputCount++
         btn11.clicked = true
         buttonEleven.style.backgroundColor = "white"
@@ -412,6 +436,8 @@ document.getElementById('undo').addEventListener('click', () => {
         let i = inputCount
         primeRow[i] = null
         previewRow[i - 1].innerText = ""
+        previewRow[i - 1].style.backgroundColor = "white"
+        previewRow[i - 1].style.borderColor = "black"
         lastClicked.button.style.backgroundColor = ""
         lastClicked.clicked = false
         lastClickedOrder[i] = null
