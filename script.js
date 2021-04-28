@@ -112,9 +112,9 @@ const divs = {
     [eleven0, eleven1, eleven2, eleven3, eleven4, eleven5, eleven6, eleven7, eleven8, eleven9, eleven10, eleven11]]
 }
 
-function cueAnims(){
-    for(let i = 0; i < 12; i++){
-        for(let j = 0; j < 12; j++){
+function cueAnims() {
+    for (let i = 0; i < 12; i++) {
+        for (let j = 0; j < 12; j++) {
             divs.rows[i][j].style.webkitAnimationPlayState = "running"
             divs.rows[i][j].style.oAnimationPlayState = "running"
             divs.rows[i][j].style.mozAnimationPlayState = "running"
@@ -408,7 +408,7 @@ document.getElementById('buttonEleven').addEventListener('click', () => {
 })
 
 document.getElementById('undo').addEventListener('click', () => {
-    if(inputCount > 0 && inputCount < 12){
+    if (inputCount > 0 && inputCount < 12) {
         let i = inputCount
         primeRow[i] = null
         previewRow[i - 1].innerText = ""

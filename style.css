@@ -1,4 +1,5 @@
 body {
+  background-color: rgb(245, 242, 238);
     display: grid;
     min-height: 90vh;
     margin-left: 0vw;
@@ -26,6 +27,7 @@ body {
 
 button{
   background-color: lightgray;
+  box-shadow: -10px 5px 5px gray;
 }
 
 .leftColumn{
@@ -364,6 +366,7 @@ button{
 
 #zero0{
     grid-area: Z0;
+    background-color: white;
 }
 
 #zero1{
@@ -373,6 +376,7 @@ button{
 
 #zero2{
     grid-area: Z2;
+    background-color: white;
 }
 
 #zero3{
@@ -382,6 +386,7 @@ button{
 
 #zero4{
     grid-area: Z4;
+    background-color: white;
 }
 
 #zero5{
@@ -391,6 +396,7 @@ button{
 
 #zero6{
     grid-area: Z6;
+    background-color: white;
 }
 
 #zero7{
@@ -400,6 +406,7 @@ button{
 
 #zero8{
     grid-area: Z8;
+    background-color: white;
 }
 
 #zero9{
@@ -409,6 +416,7 @@ button{
 
 #zero10{
     grid-area: Z10;
+    background-color: white;
 }
 
 #zero11{
@@ -425,6 +433,7 @@ button{
 
 #one1{
     grid-area: O1;
+    background-color: white;
 }
 
 #one2{
@@ -434,6 +443,7 @@ button{
 
 #one3{
     grid-area: O3;
+    background-color: white;
 }
 
 #one4{
@@ -443,6 +453,7 @@ button{
 
 #one5{
     grid-area: O5;
+    background-color: white;
 }
 
 #one6{
@@ -452,6 +463,7 @@ button{
 
 #one7{
     grid-area: O7;
+    background-color: white;
 }
 
 #one8{
@@ -461,6 +473,7 @@ button{
 
 #one9{
     grid-area: O9;
+    background-color: white;
 }
 
 #one10{
@@ -470,12 +483,14 @@ button{
 
 #one11{
     grid-area: O11;
+    background-color: white;
 }
 
 /* Row Two */
 
 #two0{
     grid-area: Tw0;
+    background-color: white;
 }
 
 #two1{
@@ -485,6 +500,7 @@ button{
 
 #two2{
     grid-area: Tw2;
+    background-color: white;
 }
 
 #two3{
@@ -494,6 +510,7 @@ button{
 
 #two4{
     grid-area: Tw4;
+    background-color: white;
 }
 
 #two5{
@@ -503,6 +520,7 @@ button{
 
 #two6{
     grid-area: Tw6;
+    background-color: white;
 }
 
 #two7{
@@ -512,6 +530,7 @@ button{
 
 #two8{
     grid-area: Tw8;
+    background-color: white;
 }
 
 #two9{
@@ -521,6 +540,7 @@ button{
 
 #two10{
     grid-area: Tw10;
+    background-color: white;
 }
 
 #two11{
@@ -537,6 +557,7 @@ button{
 
 #three1{
     grid-area: Th1;
+    background-color: white;
 }
 
 #three2{
@@ -546,6 +567,7 @@ button{
 
 #three3{
     grid-area: Th3;
+    background-color: white;
 }
 
 #three4{
@@ -555,6 +577,7 @@ button{
 
 #three5{
     grid-area: Th5;
+    background-color: white;
 }
 
 #three6{
@@ -563,6 +586,7 @@ button{
 }
 #three7{
     grid-area: Th7;
+    background-color: white;
 }
 
 #three8{
@@ -572,6 +596,7 @@ button{
 
 #three9{
     grid-area: Th9;
+    background-color: white;
 }
 
 #three10{
@@ -581,12 +606,14 @@ button{
 
 #three11{
     grid-area: Th11;
+    background-color: white;
 }
 
 /* Row Four */
 
 #four0{
     grid-area: Fo0;
+    background-color: white;
 }
 
 #four1{
@@ -596,6 +623,7 @@ button{
 
 #four2{
     grid-area: Fo2;
+    background-color: white;
 }
 
 #four3{
@@ -605,6 +633,7 @@ button{
 
 #four4{
     grid-area: Fo4;
+    background-color: white;
 }
 
 #four5{
@@ -614,6 +643,7 @@ button{
 
 #four6{
     grid-area: Fo6;
+    background-color: white;
 }
 
 #four7{
@@ -623,6 +653,7 @@ button{
 
 #four8{
     grid-area: Fo8;
+    background-color: white;
 }
 
 #four9{
@@ -632,6 +663,7 @@ button{
 
 #four10{
     grid-area: Fo10;
+    background-color: white;
 }
 
 #four11{
@@ -648,6 +680,7 @@ button{
 
 #five1{
     grid-area: Fi1;
+    background-color: white;
 }
 
 #five2{
@@ -657,6 +690,7 @@ button{
 
 #five3{
     grid-area: Fi3;
+    background-color: white;
 }
 
 #five4{
@@ -666,6 +700,7 @@ button{
 
 #five5{
     grid-area: Fi5;
+    background-color: white;
 }
 
 #five6{
@@ -675,6 +710,7 @@ button{
 
 #five7{
     grid-area: Fi7;
+    background-color: white;
 }
 
 #five8{
@@ -684,6 +720,7 @@ button{
 
 #five9{
     grid-area: Fi9;
+    background-color: white;
 }
 
 #five10{
@@ -693,12 +730,14 @@ button{
 
 #five11{
     grid-area: Fi11;
+    background-color: white;
 }
 
 /* Row Six */
 
 #six0{
     grid-area: Si0;
+    background-color: white;
 }
 
 #six1{
@@ -708,6 +747,7 @@ button{
 
 #six2{
     grid-area: Si2;
+    background-color: white;
 }
 
 #six3{
@@ -717,6 +757,7 @@ button{
 
 #six4{
     grid-area: Si4;
+    background-color: white;
 }
 
 #six5{
@@ -726,6 +767,7 @@ button{
 
 #six6{
     grid-area: Si6;
+    background-color: white;
 }
 
 #six7{
@@ -735,6 +777,7 @@ button{
 
 #six8{
     grid-area: Si8;
+    background-color: white;
 }
 
 #six9{
@@ -744,6 +787,7 @@ button{
 
 #six10{
     grid-area: Si10;
+    background-color: white;
 }
 
 #six11{
@@ -760,6 +804,7 @@ button{
 
 #seven1{
     grid-area: Se1;
+    background-color: white;
 }
 
 #seven2{
@@ -769,6 +814,7 @@ button{
 
 #seven3{
     grid-area: Se3;
+    background-color: white;
 }
 
 #seven4{
@@ -778,6 +824,7 @@ button{
 
 #seven5{
     grid-area: Se5;
+    background-color: white;
 }
 
 #seven6{
@@ -787,6 +834,7 @@ button{
 
 #seven7{
     grid-area: Se7;
+    background-color: white;
 }
 
 #seven8{
@@ -796,6 +844,7 @@ button{
 
 #seven9{
     grid-area: Se9;
+    background-color: white;
 }
 
 #seven10{
@@ -805,12 +854,14 @@ button{
 
 #seven11{
     grid-area: Se11;
+    background-color: white;
 }
 
 /* Row Eight */
 
 #eight0{
     grid-area: Ei0;
+    background-color: white;
 }
 
 #eight1{
@@ -820,6 +871,7 @@ button{
 
 #eight2{
     grid-area: Ei2;
+    background-color: white;
 }
 
 #eight3{
@@ -829,6 +881,7 @@ button{
 
 #eight4{
     grid-area: Ei4;
+    background-color: white;
 }
 
 #eight5{
@@ -838,6 +891,7 @@ button{
 
 #eight6{
     grid-area: Ei6;
+    background-color: white;
 }
 
 #eight7{
@@ -847,6 +901,7 @@ button{
 
 #eight8{
     grid-area: Ei8;
+    background-color: white;
 }
 
 #eight9{
@@ -856,6 +911,7 @@ button{
 
 #eight10{
     grid-area: Ei10;
+    background-color: white;
 }
 
 #eight11{
@@ -872,6 +928,7 @@ button{
 
 #nine1{
     grid-area: N1;
+    background-color: white;
 }
 
 #nine2{
@@ -881,6 +938,7 @@ button{
 
 #nine3{
     grid-area: N3;
+    background-color: white;
 }
 
 #nine4{
@@ -890,6 +948,7 @@ button{
 
 #nine5{
     grid-area: N5;
+    background-color: white;
 }
 
 #nine6{
@@ -899,6 +958,7 @@ button{
 
 #nine7{
     grid-area: N7;
+    background-color: white;
 }
 
 #nine8{
@@ -908,6 +968,7 @@ button{
 
 #nine9{
     grid-area: N9;
+    background-color: white;
 }
 
 #nine10{
@@ -917,12 +978,14 @@ button{
 
 #nine11{
     grid-area: N11;
+    background-color: white;
 }
 
 /* Row Ten */
 
 #ten0{
     grid-area: Te0;
+    background-color: white;
 }
 
 #ten1{
@@ -932,6 +995,7 @@ button{
 
 #ten2{
     grid-area: Te2;
+    background-color: white;
 }
 
 #ten3{
@@ -941,6 +1005,7 @@ button{
 
 #ten4{
     grid-area: Te4;
+    background-color: white;
 }
 
 #ten5{
@@ -950,6 +1015,7 @@ button{
 
 #ten6{
     grid-area: Te6;
+    background-color: white;
 }
 
 #ten7{
@@ -959,6 +1025,7 @@ button{
 
 #ten8{
     grid-area: Te8;
+    background-color: white;
 }
 
 #ten9{
@@ -968,6 +1035,7 @@ button{
 
 #ten10{
     grid-area: Te10;
+    background-color: white;
 }
 
 #ten11{
@@ -984,6 +1052,7 @@ button{
 
 #eleven1{
     grid-area: El1;
+    background-color: white;
 }
 
 #eleven2{
@@ -993,6 +1062,7 @@ button{
 
 #eleven3{
     grid-area: El3;
+    background-color: white;
 }
 
 #eleven4{
@@ -1002,6 +1072,7 @@ button{
 
 #eleven5{
     grid-area: El5;
+    background-color: white;
 }
 
 #eleven6{
@@ -1011,6 +1082,7 @@ button{
 
 #eleven7{
     grid-area: El7;
+    background-color: white;
 }
 
 #eleven8{
@@ -1020,6 +1092,7 @@ button{
 
 #eleven9{
     grid-area: El9;
+    background-color: white;
 }
 
 #eleven10{
@@ -1029,6 +1102,7 @@ button{
 
 #eleven11{
     grid-area: El11;
+    background-color: white;
 }
 
 #zero0, #one0, #two0, #three0, #four0, #five0, #six0, #seven0, #eight0, #nine0, #ten0, #eleven0{
