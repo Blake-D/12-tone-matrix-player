@@ -1,5 +1,7 @@
 body {
-  background-color: rgb(245, 242, 238);
+  /* background-color: rgb(245, 242, 238); */
+    background: url('white_piano.jpeg');
+    background-size: cover;
     display: grid;
     min-height: 90vh;
     margin-left: 0vw;
@@ -27,7 +29,7 @@ body {
 
 button{
   background-color: lightgray;
-  box-shadow: -10px 5px 5px gray;
+  box-shadow: -5px 5px 5px gray;
 }
 
 .leftColumn{
