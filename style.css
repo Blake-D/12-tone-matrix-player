@@ -27,13 +27,6 @@ body {
                             "BL     B3     BR0     BR1     BR2     BR3     BR4     BR5     BR6     BR7     BR8     BR9     BR10    BR11    B4      PB"
 }
 
-@media only screen and (max-width: 800px){
-  body{
-    background-size: 800px 1600px;
-    background-repeat: no-repeat;
-  }
-}
-
 button{
   background-color: black;
   color: white;
@@ -96,6 +89,7 @@ button{
 }
 
 .playbackButton{
+  margin-top: 10px;
   width: 100px;
   height: auto;
   border-radius: 10px;
@@ -1814,5 +1808,93 @@ button{
     }
     100% {
       opacity:1;
+    }
+  }
+
+  @media only screen and (max-width: 800px){
+    body{
+      background: none;
+      background-color: lightgray;
+      grid-template-rows: 40px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 50px 20px 20px;
+      grid-template-columns: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+      grid-template-areas:    "T      T      T       T       T       T       T       T       T       T       T       T       T       T       T"
+                              "BL     B1     TR0     TR1     TR2     TR3     TR4     TR5     TR6     TR7     TR8     TR9     TR10    TR11    B2"
+                              "BL     LC0    Z0      Z1      Z2      Z3      Z4      Z5      Z6      Z7      Z8      Z9      Z10     Z11     RC0"
+                              "BL     LC1    O0      O1      O2      O3      O4      O5      O6      O7      O8      O9      O10     O11     RC1"
+                              "BL     LC2    Tw0     Tw1     Tw2     Tw3     Tw4     Tw5     Tw6     Tw7     Tw8     Tw9     Tw10    Tw11    RC2"
+                              "BL     LC3    Th0     Th1     Th2     Th3     Th4     Th5     Th6     Th7     Th8     Th9     Th10    Th11    RC3"
+                              "BL     LC4    Fo0     Fo1     Fo2     Fo3     Fo4     Fo5     Fo6     Fo7     Fo8     Fo9     Fo10    Fo11    RC4"
+                              "BL     LC5    Fi0     Fi1     Fi2     Fi3     Fi4     Fi5     Fi6     Fi7     Fi8     Fi9     Fi10    Fi11    RC5"
+                              "BL     LC6    Si0     Si1     Si2     Si3     Si4     Si5     Si6     Si7     Si8     Si9     Si10    Si11    RC6"
+                              "BL     LC7    Se0     Se1     Se2     Se3     Se4     Se5     Se6     Se7     Se8     Se9     Se10    Se11    RC7"
+                              "BL     LC8    Ei0     Ei1     Ei2     Ei3     Ei4     Ei5     Ei6     Ei7     Ei8     Ei9     Ei10    Ei11    RC8"
+                              "BL     LC9    N0      N1      N2      N3      N4      N5      N6      N7      N8      N9      N10     N11     RC9"
+                              "BL     LC10   Te0     Te1     Te2     Te3     Te4     Te5     Te6     Te7     Te8     Te9     Te10    Te11    RC10"
+                              "BL     LC11   El0     El1     El2     El3     El4     El5     El6     El7     El8     El9     El10    El11    RC11"
+                              "BL     B3     BR0     BR1     BR2     BR3     BR4     BR5     BR6     BR7     BR8     BR9     BR10    BR11    B4"
+                              "OB     OB     OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB      OB"
+                              "Pr     Pr     Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr      Pr"
+                              "PB     PB     PB      PB      PB      PB      PB      PB      PB      PB      PB      PB      PB      PB      PB"
+    }
+
+    .leftColumn{
+      font-size: 12px;
+      padding: 0px;
+    }
+  
+    .rightColumn{
+      font-size: 12px;
+      padding: 0px;
+    }
+  
+    .topRow{
+      font-size: 12px;
+      padding: 3px 0px 0px 0px;
+    }
+  
+    .botRow{
+      font-size: 11px;
+      padding: 3px 0px 0px 0px;
+    }
+  
+    #ordering-bar{
+      margin-left: 60px;
+      margin-right: 30px;
+      padding-top: 20px;
+    }
+  
+    #preview-bar{
+      padding-top: 30px;
+      margin-left: 20px;
+      padding-bottom: 0px;
+    }
+
+    #playbackBar{
+      margin-top: 50px;
+    }
+
+    .playbackButton{
+      margin-top: 1px;
+      width: 240px;
+      height: auto;
+      border-radius: 10px;
+    }
+  
+    #title-pad-left{
+      background-color: lightgray;
+    }
+    
+    #title-pad-right{
+      background-color: lightgray;
+    }
+
+    #title{
+      background-color: lightgray;
+      text-align: center;
+      color: black;
+    }
+
+    .box0, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11{
+      padding: 0px;
     }
   }
