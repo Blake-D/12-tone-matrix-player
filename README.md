@@ -10,7 +10,7 @@ So the big question in 12-tone music is what order do the pitches appear in? Sur
 
 Long story short: 12-tone music is an overly-complicated style of music that maybe a handful of people in the world actually enjoy. But I am one of those people. 
 
-I also compose 12-tone music at a prolific rate. So 12-tone matrices are a tool I rely on quite heavily. While there are a few web-based 12-tone matrix calculators that I am aware of, they all lack an important feature: none of them produce an audible version of the row. So I made one that does.
+I also compose 12-tone music at a prolific rate. So 12-tone matrices are a tool I rely on quite heavily. While there are a few web-based 12-tone matrix calculators that I am aware of, they all lack an important feature: none of them let you hear the row you've decided on. So I made one that does.
 
 Hence:
 
