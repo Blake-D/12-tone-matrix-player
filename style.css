@@ -1900,6 +1900,10 @@ button{
 
     @media screen and (orientation:landscape){
       body{
+        background: url('white_piano.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: none;
         grid-template-rows: 40px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
         grid-template-columns: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 80px 80px 80px;
         grid-template-areas:    "T      T      T       T       T       T       T       T       T       T       T       T       T       T       T      T     T     T"
@@ -1937,6 +1941,12 @@ button{
       .playbackButton{
         margin-top: 5px;
         width: 200px;
+      }
+
+      #title{
+        background-color: black;
+        color: white;
+        width: 100vw;
       }
 
     }
